@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My certificates</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="index.css">
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            body{
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                background-color: rgba(255, 251, 251, 0.726);
+            }
+            .wrapper-here{
+                background-color: rgb(252, 247, 241);
+                display:flex;
+                margin:10px;
+                border-radius: 4px;
+                font-size:small;
+                overflow-x:auto;
+                height: 140px;
+            }
+            .wrapper-here a{
+                text-decoration: none;
+                color:rgb(150, 71, 71);
+                font-weight: 600;
+                box-shadow: 1px 1px 3px;
+            }
+            .html{
+                width:300px;
+                background-color: rgb(202, 187, 160);
+                padding:5px;
+                margin:10px;
+                border-radius: 4px;
+                min-width: 240px;
+            }
+            .html button{
+                padding:10px;
+                background-color:indianred;
+                border:none;
+                border-radius:4px;
+            }
+            .css{
+                width:300px;
+                background-color: rgba(219, 231, 235, 0.637);
+                padding:5px;
+                margin:10px;
+                border-radius: 4px;
+                min-width: 240px;
+            }
+            .css button{
+                padding:10px;
+                background-color:rgb(92, 205, 167);
+                border:none;
+                border-radius:4px;
+            }
+            .php{
+                width:300px;
+                background-color: rgba(164, 171, 185, 0.644);
+                padding:5px;
+                margin:10px;
+                border-radius: 4px;
+                min-width: 240px;
+            }
+            .php button{
+                padding:10px;
+                background-color:rgb(196, 120, 196);
+                border:none;
+                border-radius:4px;
+            }
+            .sql{
+                width:300px;
+                background-color: rgba(230, 126, 29, 0.589);
+                padding:5px;
+                margin:10px;
+                border-radius: 4px;
+                min-width: 240px;
+            }
+            .sql button{
+                padding:10px;
+                background-color:rgb(128, 211, 193);
+                border:none;
+                border-radius:4px;
+            }
+            .pythonbegginers{
+                width:300px;
+                background-color: rgba(184, 144, 146, 0.767);
+                padding:5px;
+                margin:10px;
+                border-radius: 4px;
+                min-width: 240px;
+            }
+            .pythonbegginers button{
+                padding:10px;
+                background-color:rgba(22, 71, 80, 0.863);
+                border:none;
+                border-radius:4px;
+            }
+            .buttons{
+                text-align: center;
+                margin:10px;
+            }
+            .buttons a{
+                color:white;
+            }
+            h1{
+                text-align: center;
+                font-size:small;
+                margin-top:-5px;
+                color:rgb(151, 146, 149);
+                text-decoration: underline;
+                padding:5px;
+            }
+            /*menu location*/
+            .certificates{
+             text-decoration: underline rgb(243, 189, 12) 2px;
+            }
+
+        </style>
+        <meta name="viewport" content="device-width,initial-scale=1.0">
+    </head>
+    <body>
+       <!--MENU HEADER-->
+       <!--HEADER-->
+    <div id="header">
+        <div class="wrap-icon" onclick="menu()">
+            <!--the menu icon-->
+        <div class="menuicon" id="menuicon">
+            <div id="barone"></div>
+            <div id="bartwo"></div>
+            <div id="barthree"></div>
+        </div>
+        </div>
+    </div>
+
+     <!---Menu box-->
+     <div class="Menu">
+        <div class="flexmenuwrapper">
+            <div onclick="window.location='index.html'">Home</div>
+            <div class="blog-small-screen" onclick="window.location='myblog.html'">Blog</div>
+            <div class="about-small-screens" onclick="window.location='myabout.html'">About</div>
+            <div class="about-small-screens" onclick="window.location='cv.html'">Curriculum Vitate</div>
+            <div class="about-small-screens" onclick="window.location='myblog.html'">Blog</div>
+            <div onclick="hiremenav()">Hire Me</div>
+            <div onclick="alertprojects()">My Projects</div>
+            <div class="alert" style="font-size:medium;width:200px;font-weight: 100;background-color: rgb(253, 238, 208);text-align:start;height:0;overflow: hidden;position:absolute;margin-top: -24px;color:rgb(66, 63, 63);"> There is nothing to show at the moment.
+                This website is still in development process. <button style="padding:5px;color:green;" onclick="alertprojects()">OK</button>
+            </div>
+            <div onclick="requestproject()">Request Project</div>
+            <div onclick="viewcertificatesnav()" class="certificates">Certificates <span class="viewcert">&#10010;</span></div>
+            <section class="mycertificates">
+                <div onclick="window.location='certificates.html'">Web Development</div>
+                <div onclick="alertprojects()">Electrical Engineering</div>
+                <div onclick="alertprojects()">Poetry</div>
+            </section>
+            <div onclick="otheractivities()">Other Activities <span class="otheract">&#10010</span></div>
+            <section class="mytuition">
+                <div onclick="document.location='tutor.html'">Tuition</div>
+                <div onclick="alertprojects()">Writing</div>
+            </section>
+            <div onclick="contactmenav()">Contact</div>
+        </div>
+    </div>
+    
+    <!--navigation box-->
+    <nav id="nav-li-menu">
+        <ul>
+            <li class="myblog"><a href="myblog.html">Blog</a></li>
+            <li><a href="myabout.html">About</a></li>
+            <li class="callme"><a href="tel:0786052462"><span>&#9742</span> 078 605 2462</a></li>
+        </ul>
+    </nav>
+
+    
+        <br><br>
+        <h1>Certificates in Web Development</h1>
+        <div class="wrapper-here">
+           
+            <!--html box-->
+            <div class="html">
+                <span style="color:green;font-weight:600;">HTML</span> is used to lay structure for the web. 
+                <div class="buttons">
+            <button><a href="HTML_certificate.jpg" downwload>View Certificate<span>&#8595</span></a></button>
+                </div>
+            </div>
+            <!--css box-->
+            <div class="css">
+                <span style="color:rgb(241, 28, 110);font-weight:600;">CSS</span> is used to style that structure to make it look amazing.
+                <div class="buttons">
+                   <button><a href="CSS_certificate.jpg">View Certificate <span>&#8595</span></a></button>
+                </div>
+            </div>
+            <!--php-->
+            <div class="php">
+                <span style="color:rgb(15, 116, 119);font-weight:600;">PHP</span> is a backend programming language.
+                <div class="buttons">
+                     <button><a href="PHP_certificate.jpg">View Certificate <span>&#8595</span></a></button>
+                </div>
+            </div>
+            <!--sql box-->
+            <div class="sql">
+                <span style="color:rgb(242, 241, 255);font-weight:600;">SQL</span> is also a backend programming language .
+                <div class="buttons">
+                     <button><a href="SQL_certificate.jpg">View Certificate <span>&#8595</span></a></button>
+                </div>
+            </div>
+            <!--python for begginers box-->
+            <div class="pythonbegginers">
+                <span style="color:rgb(62, 11, 182);font-weight:600;">Python for Begginers</span> introduces the fundamentals of python.
+                <div class="buttons">
+                    <div class="buttons">
+                         <button><a href="CC-Mandatory-Python-for-Beginners_certificate.jpg">View Certificate <span>&#8595</span></a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="index.js"></script>
+
+    </body>
+</html>

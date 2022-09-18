@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutor: C++|Python</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="index.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <style>
+            *{
+              margin:0;
+              padding:0;
+            }
+        body{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgba(255, 251, 251, 0.726);
+            font-size: small;
+            color:rgb(80, 75, 75);
+        }
+        .wrapper-here{
+            display:flex;
+            justify-content: center;
+            padding:5px;
+        }
+        h1{
+            text-align: center;
+            font-size: small;
+            margin-top:-4px;
+            color:rgb(151, 146, 149);
+            text-decoration: underline;
+            padding:5px;
+        }
+        .courses{
+            text-align: center;
+            margin:10px;
+        }
+        .wrapform{
+            padding:20px;
+            border-radius: 4px;
+            box-shadow:1px 1px 7px;
+            margin:10px 20px;
+        }
+        .wrapform input{
+            box-shadow: 1px 1px 3px brown;
+        }
+        .wrapform textarea{
+            width:100%;
+            box-sizing: border-box;
+        }
+        .buttons{
+            text-align: center;
+            margin:10px 0 3px 0;
+        }
+        .buttons button{
+            padding:2px;
+        }
+        /*styling back button*/
+            /*popup boxes*/
+            .popup1,.popup2{
+                color:brown;
+                font-weight: 600;
+                font-size: small;
+                height:0;
+                overflow: hidden;
+                margin-top: -20px;
+                transition: margin 200ms linear;
+            }
+            .paypopup{
+                overflow: hidden;
+                transition: margin 200ms linear;
+                height:0;
+                margin-top: -20px;
+                font-size: small;
+                color:brown;
+            }
+            /*styling the buttons at the bottom*/
+            .buttons .reset{
+                box-shadow: 1px 2px 6px rgb(0, 0, 0);
+                border-radius:4px;
+                font-weight: 600;
+                background-color: rgb(60, 56, 83);
+                color:white;
+                border:none;
+                padding:5px;
+            }
+            .buttons .send{
+                box-shadow: 1px 2px 6px rgb(34, 33, 33);
+                border-radius:4px;
+                font-weight: 600;
+                background-color: rgb(10, 129, 133);
+                color:white;
+                border:none;
+                padding:5px;
+            }
+            /*finish box*/
+            .finish{
+                display: flex;
+                justify-content: center;
+                margin-top: 10%;
+            }
+            .finish div{
+                text-align: center;
+            }
+            .finish button{
+                padding:10px;
+                width:50%;
+                margin-top: 15px;
+                background-color: navy;
+                border:none;
+                color:white;
+                font-weight: 900;
+                border-radius: 4px;
+                transition: width 200ms;
+            }
+            .finish button:hover{
+                width:60%;
+                cursor:pointer;
+            }
+            .finish{
+                display:none;
+            }
+            /*menu location*/
+            .other-activities{
+            text-decoration: underline rgb(243, 189, 12) 2px;
+            }
+    </style>
+</head>
+<body>
+   <!--MENU HEADER-->
+   <!--HEADER-->
+   <div id="header">
+    <!--the menu icon-->
+    <div class="wrap-icon" onclick="menu()">
+        <div class="menuicon" id="menuicon">
+            <div id="barone"></div>
+            <div id="bartwo"></div>
+            <div id="barthree"></div>
+        </div>
+    </div>
+</div>
+
+ <!---Menu box-->
+ <div class="Menu">
+    <div class="flexmenuwrapper">
+        <div onclick="window.location='index.html'">Home</div>
+        <div class="blog-small-screen" onclick="window.location='myblog.html'">Blog</div>
+        <div class="about-small-screens" onclick="window.location='myabout.html'">About</div>
+        <div class="about-small-screens" onclick="window.location='cv.html'">Curriculum Vitate</div>
+        <div class="about-small-screens" onclick="window.location='myblog.html'">Blog</div>
+        <div onclick="hiremenav()">Hire Me</div>
+        <div onclick="alertprojects()">My Projects</div>
+        <div class="alert" style="font-size:medium;width:200px;font-weight: 100;background-color: rgb(253, 238, 208);text-align:start;height:0;overflow: hidden;position:absolute;margin-top: -24px;color:rgb(66, 63, 63);"> There is nothing to show at the moment.
+            This website is still in development process. <button style="padding:5px;color:green;" onclick="alertprojects()">OK</button>
+        </div>
+        <div onclick="requestproject()">Request Project</div>
+        <div onclick="viewcertificatesnav()">Certificates <span class="viewcert">&#10010;</span></div>
+        <section class="mycertificates">
+            <div onclick="window.location='certificates.html'">Web Development</div>
+            <div onclick="alertprojects()">Electrical Engineering</div>
+            <div onclick="alertprojects()">Poetry</div>
+        </section>
+        <div onclick="otheractivities()" class="other-activities">Other Activities <span class="otheract">&#10010</span></div>
+        <section class="mytuition">
+            <div onclick="document.location='tutor.html'">Tuition</div>
+            <div onclick="alertprojects()">Writing</div>
+        </section>
+        <div onclick="contactmenav()">Contact</div>
+    </div>
+</div>
+
+<!--navigation box-->
+<nav id="nav-li-menu">
+    <ul>
+        <li class="myblog"><a href="myblog.html">Blog</a></li>
+        <li><a href="myabout.html">About</a></li>
+        <li class="callme"><a href="tel:0786052462"><span>&#9742</span> 078 605 2462</a></li>
+    </ul>
+</nav>
+
+
+        <br><br>
+    <h1>Tution</h1>
+    <div class="courses"><button style="padding:4px;background-color: rgb(172, 105, 105);color:white;border:none;border-radius:4px;">C++</button> <button style="padding:4px;background-color:rgb(129, 95, 160);color:white;border:none;border-radius:4px;">Arduino Programming</button></div>
+    
+
+    <div class="wrapper-here">
+    
+        <div class="questionform">
+            <div>Welcome dear mate, are you interested in getting tuition for the above mentioned 
+                programming languages? 
+                
+            <br><br>Get a tutor now by  simply following the steps below:
+            </div>
+            
+        
+
+            <div class="wrapform">
+                <input type="text" placeholder="Phone Number or Email" style="padding:3px;margin:10px 0 10px 0;width:70%;border:1px solid grey;" class="phoneEmail"><br>
+                Choose the course(s) you need tution for: <br>
+            <input type="checkbox" value="cpp" id="cpp"> C++ Programming <br>
+            <input type="checkbox" value="python" id="python"> Python Programming <br>
+            <br>
+            Why do you need tution?<br>
+            <textarea name="" id="" cols="20" rows="5" class="tuitioncomment"></textarea> <br>
+            Are you willing to pay more than R30.00 per week?<br>
+            <input type="radio" name="fee" onclick="yespayment()"> Yes
+            <input type="radio" name="fee" onclick="payment()"> No
+            <br>
+            <!--popup boxes for paying-->
+            <div class="paypopup">
+                <span style="color:rgb(128, 0, 0);">&#10150; </span> Oops!! If you are not willing to pay, we cannot offer you our service.
+            </div><br><br>
+            Will you manage to be tutored online?<br>
+            <input type="radio" name="willmanage" onclick="absolutely()"> Yes, absolutely <br>
+            <input type="radio" name="willmanage" onclick="no()"> No <br>
+            <input type="radio" name="willmanage" onclick="notsure()"> I am not sure
+
+            <br><br>
+            <div class="popup1">
+                <span style="color:green;">&#10150; </span>Sorry to hear that mate, but we can only offer online tution at the moment.
+            </div>
+            <br>
+            <div class="popup2">
+            <span style="color:green;">&#10150; </span>Why don't you give it a try and see how it turns out? We guarantee that you will not regret it.
+            </div>
+            <div class="buttons">
+                <button class="reset" onclick="window.location='tutor.html'">Reset</button> <button class="send" onclick="finish()">Send Application</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="finish">
+        <div>
+            <span style="font-size:100px;color:rgb(0, 255, 64);">&#9745</span>
+        <br>Your application has been sent successfully.
+        <br><button onclick="window.location='Portfolio.html'">OK</button>
+        </div>
+    </div>
+
+
+    <script>
+        //function for not sure user
+        function notsure(){
+            document.querySelector(".popup2").style.height="fit-content";
+            document.querySelector(".popup2").style.border="1px solid grey";
+            document.querySelector(".popup2").style.padding="3px";
+            document.querySelector(".popup2").style.boxShadow="1px 1px 3px";
+            document.querySelector(".popup2").style.marginTop="-10px";
+        }
+        //function for no option
+        function no(){
+            document.querySelector(".popup1").style.height="fit-content";
+            document.querySelector(".popup1").style.border="1px solid grey";
+            document.querySelector(".popup1").style.padding="3px";
+            document.querySelector(".popup1").style.boxShadow="1px 1px 3px";
+            document.querySelector(".popup1").style.marginTop="-10px";
+        }
+        //yes absolutely
+        function absolutely(){
+            document.querySelector(".popup1").style.height="0";
+            document.querySelector(".popup1").style.border="none";
+            document.querySelector(".popup1").style.padding="0";
+            document.querySelector(".popup1").style.boxShadow="none";
+            document.querySelector(".popup1").style.marginTop="-20px";
+
+            document.querySelector(".popup2").style.height="0";
+            document.querySelector(".popup2").style.border="none";
+            document.querySelector(".popup2").style.padding="0";
+            document.querySelector(".popup2").style.boxShadow="none";
+            document.querySelector(".popup2").style.marginTop="-20px";
+
+        }
+        //function for payment
+        function payment(){
+            document.querySelector(".paypopup").style.height="fit-content";
+            document.querySelector(".paypopup").style.border="1px solid grey";
+            document.querySelector(".paypopup").style.padding="3px";
+            document.querySelector(".paypopup").style.boxShadow="1px 1px 3px";
+            document.querySelector(".paypopup").style.marginTop="8px";
+        }
+        //yes I am willing to pay button
+        function yespayment(){
+            document.querySelector(".paypopup").style.height="0";
+            document.querySelector(".paypopup").style.border="none";
+            document.querySelector(".paypopup").style.padding="0";
+            document.querySelector(".paypopup").style.boxShadow="none";
+            document.querySelector(".paypopup").style.marginTop="-20px";
+        }
+
+        function finish(){
+            let CONTACT=document.querySelector(".phoneEmail").value;
+            let COMMENT=document.querySelector(".tuitioncomment").value;
+
+            if(CONTACT!="" && COMMENT!="" ){
+            document.querySelector(".finish").style.display="flex";
+            document.querySelector(".wrapper").style.display="none";
+            document.querySelector(".courses").style.display="none";
+            document.querySelector("h1").style.display="none";
+            document.querySelector(".back").style.display="none";
+            }
+            else if(CONTACT=="" && COMMENT==""){
+                document.querySelector(".phoneEmail").style.border="1px solid red";
+                document.querySelector(".tuitioncomment").style.border="1px solid red";
+            }
+            else if(CONTACT==""){
+                document.querySelector(".phoneEmail").style.border="1px solid red";
+            }
+            else if(COMMENT==""){
+                document.querySelector(".tuitioncomment").style.border="1px solid red";
+            }
+
+        }
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>

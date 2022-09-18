@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            font-family: 'Acme', sans-serif;
+            font-size: small;
+            background-color: rgba(255, 251, 251, 0.726);
+            color:rgb(80, 75, 75);
+        }
+        section{
+            border:1px solid lightgrey;
+            padding:3px;
+            margin:5px;
+        }
+        .terms{
+            margin-top: 10px;
+        }
+        .wrapheader{
+            display:flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .header{
+            padding:2px;
+            width:fit-content;
+            background-color: rgba(54, 54, 179, 0.884);
+            color:white;
+            margin-bottom: -15px;
+            border-radius: 4px;
+            box-shadow: 1px 1px 3px grey;
+            
+        }
+        .intro{
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!--linked header-->
+    <?php include('header.php') ?>
+        <br><br>
+    <div class="wrapheader"><div class="header">Terms and Conditions</div></div>
+    <section>
+        <p class="intro">
+            To deliver the best service I have made an oath with myself that my service 
+            should be consistent and satisfactory to the people. After carefully thinking of a way of doing this, I decided to write down 
+            all the terms and conditions that the people should accept/follow in order to recieve my sevice.
+            <br><br>This is to avoid all the complaints 
+            and allegations that may be thrown at me/my service. This is also to let people know what they are actually signing for to avoid unnecessary conflicts.
+        </p>
+        <p class="terms">
+           <span style="color:rgb(42, 116, 165)"> You are expected to: </span><br>
+            1. Give a fully detailed problem or explanation of what needs to be done. if someone 
+            requests a project, at least he/she should have adequate information about it to make me be able to 
+            do axactly what he/she requests.
+            <br>2.Having adequate information about your project means knowing important details 
+            like the components and tools needed to implement that specific project. Do your own research so that 
+            you can be able to compare with the apparutus we will give you. 
+            <br>3. Test the project and see if it is working and if it is what you wanted. 
+            <br>4. Give directions in time in case there are some features that need to be added or removed from the project you are requesting.
+        </p>
+    </section>
+    <div class="endwrapper" style="display:flex;gap:10px;">
+        <div style="margin:5px;color:green;">
+            <form action="">
+                <label><b>I Accept</b></label> <input type="checkbox" style="box-shadow:1px 1px 4px grey;">
+            </form>
+        </div>
+        <button onclick="window.location='requestproject.html'" style="background-color:darkorange;border:none;padding:2px;border-radius:4px;color:rgb(253, 253, 253);font-family: 'Acme', sans-serif;"> Next &#10132</button>
+    </div>
+</body>
+</html>

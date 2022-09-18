@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--HEADER-->
+    <div id="header">
+        <!--the menu icon-->
+        <div class="menuicon" id="menuicon" onclick="menu()">
+            <div id="barone"></div>
+            <div id="bartwo"></div>
+            <div id="barthree"></div>
+        </div>
+    </div>
+
+     <!---Menu box-->
+     <div class="Menu">
+        <div class="flexmenuwrapper">
+        <div class="blog-small-screen" onclick="window.location='myblog.html'">Blog</div>
+        <div class="about-small-screens" onclick="window.location='myabout.html'">About</div>
+        <div class="about-small-screens" onclick="window.location='cv.html'">Curriculum Vitate</div>
+        <div class="about-small-screens" onclick="window.location='myblog.html'">Blog</div>
+        <div onclick="hiremenav()">Hire Me</div>
+        <div onclick="alertprojects()">My Projects</div>
+        <div class="alert" style="font-size:medium;width:200px;font-weight: 100;background-color: rgb(253, 238, 208);text-align:start;height:0;overflow: hidden;position:absolute;margin-top: -24px;color:rgb(66, 63, 63);"> There is nothing to show at the moment.
+            This website is still in development process. <button style="padding:5px;color:green;" onclick="alertprojects()">OK</button>
+        </div>
+        <div onclick="requestproject()">Request Project</div>
+        <div onclick="viewcertificatesnav()">Certificates <span class="viewcert">&#10010;</span></div>
+        <section class="mycertificates">
+            <div onclick="window.location='certificates.html'">Web Development</div>
+            <div onclick="alertprojects()">Electrical Engineering</div>
+            <div onclick="alertprojects()">Poetry</div>
+        </section>
+        <div onclick="otheractivities()">Other Activities <span class="otheract">&#10010</span></div>
+        <section class="mytuition">
+            <div onclick="document.location='tutor.html'">Tuition</div>
+            <div onclick="alertprojects()">Writing</div>
+        </section>
+        <div onclick="contactmenav()">Contact</div>
+        </div>
+    </div>
+    
+    <!--navigation box-->
+    <nav id="nav-li-menu">
+        <ul>
+            <li class="myblog"><a href="myblog.html">Blog</a></li>
+            <li><a href="myabout.html">About</a></li>
+            <li><a href="cv.html">Curriculum Vitae</a></li>
+            <li class="download"><a href="Sinethemba Lusawana's Curriculum Vitae.pdf" download >Download CV</a></li>
+            <li class="callme"><a href="tel:0786052462"><span>&#9742</span> 078 605 2462</a></li>
+        </ul>
+    </nav>
+
+    <script src="index.js"></script>
+</body>
+</html>

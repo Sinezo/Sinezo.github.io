@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background-color: rgba(255, 251, 251, 0.726);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: small;
+            display:flex;
+            justify-content: center;
+            color:rgb(80, 75, 75);
+        }
+        .wrapper{
+            width:800px;
+        }
+        .section1{
+            border:1px solid lightgrey;
+            padding:5px;
+            margin:10px;
+        }
+        .section1 a{
+            color:rgba(84, 87, 86, 0.767);
+        }
+        .section1 h3{
+            color:rgb(214, 124, 21);
+        }
+        .section1 p span{
+            color:rgba(179, 107, 15, 0.884);
+            font-style: oblique;
+            display:block;
+        }
+        .section1 .full-article{
+            display:none;
+        }
+        h2 {
+            color:rgb(126, 117, 117);
+            padding:3px;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Latest</h2>
+    <section class="section1">
+        <a><i>29/08/2022</i><br>
+            <i>2 min read</i>
+        </a>
+        <h3>D<i>it</i> - an Online Learning platform</h3>
+        <p>
+            I am so delighted to announce that I am having this vision of  creating an online learning platform to help 
+            students digest what they learned in class. <span class="readmore1" onclick="fullarticle1()">Read full article</span> 
+        </p><br>
+        <div class="full-article">
+            Sometimes we do not grasp knowledge instantly, we need some time to understand it. 
+            D<i>it</i> is here for that reason, to help make learning fun and less overwhelming. 
+
+            <br><br>
+            <div style="display:flex;background-color: rgb(252, 244, 243);">
+                <div style="background-color:rgba(228, 113, 37, 0.712);padding:2px;border-radius:5px 0 0 5px"></div>
+               <div style="padding:10px;">
+                This platform is being developed with the fact in mind that learning gets 
+                fun when you are playing, your mind never gets tired and is always eager to get to the next level of the game.
+               </div> 
+            </div>
+
+            <br><br>D<i>it</i> will offer two subjects to assist students out there and those are: <a href="#">C++ Programming</a>, <a href="#">Technical Mathematics</a> and some practical examples of <a href="#">Arduino Programming</a>.
+
+           <br><br>
+                In this platform almost all the basics that every C++ Programmer needs to know to start writing some useful programs
+                wil be covered. Examples of real life problems will be there to help students have the idea of what they are doing so that they can stay motivated and inspired at all times. 
+
+                <p style="margin:20px;color:rgb(173, 127, 27);">
+                    Bite as much as you want, D<i>it</i> will help you digest it.
+                </p><hr>
+                <span style="color:rgba(179, 15, 15, 0.884);font-style:oblique;" onclick="fullarticle1()">Show less</span>
+            
+            </div>
+    </section>
+    </div>
+
+
+    <script>
+        let fullart1=1;
+        function fullarticle1(){
+            if(fullart1==1){
+                document.querySelector('.full-article').style.display="block";
+                document.querySelector('.readmore1').style.display="none";
+                fullart1=0;
+            }
+            else if(fullart1==0){
+                document.querySelector('.full-article').style.display="none";
+                document.querySelector('.readmore1').style.display="block";
+                fullart1=1;
+            }
+        }
+    </script>
+</body>
+</html>

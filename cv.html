@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Curriculum Vitae</title>
+        <meta name="viewport" content="device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link  rel="stylesheet" href="index.css">
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            body{
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                padding:5px;
+                background-color: rgba(255, 251, 251, 0.726);
+                font-size:small;
+                color:rgb(80, 75, 75);
+            }
+            .header{
+                text-align: center;
+                color:rgb(151, 146, 149);
+                text-decoration: underline;
+                padding:5px;
+                width:100%;
+                margin-left:-5px;
+                margin-top:-3px;
+            }
+            /*styling the big container*/
+            .curriculumv{
+                margin-top: 40px;
+                display:flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding:10px;
+            }
+            /*styling the photo box*/
+            .photo{
+                text-align: center;
+                margin: 10px 0 0 10px;
+                margin:0 5px 10px 0;
+                background-color: rgb(117, 156, 228);
+                box-shadow: 1px 1px 7px;
+                padding:5px;
+            }
+            .photo img{
+                border-radius: 50%;
+            }
+            .contact a{
+                text-decoration: none;
+                color:blue;
+            }
+            /*styling the profile box*/
+            .profile{
+                margin-top: 10px;
+                width:500px;
+                padding:5px;
+            }
+            .varsity{
+                padding:5px;
+            }
+            .highschool{
+                padding:5px;
+            }
+            .skills{
+                padding:5px;
+            }
+            .activities{
+                padding:5px;
+            }
+            .references{
+                padding:5px;
+            }
+            h3{
+                color:rgb(39, 129, 122);
+            }
+            .button{
+                text-align: center;
+            }
+            .button button{
+                padding:3px;
+                background-color: white;
+                border:2px solid;
+                color:red;
+                margin:10px 0 20px 0;
+                border-radius: 5px;
+                font-weight: 900;
+            }
+            .button .download{
+                border:none;
+            }
+            .button .download a{
+                text-decoration: none;
+                background-color: rgb(41, 100, 148);
+                color:rgb(255, 255, 255);
+                padding:4px;
+                font-weight: 100;
+                
+            }
+            /*styling the ul list*/
+            ul{
+                list-style: none;
+                margin-left: 20px;
+            }
+            .wrapperin{
+                box-shadow: 1px 1px 3px grey;
+                background-color: rgba(252, 242, 201, 0.815);
+            }
+        
+            @media screen and (max-width:450px){
+                .profile{
+                    width:fit-content;
+                }
+            }
+
+            /*styling the web skills*/
+            .webskills{
+                padding:5px;
+                background-color: rgb(255, 255, 255);
+                display:flex;
+                border:1px solid lightgrey;
+            }
+            .htmlout{
+                background-color: white;
+                border:1px solid grey;
+                border-radius:7px;
+                margin-bottom: 10px;
+                width:100%;
+                height: fit-content;
+            }
+            .htmlin{
+                background-color: rgb(233, 216, 160);
+                padding:2px;
+                width:90%;
+                border-radius: 7px;
+            }
+            .cssout{
+                background-color: white;
+                border:1px solid grey;
+                border-radius:7px;
+                margin-bottom: 10px;
+                width:100%;
+                height: fit-content;
+            }
+            .cssin{
+                background-color: rgb(255, 108, 9);
+                padding:2px;
+                width:70%;
+                border-radius: 7px;
+            }
+            .phpout{
+                background-color: white;
+                border:1px solid grey;
+                border-radius:7px;
+                margin-bottom: 10px;
+                width:100%;
+                height: fit-content;
+            }
+            .phpin{
+                background-color: rgb(188, 135, 248);
+                padding:2px;
+                width:50%;
+                border-radius: 7px;
+            }
+            .sqlout{
+                background-color: white;
+                border:1px solid grey;
+                border-radius:7px;
+                margin-bottom: 10px;
+                width:100%;
+                height: fit-content;
+            }
+            .sqlin{
+                background-color: rgb(109, 92, 85);
+                padding:2px;
+                width:60%;
+                border-radius: 7px;
+            }
+            .pybegginersout{
+                background-color: white;
+                border:1px solid grey;
+                border-radius:7px;
+                width:100%;
+                height: fit-content;
+            }
+            .pybegginersin{
+                background-color: rgb(48, 112, 87);
+                padding:2px;
+                width:80%;
+                border-radius: 7px;
+            }
+            .webright{
+                width:100%;
+                margin-left:50px;
+            }
+            .webleft{
+                font-size: small;
+                padding-right:3px;
+                margin-top: -2px;
+                font-weight: 600;
+                color:rgb(180, 152, 28)
+            }
+            .webpercent{
+                margin: -6px 0 0px 10px;
+                color:rgb(92, 89, 89);
+                font-size: small;
+            }
+            .webpercent div{
+                margin-bottom: 1px;
+            }
+                /*menu location*/
+             .cv-small-screens{
+             text-decoration: underline rgb(243, 189, 12) 2px;
+            }
+        </style>
+    </head>
+    <body>
+       <!--MENU HEADER-->
+       <!--HEADER-->
+    <div id="header">
+        <div class="wrap-icon" onclick="menu()">
+            <!--the menu icon-->
+        <div class="menuicon" id="menuicon">
+            <div id="barone"></div>
+            <div id="bartwo"></div>
+            <div id="barthree"></div>
+        </div>
+        </div>
+    </div>
+
+     <!---Menu box-->
+     <div class="Menu">
+        <div class="flexmenuwrapper">
+            <div onclick="window.location='index.html'">Home</div>
+            <div class="blog-small-screen" onclick="window.location='myblog.html'">Blog</div>
+            <div class="about-small-screens" onclick="window.location='myabout.html'">About</div>
+            <div class="cv-small-screens" onclick="window.location='cv.html'">Curriculum Vitate</div>
+            <div class="myblog-small-screens" onclick="window.location='myblog.html'">Blog</div>
+            <div onclick="hiremenav()">Hire Me</div>
+            <div onclick="alertprojects()">My Projects</div>
+            <div class="alert" style="font-size:medium;width:200px;font-weight: 100;background-color: rgb(253, 238, 208);text-align:start;height:0;overflow: hidden;position:absolute;margin-top: -24px;color:rgb(66, 63, 63);"> There is nothing to show at the moment.
+                This website is still in development process. <button style="padding:5px;color:green;" onclick="alertprojects()">OK</button>
+            </div>
+            <div onclick="requestproject()">Request Project</div>
+            <div onclick="viewcertificatesnav()">Certificates <span class="viewcert">&#10010;</span></div>
+            <section class="mycertificates">
+                <div onclick="window.location='certificates.html'">Web Development</div>
+                <div onclick="alertprojects()">Electrical Engineering</div>
+                <div onclick="alertprojects()">Poetry</div>
+            </section>
+            <div onclick="otheractivities()">Other Activities <span class="otheract">&#10010</span></div>
+            <section class="mytuition">
+                <div onclick="document.location='tutor.html'">Tuition</div>
+                <div onclick="alertprojects()">Writing</div>
+            </section>
+            <div onclick="contactmenav()">Contact</div>
+        </div>
+    </div>
+    
+    <!--navigation box-->
+    <nav id="nav-li-menu">
+        <ul>
+            <li class="myblog"><a href="myblog.html">Blog</a></li>
+            <li><a href="myabout.html">About</a></li>
+            <li><a href="cv.html">Curriculum Vitae</a></li>
+            <li class="download"><a href="Sinethemba Lusawana's Curriculum Vitae.pdf" download >Download CV</a></li>
+            <li class="callme"><a href="tel:0786052462"><span>&#9742</span> 078 605 2462</a></li>
+        </ul>
+    </nav>
+
+    
+
+
+        <br><br>
+        <!--THE HEADER BOX-->
+        <div class="header">Curriculum Vitae</div>
+        <!--Contact information-->
+
+        <!--THE CURRICULUM VITAE BOX-->
+        <div class="curriculumv">
+            <!--all the information here-->
+            <div class="wrapperin">
+                <!--Profile box-->
+                    <div class="profile">
+                        <h3>Profile</h3>
+                        <p>A humble, passionate and enthusiastic young man enrolled for Electrical Engineering at 
+                            Walter Sisulu University in East London.
+                        </p>
+                    </div>
+                <!--education box-->
+                <div class="education">
+                    <!--varsity education-->
+                    <div class="varsity">
+                        <h3>Education</h3>
+                    <p>
+                        <span class="varsity" style="color:rgb(102, 98, 98);"><b>Walter Sisulu University</b></span>| <span style="color:rgb(74, 95, 133);"><b>East London, South Africa</b></span><br>
+                        <span class="coursename">National Diploma:</span> Electrical Engineering <br>
+                        <span class="subjects">Subjects (Pass With Distinction):</span>
+                        <ul>
+                            <li>Mathematics I</li>
+                            <li>Electrical Machines II</li>
+                            <li>Electrical Protection III</li>
+                        </ul>
+                    </p>
+                    </div>
+                    <!--high school education-->
+                    <div class="highschool">
+                        <span class="certificate" style="color:rgb(102, 98, 98);"><b>National Senior Certificate</b></span>| <span style="color:rgb(74, 95, 133);"><b>Engcobo, South Africa</b></span><br>
+                        <span>Related Subjects:</span>
+                        <ul>
+                            <li>Technical Mathematics (90%)</li>
+                            <li>Technical Sciences (78%)</li>
+                            <li>Electrical Technology (64%)</li>
+                            <li>Engineering Graphics and Designs (54%)</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+
+                <!--skills box-->
+                <div class="skills">
+                    <h3>Skills</h3>
+                    <!--left list-->
+                    <div class="skillsleft">
+                        <span>Arduino Programming</span>
+                        <br>
+                        <span>Web Development</span><span style="color:rgb(166, 164, 179)"> &#10136 </span>
+                        <div class="webskills">
+
+                            <!--skill names-->
+                                <div class="webleft">
+                                    <div>HTML</div>
+                                    <div>CSS</div>
+                                    <div>PHP</div>
+                                    <div>SQL</div>
+                                    <div>PYTHON</div>
+                                </div>
+                                <!--skill scale-->
+                                <div class="webright">
+                                    <div class="htmlout">
+                                        <div class="htmlin"></div>
+                                    </div>
+    
+                                    <div class="cssout">
+                                        <div class="cssin"></div> 
+                                    </div>
+    
+                                
+                                    <div class="phpout">
+                                        <div class="phpin"></div>
+                                    </div>
+                                
+                                    <div class="sqlout">
+                                        <div class="sqlin"></div>
+                                    </div>
+                    
+                                    <div class="pybegginersout">
+                                        <div class="pybegginersin"></div>
+                                    </div>
+                                </div>
+                                <div class="webpercent">
+                                    <div>85%</div>
+                                    <div>75%</div>
+                                    <div>54%</div>
+                                    <div>64%</div>
+                                    <div>78%</div>
+                                </div>
+                            
+                        </div>
+                    </div>
+                    <!--right list-->
+                    <div class="skillsleft">
+                        
+                    </div>
+                </div>
+
+                <!--activities box-->
+                <div class="activities">
+                    <h3>Activities</h3>
+                <span>Teaching:</span> assisting  grade 12 at Nosimo Technical High School since 2019
+                <br>
+                <span>Poetry:</span> 1st place in the Avbob Poetry Competition in 2020
+                </div>
+
+                <!--References box-->
+                <div class="references">
+                    <h3>References</h3>
+
+                    <div class="leftreference">
+                        <span style="color:rgb(102, 98, 98);"><b>Lecturer in Electrical Engineering</b></span><br></r>
+                        <span>Walter Sisulu University</span>
+                        <ul>
+                            <li>Miss C James</li>
+                            <li><a href="mailto:cjames@wsu.ac.za">cjames@wsu.ac.za</a></li>
+                            <li>083 475 3511</li>
+                            <li>WSU College St, East London</li>
+                        </ul>
+                    </div>
+
+                    <div class="rightreference">
+                        <span style="color:rgb(102, 98, 98);"><b>Principal, Nosimo Technical High School</b></span><br></r>
+                        <ul>
+                            <li>Mr M Menyuku</li>
+                            <li><a href="mailto:menyuku@wsu.ac.za">menyuku@gmail.com</a></li>
+                            <li>071 767 3871</li>
+                            <li>Ntsimba A/A, PO BOX 266, Engcobo 5050</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button">
+             <button class="download"><a href="Sinethemba Lusawana's Curriculum Vitae.pdf" download>Download &#8595</a></button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

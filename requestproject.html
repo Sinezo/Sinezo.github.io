@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Request Project</title>
+        <meta name="viewport" content="device-width,initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="index.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+        <style>
+            *{
+                padding:0;
+                margin:0;
+            }
+            body{
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                background-color:rgba(255, 251, 251, 0.726);
+                font-size: small;
+                color:rgb(80, 75, 75);
+            }
+            .wrapper{
+                display:flex;
+                justify-content: center;
+                margin-top:30px;
+            }
+            h1{
+                text-align: center;
+                font-size: small;
+                color:rgb(151, 146, 149);
+                text-decoration: underline;
+                margin-top:-5px;
+                padding:5px;
+            }
+            .nav{
+                display:flex;
+                overflow-x: auto;
+                margin-bottom: 10px;
+            }
+            .nav button{
+                min-width:max-content;
+                margin: 3px;
+                padding:5px;
+                color:rgb(37, 141, 89);
+                background-color: rgb(250, 255, 254);
+                border:1px solid rgb(144, 159, 163);
+                box-shadow: 1px 2px 3px rgb(114, 95, 95);
+                border-radius: 4px;
+                font-weight: 900;
+            }
+            .nav::-webkit-scrollbar{
+                width:0;
+            }
+            /*styling boxes*/
+            .boxes{
+                display:flex;
+                justify-content: center;
+                margin-bottom:30px;
+            }
+            .automation{
+                background-color: rgb(181, 187, 238);
+                padding:20px;
+                border-radius: 4px;
+            }
+            .automation button{
+                padding:5px;
+                margin:5px 0;
+                background-color: blueviolet;
+                width:100%;
+                border:none;
+                color:white;
+                border-radius: 4px;
+            }
+            .boxes .automation input{
+                margin:4px 0;
+                box-sizing: border-box;
+                padding:5px;
+                box-shadow: 1px 2px 3px grey;
+                border:1px solid grey;
+            }
+            .automation textarea{
+                padding:5px;
+                box-shadow: 1px 2px 3px grey;
+            }
+
+            /*styling the electrical machines box*/
+            .elecmachines{
+                background-color: rgb(77, 84, 143);
+                border-radius: 4px;
+            }
+            .elecmachines  input{
+                margin:4px 0;
+                box-sizing: border-box;
+                padding:5px;
+                box-shadow: 1px 2px 3px grey;
+                border:1px solid grey;
+            }
+            .elecmachines textarea{
+                padding:5px;
+                box-shadow: 1px 2px 3px grey;
+            }
+            .elecmachines button{
+                padding:5px;
+                margin:5px 0;
+                background-color: rgb(226, 95, 43);
+                width:100%;
+                border:none;
+                color:white;
+                border-radius: 4px;
+            }
+
+            /*styling electrical wiring box*/
+            .elecwiring{
+                background-color: rgb(179, 106, 47);
+                padding:20px;
+                border-radius: 4px;
+            }
+            .elecwiring input{
+                margin:4px 0;
+                box-sizing: border-box;
+                padding:5px;
+                box-shadow: 1px 2px 3px grey;
+                border:1px solid grey;
+            }
+            .elecwiring textarea{
+                padding:5px;
+                box-shadow: 1px 2px 3px grey;
+            }
+            .elecwiring button{
+                padding:5px;
+                margin:5px 0;
+                background-color: rgb(43, 86, 226);
+                width:100%;
+                border:none;
+                color:white;
+                border-radius: 4px;
+            }
+            /*styling web dev box*/
+            .webdev{
+                background: linear-gradient(to right,rgb(202, 169, 23),rgb(238, 72, 60),yellow);
+                padding:20px;
+                border-radius: 4px;
+            }
+            .webdev input{
+                margin:4px 0;
+                box-sizing: border-box;
+                padding:5px;
+                box-shadow: 1px 2px 3px grey;
+                border:1px solid grey;
+            }
+            .webdev textarea{
+                padding:5px;
+                box-shadow: 1px 2px 3px grey;
+            }
+            .webdev button{
+                padding:5px;
+                margin:5px 0;
+                background:linear-gradient(to right,rgb(126, 7, 96),rgb(29, 224, 29));
+                width:100%;
+                border:none;
+                color:white;
+                border-radius: 4px;
+            }
+            /*styling the boxes*/
+            .elecmachines,.elecwiring,.webdev{
+                display:none;
+            }
+            /*menu location*/
+             .request-project{
+             text-decoration: underline rgb(243, 189, 12) 2px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--MENU HEADER-->
+        <!--HEADER-->
+    <div id="header">
+       <div class="wrap-icon">
+         <!--the menu icon-->
+         <div class="menuicon" id="menuicon" onclick="menu()">
+            <div id="barone"></div>
+            <div id="bartwo"></div>
+            <div id="barthree"></div>
+        </div>
+       </div>
+    </div>
+
+     <!---Menu box-->
+     <div class="Menu">
+        <div class="flexmenuwrapper">
+            <div onclick="window.location='index.html'">Home</div>
+            <div class="blog-small-screen" onclick="window.location='myblog.html'">Blog</div>
+            <div class="about-small-screens" onclick="window.location='myabout.html'">About</div>
+            <div class="about-small-screens" onclick="window.location='cv.html'">Curriculum Vitate</div>
+            <div class="about-small-screens" onclick="window.location='myblog.html'">Blog</div>
+            <div onclick="hiremenav()">Hire Me</div>
+            <div onclick="alertprojects()">My Projects</div>
+            <div class="alert" style="font-size:medium;width:200px;font-weight: 100;background-color: rgb(253, 238, 208);text-align:start;height:0;overflow: hidden;position:absolute;margin-top: -24px;color:rgb(66, 63, 63);"> There is nothing to show at the moment.
+                This website is still in development process. <button style="padding:5px;color:green;" onclick="alertprojects()">OK</button>
+            </div>
+            <div onclick="requestproject()" class="request-project">Request Project</div>
+            <div onclick="viewcertificatesnav()">Certificates <span class="viewcert">&#10010;</span></div>
+            <section class="mycertificates">
+                <div onclick="window.location='certificates.html'">Web Development</div>
+                <div onclick="alertprojects()">Electrical Engineering</div>
+                <div onclick="alertprojects()">Poetry</div>
+            </section>
+            <div onclick="otheractivities()">Other Activities <span class="otheract">&#10010</span></div>
+            <section class="mytuition">
+                <div onclick="document.location='tutor.html'">Tuition</div>
+                <div onclick="alertprojects()">Writing</div>
+            </section>
+            <div onclick="contactmenav()">Contact</div>
+        </div>
+    </div>
+    
+    <!--navigation box-->
+    <nav id="nav-li-menu">
+        <ul>
+            <li class="myblog"><a href="myblog.html">Blog</a></li>
+            <li><a href="myabout.html">About</a></li>
+            <li class="callme"><a href="tel:0786052462"><span>&#9742</span> 078 605 2462</a></li>
+        </ul>
+    </nav>
+
+    
+        <br><br>
+        <h1>Request Project</h1>
+
+        <!--guide-->
+        <div class="navigatio" style="margin-top:20px;padding:10px;">
+            Write a project name and short description on the text-area below to request a project. <br><br>
+            Sending me the request means you have read and accepted the <a href="termsandconditions.html">Terms & Conditions</a> of my service.
+            <br>
+            <div style="text-align:center;margin:40px 0;">
+                <textarea placeholder="Project Name & Short Description" style="padding:5px;box-shadow:1px 1px 3px grey;" onclick="window.location='mailto:lusawanasinethemba@gmail.com'"></textarea>
+            </div>
+        </div>
+        
+        
+<script src="requestproject.js"></script>
+<script src="index.js"></script>
+    </body>
+</html>

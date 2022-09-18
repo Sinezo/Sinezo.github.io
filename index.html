@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Portfolio</title>
+        <meta name="viewport" content="device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <script src="https://kit.fontawesome.com/dd42663f14.js" crossorigin="anonymous"></script> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--HEADER-->
+        <div id="header">
+            <div class="wrap-icon" onclick="menu()">
+            <!--the menu icon-->
+            <div class="menuicon" id="menuicon">
+                <div id="barone"></div>
+                <div id="bartwo"></div>
+                <div id="barthree"></div>
+            </div>
+            </div>
+            <div class="right-nav">
+                <button class="dit" onclick="dit_message()">Dit</button>
+    
+            </div>
+        </div>
+
+        <!--dit message-->
+        <div class="dit-wrapper">
+            <div class="dit-message">
+                <img src="images/Cute Colorful Baby Daycare Center Logo.png">
+                <p style="text-align: center;color:rgb(255, 255, 255);">
+                    Digest<i>it</i> (D<i>it</i>) is an online learning platform where you will learn the basics of C++ Programming and Technical Mathematics. <br><br>
+                    <p style="text-align:center;color:rgb(173, 16, 16);">
+                        It is not available at the moment, as it is still in development process. Thank You!
+                    </p>
+                </p>
+                <button onclick="dit_message()">Okay, good to know!</button>
+            </div>
+        </div>
+
+        <!---Menu box-->
+        <div class="Menu">
+            <div class="flexmenuwrapper">
+            <div onclick="window.location='index.html'" class="home">Home</div>
+            <div class="blog-small-screen" onclick="window.location='myblog.html'">Blog</div>
+            <div class="about-small-screens" onclick="window.location='myabout.html'">About</div>
+            <div class="about-small-screens" onclick="window.location='myblog.html'">Blog</div>
+            <div onclick="hiremenav()">Hire Me</div>
+            <div onclick="alertprojects()">My Projects</div>
+            <div class="alert" style="font-size:medium;width:200px;font-weight: 100;background-color: rgb(253, 238, 208);text-align:start;height:0;overflow: hidden;position:absolute;margin-top: -24px;color:rgb(66, 63, 63);"> There is nothing to show at the moment.
+                This website is still in development process. <button style="padding:5px;color:green;" onclick="alertprojects()">OK</button>
+            </div>
+            <div onclick="window.location='requestproject.html'">Request Project</div>
+            <div onclick="viewcertificatesnav()">Certificates <span class="viewcert">&#10010;</span></div>
+            <section class="mycertificates">
+                <div onclick="window.location='certificates.html'">Web Development</div>
+                <div onclick="alertprojects()">Electrical Engineering</div>
+                <div onclick="alertprojects()">Poetry</div>
+            </section>
+            <div onclick="otheractivities()">Other Activities <span class="otheract">&#10010</span></div>
+            <section class="mytuition">
+                <div onclick="document.location='tutor.html'">Tuition</div>
+                <div onclick="alertprojects()">Writing</div>
+            </section>
+            <div onclick="contactmenav()">Contact</div>
+            </div>
+        </div>
+        
+        <!--navigation box-->
+        <nav id="nav-li-menu">
+            <ul>
+                <li class="myblog"><a href="myblog.html">Blog</a></li>
+                <li><a href="myabout.html">About</a></li>
+                <li class="callme"><a href="tel:0786052462"><span>&#9742</span> 078 605 2462</a></li>
+            </ul>
+        </nav>
+        
+        <!--my photo box-->
+        <div class="photo">
+            <div class="photowrapper">
+                <div class="intropar">
+                    Hello, I am<br><span> Sinethemba Lusawana</span> <br> An Electrician Trainee at <a href="https://snrelectrical.co.za" style="color:rgb(104, 100, 100);">SNR Electrical & Mechanical</a>.
+                    <div class="btns">
+                        
+                        <button class="readmore" onclick="window.location='myabout.html'">Read More</button> 
+                        <a href="tel:0786052462" class="callme">078 605 2462</a>
+                        
+                    </div>
+                </div>
+                <div class="image-wrapper">
+                    <div class="image">
+                        <!--centering the image-->
+                        <div class="image-centering">
+                    
+                               
+                                    <img src="myphoto.png" alt="Sinethemba Lusawana" style="width:100%;height:100%;height:370px;" name="image_in">
+                        
+                       
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <!--my abilities (professional skills)-->
+        <div class="section-title">
+            <div class="title">Skills</div>
+            <div class="decor"></div>
+        </div>
+        <div class="myprof_skills">
+            <!--poet-->
+            <div class="poet">
+                <i class="fa-solid fa-pen"></i>
+                <h3>Poet</h3>
+                Placed first in the Avbob Poerty competition in 2020 in the isiXhosa category.
+            </div>
+            <!--arduino programmer-->
+            <div class="arduino_programmer">
+                <i class="fa-solid fa-microchip"></i>
+                <h3>Arduino Programmer</h3>
+                Automating projects with just few lines of code
+            </div>
+            <!--web developer-->
+            <div class="web_developer">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Developer</h3>
+                Developing responsive and interactive websites from scratch - backend and frontend.
+            </div>
+        </div>
+
+        <!--bragging 1 box-->
+        <div class="bragging1">
+            <div class="decoration"></div>
+            <div class="parbrag">
+          I really love developing new skills. Since 2021 I have been enrolling for online 
+          courses that I find interesting, like courses in web development and programming languages courses.
+            </div>
+        </div>
+
+        <!--my good at box-->
+        <div class="mygood-at">
+            <div class="section-title">
+                <div class="title">About Skills</div>
+                <div class="decor"></div>
+            </div>
+            <!--web development-->
+            <div class="web-development-brief">
+                <div>
+                    <h3 style="text-align:center;">Web Development</h3>
+                </div>
+                <div style="padding:5px;">
+                    I learned web development with the help of Sololearn and YouTube 
+                    video tutorials. <br><br>
+                    <a href="https://sololearn.com" style="color:rgb(26, 156, 165);text-decoration:none;">Sololearn</a> has awarded me with more than one certificate in HTML, CSS, Python for Beginners courses and more. You can view all the certificates
+                     <a href="certificates.html" style="color:rgb(25, 55, 226);text-decoration:none;">here</a>.
+                     <br><br>
+                     <p>
+                        <button>See Projects</button> <button onclick="window.location='certificates.html'">View Certificates</button>
+                     </p>
+                    </div>
+            </div>
+            <!--arduino programming-->
+            <div class="arduino-programming-brief">
+                <div>
+                    <h3 style="text-align:center">Arduino Programming</h3>
+                </div>
+                <div style="padding:5px;">
+                    Having the basics of C++ Programming and experience from that simple electronic project 
+                    of traffic lights we did in varsity made me love automation. <br><br>
+                    I have been learning different arduino libraries, and I can design significant automated projects for 
+                    the community. <br><br>
+                    <p>
+                        <button>See Projects</button> <button onclick="window.location='#'">View Certificates</button>
+                    </p>
+                </div>
+            </div>
+            <!--poerty-->
+            <div class="poetry-brief">
+                <div>
+                    <h3 style="text-align:center">Poetry</h3>
+                </div>
+                <div style="padding:5px;">
+                    Poetry has been a friend to me for a while now. In 2020 I had the courage 
+                    to enter the Fourth Abvob Poetry competition and placed first in the isiXhosa category. <br><br>
+                    <p>
+                        <button>See Prizes</button> <button onclick="window.location='#'">View Certificate</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--my services-->
+        <div class="my-services">
+            <div class="section-title-servises">
+                <div class="title">My Services</div>
+                <div class="decor"></div>
+            </div>
+            <!--services list-->
+            <div class="services-list">
+                <!--website development-->
+                <div class="box">
+                    <div>
+                        <img src="undraw_Website_builder_re_ii6e.png" alt="" width="100">
+                    </div >
+                    <p>
+                        Share content and make it easy for people to reach you.
+                    </p>
+                    <button>Learn More</button>  <button>Request Website</button>
+                </div>
+                <!--electrician-->
+                <div class="box">
+                    <div>
+                        <img src="undraw_circuit_sdmr.png" alt="" width="100">
+                    </div>
+                    <p>
+                        Home wiring + Distribution board at a safe level <br>
+                        Installation and maintenance of street lights
+                    </p>
+                    <button>Hire Me</button>
+                </div>
+                <!--automation-->
+                <div class="box">
+                    <div>
+                        <img src="undraw_Artificial_intelligence_re_enpp.png" alt="" width="100">
+                    </div>
+                    <p>
+                        Have the best experience with automated machines and devices. 
+
+                    </p>
+                    <button>Buy Project</button> <button>Request Project</button>
+                </div>
+                <!--tuition-->
+                <div class="box">
+                    <div>
+                        <img src="undraw_Pair_programming_re_or4x.png" alt="" width="100">
+                    </div>
+                    <p>Online tuition for better grades and bright future</p> 
+                    <button>Learn More</button> <button>Get a Tutor</button>
+                </div>
+            </div>
+        </div>
+
+        <!--the contact and hire me box-->
+        <div class="wrapcontact" id="wrapcontact">
+            <div class="flexwrappcontact">
+                <!--choose between message and hire me box-->
+            <div class="chooseaction">
+                <button onclick="contactfunc()" id="contactusbtn">Contact</button> <span style="color:white;text-align: center;">|</span> <button onclick="hiremefunc()" id="hiremebtn">Hire Me</button>
+            </div>
+            <!--contact me box-->
+            <div class="contactus">
+
+                   <form>
+                    <textarea  placeholder="Message..." name="messagecontact" onclick="window.location='mailto:lusawanasinethemba@gmail.com'"></textarea>
+                    
+                   </form>
+            </div>
+            <!--hire me box-->
+            <div class="hiremebox">
+                <form>
+                    <textarea name="descriptionhireme" placeholder="Job/Project description" onclick="window.location='mailto:lusawanasinethemba@gmail.com'"></textarea>
+
+                </form>
+            </div>
+            </div>
+        </div>
+        <!--scroll top-->
+        <div class="scroll-top" onclick="window.location='#'"><span>Go up</span></div>
+        <!--footer-->
+
+        
+        <footer>
+            <div class="contactdetails">
+                Email: <a href="mailto:lusawanasinethemba@gmail.com">lusawanasinethemba@gmail.com</a><br>
+                WhatsApp: <a href="#">078 605 2462</a><br>
+                Facebook: <a href="#">Sinethemba Lusawana</a>
+            </div>
+
+            <div class="address">
+                Ntsimba A/A <br>
+                Engcobo <br>
+                5050 <br>
+                Eastern Cape, South Africa
+            </div>
+        </footer>
+       <script src="index.js"></script>
+    </body>
+</html>

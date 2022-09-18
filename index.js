@@ -1,0 +1,218 @@
+
+            //FUNCTION FOR MENU ICON
+          var show=0;
+          function menu(){
+             if(show==0){
+                 document.querySelector("#barone").style.transform="rotate(135deg)";
+                 document.querySelector("#barone").style.marginBottom="-1.5px";
+                 document.querySelector("#bartwo").style.display="none";
+                 document.querySelector("#barthree").style.transform="rotate(225deg)";
+                 document.querySelector("#barthree").style.marginTop="-1.8px";
+                 document.querySelector(".Menu").style.height="245px";
+                 document.querySelector("#barone").style.backgroundColor="white";
+                 document.querySelector("#barthree").style.backgroundColor="white";
+                 document.querySelector(".wrap-icon").style.backgroundColor="rgb(212, 206, 116)";
+                 document.querySelector(".menuicon").style.margin="5px 0 0 0";
+                 show=1;
+             }
+             else if(show==1){
+                document.querySelector("#barone").style.transform="rotate(0)";
+                 document.querySelector("#barone").style.marginBottom="3px";
+                 document.querySelector("#bartwo").style.display="block";
+                 document.querySelector("#barthree").style.transform="rotate(0)";
+                 document.querySelector("#barthree").style.marginTop="0px";
+                 document.querySelector(".Menu").style.height="0";
+                 document.querySelector(".Menu").style.border="none";
+                 document.querySelector(".Menu").style.margin="0";
+                 document.querySelector("#barone").style.backgroundColor="rgb(211, 178, 134)";
+                 document.querySelector("#barthree").style.backgroundColor="rgb(211, 178, 134)";
+                 //hiding certificates box
+                 document.querySelector(".mycertificates").style.display="none";
+                 document.querySelector(".viewcert").innerHTML="&#10010;";
+                 document.querySelector(".wrap-icon").style.backgroundColor="rgba(255, 251, 251, 0.726)";
+                  viewnav=0;
+                 //hiding other activities box
+                 document.querySelector(".mytuition").style.display="none";
+                 document.querySelector(".otheract").innerHTML="&#10010";
+                 document.querySelector(".menuicon").style.margin="0 ";
+                 othershow=1;
+                 show=0;
+             }
+          }
+
+          //funtion for the contactwrap
+          function contactfunc(){
+                  document.querySelector(".contactus").style.display="block";
+                  document.querySelector(".hiremebox").style.display="none";
+                  document.querySelector("#hiremebtn").style.boxShadow="none";
+                  document.querySelector("#contactusbtn").style.boxShadow="1px 1px 1px grey";
+                  document.querySelector("#hiremebtn").style.color="black";
+          }
+          function hiremefunc(){
+            document.querySelector(".hiremebox").style.display="block";
+            document.querySelector(".contactus").style.display="none";
+            document.querySelector("#hiremebtn").style.boxShadow="1px 1px 1px grey";
+            document.querySelector("#contactusbtn").style.boxShadow="none";
+            document.querySelector("#contactusbtn").style.color="black";
+          }
+
+          //function for view certificates nav
+          var viewnav=0;
+          function viewcertificatesnav(){
+              if(viewnav==0){
+                  document.querySelector(".mycertificates").style.display="block";
+                  document.querySelector(".viewcert").innerHTML="&#8212";
+                  document.querySelector(".Menu").style.height="fit-content";
+                  viewnav=1;
+              }
+              else if(viewnav==1){
+                document.querySelector(".mycertificates").style.display="none";
+                document.querySelector(".viewcert").innerHTML="&#10010;";
+                  viewnav=0;
+              }
+          }
+
+          //function for hireme nav
+          function hiremenav(){
+              window.location="index.html#wrapcontact";
+              document.querySelector(".hiremebox").style.display="block";
+              document.querySelector(".contactus").style.display="none";
+              document.querySelector("#hiremebtn").style.boxShadow="1px 1px 1px rgba(172, 79, 4, 0.849)";
+              document.querySelector("#contactusbtn").style.boxShadow="none";
+              document.querySelector("#hiremebtn").style.color="rgba(172, 79, 4, 0.849)";
+
+              document.querySelector("#contactusbtn").style.color="black";
+
+          }
+          //function for contact me nav
+          function contactmenav(){
+            window.location="index.html#wrapcontact";
+            document.querySelector(".contactus").style.display="block";
+            document.querySelector(".hiremebox").style.display="none";
+            document.querySelector("#hiremebtn").style.boxShadow="none";
+            document.querySelector("#contactusbtn").style.boxShadow="1px 1px 1px rgba(17, 128, 136, 0.911)";
+            document.querySelector("#contactusbtn").style.color="rgba(17, 128, 136, 0.911)";
+
+            document.querySelector("#hiremebtn").style.color="black";
+          }
+
+          function change(){
+              document.querySelector(".box1").style.backgroundColor="red";
+          }
+          function change2(){
+              document.querySelector(".box1").style.backgroundColor="white";
+          }
+
+          //after clicking send contact
+          function sendcontact(){
+           let MESSAGE= document.querySelector("#messagecontact").value;
+           let NAME = document.querySelector("#namecontact").value;
+           let EMAIL= document.querySelector("#emailcontact").value;
+            
+
+            if(NAME!="" && MESSAGE!="" && EMAIL!=""){
+                document.querySelector(".contactus").innerHTML="Message sent successfully.&#10004";
+                document.querySelector(".contactus").style.textAlign="center";
+                document.querySelector(".contactus").style.color="green";
+
+            }
+            else if(NAME=="" || MESSAGE=="" || EMAIL==""){
+                document.querySelector("#commentcontact").innerHTML="Fill out all the fields.";
+                document.querySelector("#commentcontact").style.textAlign="center";
+                document.querySelector("#commentcontact").style.fontSize="small";
+                document.querySelector("#commentcontact").style.color="red";
+                
+            }
+          }
+          //after clicking hire  me send
+          function hiremesend(){
+           let NAME=document.querySelector("#Namehireme").value;
+           let MESSAGE=document.querySelector("#descriptionhireme").value;
+           let PROVINCE=document.querySelector("#provincehireme").value;
+           let EMAIL=document.querySelector("#emailhireme").value;
+           let STREET =document.querySelector("#streethireme").value;
+        
+           if(NAME!="" && MESSAGE!="" && EMAIL!="" && STREET!="" && PROVINCE!=""){
+               document.querySelector(".hiremebox").innerHTML="Message has been sent successfully.&#10004";
+               document.querySelector(".hiremebox").style.textAlign="center";
+                document.querySelector(".hiremebox").style.color="darkblue";
+           }
+           else if(NAME=="" || MESSAGE=="" || EMAIL=="" || STREET=="" || PROVINCE==""){
+               document.querySelector("#hiremecomment").innerHTML="Fill out all the fields.";
+               document.querySelector("#hiremecomment").style.textAlign="center";
+                document.querySelector("#hiremecomment").style.fontSize="small";
+                document.querySelector("#hiremecomment").style.color="red";
+           }
+          }
+
+          function requestproject(){
+            window.location='requestproject.html';
+          }
+//Other Activities box
+var othershow=1;
+function otheractivities(){
+    if(othershow==1){
+        document.querySelector(".mytuition").style.display="block";
+        document.querySelector(".otheract").innerHTML="&#8212";
+        document.querySelector(".Menu").style.height="fit-content";
+        othershow=0;
+    }
+    else if(othershow==0){
+        document.querySelector(".mytuition").style.display="none";
+        document.querySelector(".otheract").innerHTML="&#10010";
+        othershow=1;
+    }
+}
+
+//when clicking on my projects
+var alert=1;
+function alertprojects(){
+    if(alert==1){
+        document.querySelector(".alert").style.height="90px";
+        document.querySelector(".alert").style.padding="5px";
+        alert=0;
+    }
+    else if(alert==0){
+        document.querySelector(".alert").style.height="0";
+        document.querySelector(".alert").style.padding="0";
+        alert=1;
+    }
+}
+
+//onscroll function
+window.onscroll=function(){
+    myscroll()
+};
+function myscroll(){
+    if(document.body.scrollTop>430 || document.documentElement.scrollTop>430){
+        document.querySelector(".poet").style.opacity="1";
+        document.querySelector(".arduino_programmer").style.opacity="1";
+        document.querySelector(".web_developer").style.opacity="1";
+        
+        if(document.body.scrollTop>1200 || document.documentElement.scrollTop>1200){
+            document.querySelector(".scroll-top").style.width="40px";
+            document.querySelector(".scroll-top").style.height="40px";
+        }
+     
+    }
+    else{
+        document.querySelector(".scroll-top").style.width="0";
+        document.querySelector(".scroll-top").style.height="0";
+     
+    }
+}
+
+//dit message
+let dit_show=1;
+function dit_message(){
+    if(dit_show==1){
+        document.querySelector(".dit-wrapper").style.height="fit-content";
+        document.querySelector(".dit-wrapper").style.marginTop='100px';
+        dit_show=0;
+    }
+    else if(dit_show==0){
+        document.querySelector(".dit-wrapper").style.height="0";
+        document.querySelector(".dit-wrapper").style.marginTop='0';
+        dit_show=1;
+    }
+}
