@@ -403,6 +403,7 @@ nav ul .download a{
 /*styling my services box*/
 .my-services{
     padding:10px;
+    margin:20px 0 60px 0;
 }
 .my-services .services-list{
     display:flex;

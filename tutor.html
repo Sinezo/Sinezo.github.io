@@ -37,95 +37,13 @@
             text-align: center;
             margin:10px;
         }
-        .wrapform{
-            padding:20px;
-            border-radius: 4px;
-            box-shadow:1px 1px 7px;
-            margin:10px 20px;
+        textarea{
+            padding:5px;
+            box-shadow:1px 1px 3px grey;
         }
-        .wrapform input{
-            box-shadow: 1px 1px 3px brown;
-        }
-        .wrapform textarea{
-            width:100%;
-            box-sizing: border-box;
-        }
-        .buttons{
-            text-align: center;
-            margin:10px 0 3px 0;
-        }
-        .buttons button{
-            padding:2px;
-        }
-        /*styling back button*/
-            /*popup boxes*/
-            .popup1,.popup2{
-                color:brown;
-                font-weight: 600;
-                font-size: small;
-                height:0;
-                overflow: hidden;
-                margin-top: -20px;
-                transition: margin 200ms linear;
-            }
-            .paypopup{
-                overflow: hidden;
-                transition: margin 200ms linear;
-                height:0;
-                margin-top: -20px;
-                font-size: small;
-                color:brown;
-            }
-            /*styling the buttons at the bottom*/
-            .buttons .reset{
-                box-shadow: 1px 2px 6px rgb(0, 0, 0);
-                border-radius:4px;
-                font-weight: 600;
-                background-color: rgb(60, 56, 83);
-                color:white;
-                border:none;
-                padding:5px;
-            }
-            .buttons .send{
-                box-shadow: 1px 2px 6px rgb(34, 33, 33);
-                border-radius:4px;
-                font-weight: 600;
-                background-color: rgb(10, 129, 133);
-                color:white;
-                border:none;
-                padding:5px;
-            }
-            /*finish box*/
-            .finish{
-                display: flex;
-                justify-content: center;
-                margin-top: 10%;
-            }
-            .finish div{
-                text-align: center;
-            }
-            .finish button{
-                padding:10px;
-                width:50%;
-                margin-top: 15px;
-                background-color: navy;
-                border:none;
-                color:white;
-                font-weight: 900;
-                border-radius: 4px;
-                transition: width 200ms;
-            }
-            .finish button:hover{
-                width:60%;
-                cursor:pointer;
-            }
-            .finish{
-                display:none;
-            }
-            /*menu location*/
-            .other-activities{
-            text-decoration: underline rgb(243, 189, 12) 2px;
-            }
+        
+            
+            
     </style>
 </head>
 <body>
@@ -182,62 +100,19 @@
 
 
         <br><br>
-    <h1>Tution</h1>
-    <div class="courses"><button style="padding:4px;background-color: rgb(172, 105, 105);color:white;border:none;border-radius:4px;">C++</button> <button style="padding:4px;background-color:rgb(129, 95, 160);color:white;border:none;border-radius:4px;">Arduino Programming</button></div>
-    
-
-    <div class="wrapper-here">
-    
-        <div class="questionform">
-            <div>Welcome dear mate, are you interested in getting tuition for the above mentioned 
-                programming languages? 
-                
-            <br><br>Get a tutor now by  simply following the steps below:
-            </div>
-            
+        <h1>Tution</h1>
+        <div class="courses"><button style="padding:4px;background-color: rgb(172, 105, 105);color:white;border:none;border-radius:4px;">C++</button> <button style="padding:4px;background-color:rgb(129, 95, 160);color:white;border:none;border-radius:4px;">Arduino Programming</button> <button style="padding:4px;background-color: rgb(78, 138, 153);color:white;border:none;border-radius:4px;">Technical Mathematics</button></div>
         
+<p style="padding:10px;">
+    Hello dear mate, are you looking for someone to help you with your school work? - Oh well, you are in the right place!<br>
+    <br>Click on the box below and tell us which of the three subjects you need assistance in. 
 
-            <div class="wrapform">
-                <input type="text" placeholder="Phone Number or Email" style="padding:3px;margin:10px 0 10px 0;width:70%;border:1px solid grey;" class="phoneEmail"><br>
-                Choose the course(s) you need tution for: <br>
-            <input type="checkbox" value="cpp" id="cpp"> C++ Programming <br>
-            <input type="checkbox" value="python" id="python"> Python Programming <br>
-            <br>
-            Why do you need tution?<br>
-            <textarea name="" id="" cols="20" rows="5" class="tuitioncomment"></textarea> <br>
-            Are you willing to pay more than R30.00 per week?<br>
-            <input type="radio" name="fee" onclick="yespayment()"> Yes
-            <input type="radio" name="fee" onclick="payment()"> No
-            <br>
-            <!--popup boxes for paying-->
-            <div class="paypopup">
-                <span style="color:rgb(128, 0, 0);">&#10150; </span> Oops!! If you are not willing to pay, we cannot offer you our service.
-            </div><br><br>
-            Will you manage to be tutored online?<br>
-            <input type="radio" name="willmanage" onclick="absolutely()"> Yes, absolutely <br>
-            <input type="radio" name="willmanage" onclick="no()"> No <br>
-            <input type="radio" name="willmanage" onclick="notsure()"> I am not sure
-
-            <br><br>
-            <div class="popup1">
-                <span style="color:green;">&#10150; </span>Sorry to hear that mate, but we can only offer online tution at the moment.
+</p>
+        <div class="wrapper-here">
+        
+            <div class="questionform">
+            <textarea name="" id="" cols="30" rows="5" onclick="window.location='mailto:lusawanasinethemba@gmail.com'"></textarea>
             </div>
-            <br>
-            <div class="popup2">
-            <span style="color:green;">&#10150; </span>Why don't you give it a try and see how it turns out? We guarantee that you will not regret it.
-            </div>
-            <div class="buttons">
-                <button class="reset" onclick="window.location='tutor.html'">Reset</button> <button class="send" onclick="finish()">Send Application</button>
-            </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="finish">
-        <div>
-            <span style="font-size:100px;color:rgb(0, 255, 64);">&#9745</span>
-        <br>Your application has been sent successfully.
-        <br><button onclick="window.location='Portfolio.html'">OK</button>
         </div>
     </div>
 
