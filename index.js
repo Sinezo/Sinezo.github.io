@@ -96,54 +96,6 @@
             document.querySelector("#hiremebtn").style.color="black";
           }
 
-          function change(){
-              document.querySelector(".box1").style.backgroundColor="red";
-          }
-          function change2(){
-              document.querySelector(".box1").style.backgroundColor="white";
-          }
-
-          //after clicking send contact
-          function sendcontact(){
-           let MESSAGE= document.querySelector("#messagecontact").value;
-           let NAME = document.querySelector("#namecontact").value;
-           let EMAIL= document.querySelector("#emailcontact").value;
-            
-
-            if(NAME!="" && MESSAGE!="" && EMAIL!=""){
-                document.querySelector(".contactus").innerHTML="Message sent successfully.&#10004";
-                document.querySelector(".contactus").style.textAlign="center";
-                document.querySelector(".contactus").style.color="green";
-
-            }
-            else if(NAME=="" || MESSAGE=="" || EMAIL==""){
-                document.querySelector("#commentcontact").innerHTML="Fill out all the fields.";
-                document.querySelector("#commentcontact").style.textAlign="center";
-                document.querySelector("#commentcontact").style.fontSize="small";
-                document.querySelector("#commentcontact").style.color="red";
-                
-            }
-          }
-          //after clicking hire  me send
-          function hiremesend(){
-           let NAME=document.querySelector("#Namehireme").value;
-           let MESSAGE=document.querySelector("#descriptionhireme").value;
-           let PROVINCE=document.querySelector("#provincehireme").value;
-           let EMAIL=document.querySelector("#emailhireme").value;
-           let STREET =document.querySelector("#streethireme").value;
-        
-           if(NAME!="" && MESSAGE!="" && EMAIL!="" && STREET!="" && PROVINCE!=""){
-               document.querySelector(".hiremebox").innerHTML="Message has been sent successfully.&#10004";
-               document.querySelector(".hiremebox").style.textAlign="center";
-                document.querySelector(".hiremebox").style.color="darkblue";
-           }
-           else if(NAME=="" || MESSAGE=="" || EMAIL=="" || STREET=="" || PROVINCE==""){
-               document.querySelector("#hiremecomment").innerHTML="Fill out all the fields.";
-               document.querySelector("#hiremecomment").style.textAlign="center";
-                document.querySelector("#hiremecomment").style.fontSize="small";
-                document.querySelector("#hiremecomment").style.color="red";
-           }
-          }
 
           function requestproject(){
             window.location='requestproject.html';
@@ -184,7 +136,7 @@ window.onscroll=function(){
     myscroll()
 };
 function myscroll(){
-    if(document.body.scrollTop>430 || document.documentElement.scrollTop>430){
+    if(document.body.scrollTop>370 || document.documentElement.scrollTop>370){
         document.querySelector(".poet").style.opacity="1";
         document.querySelector(".arduino_programmer").style.opacity="1";
         document.querySelector(".web_developer").style.opacity="1";
