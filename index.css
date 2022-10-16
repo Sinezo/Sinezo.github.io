@@ -210,16 +210,16 @@ nav ul .download a{
     border:1px solid rgba(212, 169, 28, 0.76);
 }
 /*styling myprof_skills*/
-.section-title{
+.section-title1{
     display:grid;
     justify-content: center;
     margin:100px 0 0 0;
 }
-.section-title .decor{
-    padding:3px;
-    width:10px;
-    background-color: rgb(168, 136, 189);
-    margin:3px 0 0 10px;
+.section-title1 .title{
+    color:rgb(219, 144, 32);
+    text-decoration: underline;
+    background-color: rgb(242, 236, 248);
+    padding:5px;
 }
 .myprof_skills{
     padding:10px;
@@ -278,25 +278,7 @@ nav ul .download a{
 .web_developer i{
     font-size:60px;
 }
-/*styling the brag1 box*/
-.decoration{
-    background-color: rgba(126, 124, 123, 0.336);
-    padding:2px;
-    border-radius:3px 0 0 3px ;
-    margin-left: 20px;
-}
-.bragging1{
-    display:flex;
-    color:rgb(77, 81, 83);
-    border-radius:3px 0 0 3px ;
-    background-color: rgba(255, 255, 255, 0.336);
-    padding:20px;
-}
-.bragging1 .parbrag{
-    padding:30px;
-    background-color: rgb(253, 249, 247);
-    margin:0 10px 0 0 ;
-}
+
 /*styling the menu box*/
 .Menu{
     color:rgb(77, 81, 83);
@@ -357,6 +339,17 @@ nav ul .download a{
     text-decoration: underline;
     color:rgb(66, 60, 60);
 }
+.section-title{
+    display:grid;
+    justify-content: center;
+    margin:5px;
+}
+.section-title .title{
+    color:rgb(219, 144, 32);
+    text-decoration: underline;
+    background-color: rgb(242, 236, 248);
+    padding:5px;
+}
 /*stylinf web-development-brief*/
 .web-development-brief{
     display:flex;
@@ -364,6 +357,9 @@ nav ul .download a{
     margin:0 100px;
     color:rgb(80, 75, 75);
     box-shadow:1px 1px 22px 0px lightgrey;
+}
+.web-development-brief{
+    display:none;
 }
 .web-development-brief h3{
     background-color: rgb(231, 214, 158);
@@ -379,6 +375,9 @@ nav ul .download a{
     color:rgb(80, 75, 75);
     box-shadow:1px 1px 22px 0px lightgrey;
 }
+.arduino-programming-brief{
+    display:none;
+}
 .arduino-programming-brief h3{
     background-color: rgb(203, 215, 218);
     margin-top:-40px;
@@ -393,6 +392,9 @@ nav ul .download a{
     border-radius: 3px;
     color:rgb(80, 75, 75);
     box-shadow:1px 1px 22px 0px lightgrey;
+}
+.poetry-brief{
+    display:none;
 }
 .poetry-brief h3{
     background-color: rgb(250, 240, 208);
@@ -410,6 +412,9 @@ nav ul .download a{
     overflow-x: auto;
     gap:20px;
     padding:10px;
+}
+.my-services .services-list{
+    display:none;
 }
 .my-services .services-list .box{
     min-width:300px;
@@ -460,6 +465,26 @@ nav ul .download a{
      box-shadow: 1px 1px 7px rgb(255, 3, 3);
      cursor:pointer;
  }
+ /*styling the brag1 box*/
+.decoration{
+    background-color: rgba(126, 124, 123, 0.336);
+    padding:2px;
+    border-radius:3px 0 0 3px ;
+    margin-left: 20px;
+}
+.bragging1{
+    display:flex;
+    color:rgb(77, 81, 83);
+    border-radius:3px 0 0 3px ;
+    background-color: rgba(201, 196, 132, 0.336);
+    padding:20px;
+    margin-bottom: 70px;
+}
+.bragging1 .parbrag{
+    padding:30px;
+    background-color: rgb(253, 249, 247);
+    margin:0 10px 0 0 ;
+}
  /*styling the wrapcontact box*/
  .flexwrappcontact{
     background-color:rgb(255, 255, 255);

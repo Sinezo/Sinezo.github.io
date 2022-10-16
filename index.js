@@ -153,7 +153,48 @@ function myscroll(){
      
     }
 }
+//about skills
+var ab_skills=1;
+function about_skills(){
+    if(ab_skills==1){
+        document.querySelector('.web-development-brief').style.display='block';
+        document.querySelector('.poetry-brief').style.display='block';
+        document.querySelector('.arduino-programming-brief').style.display='block';
+        ab_skills=0;
+    }
+    else{
+        document.querySelector('.web-development-brief').style.display='none';
+        document.querySelector('.poetry-brief').style.display='none';
+        document.querySelector('.arduino-programming-brief').style.display='none';
+        ab_skills=1;
+    }
 
+}
+//services list
+var serv_list=1;
+function service_List(){
+    if(serv_list==1){
+        document.querySelector('.services-list').style.display='flex';
+        serv_list=0;
+    }
+    else{
+        document.querySelector('.services-list').style.display='none';
+        serv_list=1;
+    }
+}
+
+//skills
+var skill_show=1;
+function skills(){
+    if(skill_show==1){
+        document.querySelector('.myprof_skills').style.display='flex';
+        skill_show=0;
+    }
+    else{
+        document.querySelector('.myprof_skills').style.display='none';
+        skill_show=1;
+    }
+}
 //dit message
 let dit_show=1;
 function dit_message(){
