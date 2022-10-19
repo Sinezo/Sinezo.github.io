@@ -623,7 +623,7 @@ nav ul .download a{
  footer{
     display:flex;
     flex-wrap: wrap;
-    background-color: rgba(201, 203, 206, 0.884);
+    background-color: rgba(236, 240, 245, 0.884);
     color:rgb(77, 81, 83);
     margin-top: 50px;
 }
