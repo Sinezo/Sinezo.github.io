@@ -9,6 +9,7 @@
                  document.querySelector("#barthree").style.transform="rotate(225deg)";
                  document.querySelector("#barthree").style.marginTop="-1.8px";
                  document.querySelector(".Menu").style.height="245px";
+                 document.querySelector(".Menu").style.boxShadow='1px 5px 3px rgb(212, 206, 116)';
                  document.querySelector("#barone").style.backgroundColor="white";
                  document.querySelector("#barthree").style.backgroundColor="white";
                  document.querySelector(".wrap-icon").style.backgroundColor="rgb(212, 206, 116)";

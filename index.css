@@ -94,38 +94,7 @@ nav ul .download a{
     text-decoration: underline;
     
 }
-/*styling git message*/
-.dit-wrapper{
-    display:flex;
-    justify-content: center;
-    height:0;
-    overflow:hidden;
-    transition:margin 200ms linear;
-    position:absolute;
-}
 
-.dit-message{
-    box-shadow:1px 1px 7px lightgrey;
-    margin:10px;
-    text-align: center;
-    padding:10px;
-    background-color: rgb(160, 161, 161);
-
-}
-.dit-message button{
-    padding:10px;
-    margin-top:10px;
-    background-color: rgba(241, 210, 124, 0.911);
-    border:none;
-    color:rgb(53, 51, 51);
-    border-radius:4px;
-    width:40%;
-
-}
-.dit-message img{
-    width:100px;
-    border-radius:50%;
-}
 /*styling the photo box*/
 .photo{
     display:flex;
@@ -217,9 +186,8 @@ nav ul .download a{
 }
 .section-title1 .title{
     color:rgb(219, 144, 32);
-    text-decoration: underline;
     background-color: rgb(242, 236, 248);
-    padding:5px;
+    padding:15px;
 }
 .myprof_skills{
     padding:10px;
@@ -228,9 +196,13 @@ nav ul .download a{
     gap:10px;
     margin:140px 25px;
 }
+.myprof_skills{
+    display:none;
+}
 /*styling my prof skills*/
 .myprof_skills h3{
-    color:rgb(255, 145, 0);
+    color:rgb(207, 131, 44);
+    text-decoration: underline;
 }
 .poet{
     text-align: center;
@@ -242,7 +214,7 @@ nav ul .download a{
     background-image: url('20210906_122425.jpg');
     background-size:contain;
     font-weight: 100;
-    opacity:.4;
+    opacity:.7;
 }
 .poet-wrap{
     opacity:2;
@@ -260,6 +232,15 @@ nav ul .download a{
     border-top: 0;
     border-right: 0;
     border-left: 0;
+    background-image: url('20221023_182245.jpg');
+    background-size:contain;
+    opacity:.7;
+    border:1px solid rgb(224, 145, 54);
+}
+.arduino-programmer-wrap{
+    opacity:2;
+    background-color: rgb(255, 255, 255);
+    box-shadow:1px 1px 3px;
 }
 .web_developer{
     text-align:center;
@@ -285,9 +266,11 @@ nav ul .download a{
 .Menu{
     color:rgb(77, 81, 83);
     height: 0;
+    width:100%;
     overflow: hidden;
     background-color: rgba(255, 255, 255, 0.918);
     transition:height 140ms linear;
+    position:absolute;
 }
 .flexmenuwrapper{
     margin:10px;
@@ -350,7 +333,7 @@ nav ul .download a{
     color:rgb(219, 144, 32);
     text-decoration: underline;
     background-color: rgb(242, 236, 248);
-    padding:5px;
+    padding:15px;
 }
 /*stylinf web-development-brief*/
 .web-development-brief{
@@ -423,6 +406,8 @@ nav ul .download a{
     text-align: center;
     padding:30px;
     box-shadow:3px 3px 8px rgb(219, 213, 208);
+    background-color: rgb(255, 252, 244);
+    color:rgb(49, 48, 46);
 }
 .my-services .services-list button{
     background-color: rgba(255, 251, 251, 0.726);
