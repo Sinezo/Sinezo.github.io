@@ -131,28 +131,6 @@ function alertprojects(){
     }
 }
 
-//onscroll function
-window.onscroll=function(){
-    myscroll()
-};
-function myscroll(){
-    if(document.body.scrollTop>370 || document.documentElement.scrollTop>370){
-        document.querySelector(".poet").style.opacity="1";
-        document.querySelector(".arduino_programmer").style.opacity="1";
-        document.querySelector(".web_developer").style.opacity="1";
-        
-        if(document.body.scrollTop>1200 || document.documentElement.scrollTop>1200){
-            document.querySelector(".scroll-top").style.width="40px";
-            document.querySelector(".scroll-top").style.height="40px";
-        }
-     
-    }
-    else{
-        document.querySelector(".scroll-top").style.width="0";
-        document.querySelector(".scroll-top").style.height="0";
-     
-    }
-}
 //about skills
 var ab_skills=1;
 function about_skills(){
@@ -207,7 +185,7 @@ function IMAGES(){
         image=3;
     }
     else if(image==3){
-        image_in.src='20220924_072239.jpg';
+        image_in.src='20210908_103752.jpg';
         image=4;
     }
     else if(image==4){

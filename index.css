@@ -230,22 +230,24 @@ nav ul .download a{
 }
 /*styling my prof skills*/
 .myprof_skills h3{
-    color:rgb(211, 178, 134);
+    color:rgb(255, 145, 0);
 }
 .poet{
     text-align: center;
     width:300px;
-    color:rgb(80, 75, 75);
+    color:rgb(20, 20, 19);
     padding:50px;
-    opacity:0;
     transition:all 700ms ease-in-out;
-    border:1px solid lightgrey;
-    border-top: 0;
-    border-right: 0;
-    border-left: 0;
+    border:1px solid rgb(224, 145, 54);
+    background-image: url('20210906_122425.jpg');
+    background-size:contain;
+    font-weight: 100;
+    opacity:.4;
 }
-.poet i{
-    font-size:60px;
+.poet-wrap{
+    opacity:2;
+    background-color: rgb(255, 255, 255);
+    box-shadow:1px 1px 3px;
 }
 
 .arduino_programmer{
@@ -253,30 +255,30 @@ nav ul .download a{
     color:rgb(80, 75, 75);
     padding:50px;
     width:300px;
-    opacity:0;
     transition:all 2000ms ease-in-out;
     border:1px solid lightgrey;
     border-top: 0;
     border-right: 0;
     border-left: 0;
 }
-.arduino_programmer i{
-    font-size:60px;
-}
 .web_developer{
     text-align:center;
     color:rgb(80, 75, 75);
     padding:50px;
     width:300px;
-    opacity:0;
     transition:all 3000ms ease-in-out;
     border:1px solid lightgrey;
     border-top: 0;
     border-right: 0;
     border-left: 0;
+    background-image: url('web-development.png');
+    background-size: contain;
+    opacity:.7;
+    border:1px solid rgb(224, 145, 54);
 }
-.web_developer i{
-    font-size:60px;
+.web-dev-wrap{
+    background-color: white;
+    box-shadow:1px 1px 3px;
 }
 
 /*styling the menu box*/
