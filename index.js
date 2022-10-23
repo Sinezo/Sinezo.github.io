@@ -195,17 +195,29 @@ function skills(){
         skill_show=1;
     }
 }
-//dit message
-let dit_show=1;
-function dit_message(){
-    if(dit_show==1){
-        document.querySelector(".dit-wrapper").style.height="fit-content";
-        document.querySelector(".dit-wrapper").style.marginTop='100px';
-        dit_show=0;
+//images animation
+let image=1;
+function IMAGES(){
+    if(image==1){
+        image_in.src='electrician1.png';
+        image=2;
     }
-    else if(dit_show==0){
-        document.querySelector(".dit-wrapper").style.height="0";
-        document.querySelector(".dit-wrapper").style.marginTop='0';
-        dit_show=1;
+    else if(image==2){
+        image_in.src='myphoto.png';
+        image=3;
     }
+    else if(image==3){
+        image_in.src='20220924_072239.jpg';
+        image=4;
+    }
+    else if(image==4){
+        image_in.src='20221010_120358.jpg';
+        image=5;
+    }
+    else if(image==5){
+        image_in.src='20221007_135002.jpg';
+        image=1;
+    }
+    setTimeout('IMAGES()',4000);
 }
+window.onload=IMAGES;
