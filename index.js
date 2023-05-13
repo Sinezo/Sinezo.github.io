@@ -28,3 +28,32 @@ menu.addEventListener('click', function(){
 
 });
 
+//window scroll
+window.onscroll=function(){
+    scrolling();
+};
+function scrolling(){
+    if(document.body.scrollTop > 0 || document.documentElement.scrollTop >0){
+        document.querySelector('.nav-small-screen').style.backgroundColor='white';
+        document.querySelector('.nav-small-screen').style.marginTop='-110px';
+        document.querySelector('.nav-small-screen').style.position='fixed';
+        document.querySelector('.nav-small-screen').style.boxShadow='1px 1px 3px lightgrey';
+        document.querySelector('.phone').style.width='170px';
+        document.querySelector('.phone').style.border='1px solid lightgrey';
+        //document.querySelector('.web-name').style.fontSize="10px";
+        //document.querySelector('.web-name').style.color='chocolate';
+        
+
+    }
+    else{
+        document.querySelector('.nav-small-screen').style.backgroundColor='unset';
+        document.querySelector('.nav-small-screen').style.boxShadow='none';
+        document.querySelector('.nav-small-screen').style.position='relative';
+        document.querySelector('.nav-small-screen').style.marginTop='-70px';
+        document.querySelector('.phone').style.width='0';
+        document.querySelector('.phone').style.border='0';
+        //document.querySelector('.web-name').style.fontSize="x-large";
+        //document.querySelector('.web-name').style.color='black';
+    }
+}
+
