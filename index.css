@@ -28,7 +28,7 @@ body{
     border:0;
     transition: color 300ms ease-in-out;
     transition:  padding 300ms ease-in-out;
-    background-color:rgb(20, 149, 189);
+    background-color:rgb(235, 107, 23);
     padding:0 20px;
     border-radius: 4px;
 }
@@ -180,7 +180,7 @@ header .wrap-web-name{
 .introduction .message button{
     background-color: unset;
     border:0;
-    color:rgb(0, 0, 0);
+    color:rgb(231, 225, 221);
 }
 .introduction .picture{
     width:600px;
@@ -222,9 +222,9 @@ header .wrap-web-name{
 }
 .services-brief button{
     padding:20px;
-    background-color: unset;
+    background-color: rgb(235, 107, 23);
     border:1px solid chocolate;
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
     margin:20px 0;
     border-radius: 4px;
 }
