@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/dd42663f14.js" crossorigin="anonymous"></script> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <title>About Us| Escaletech</title>
+    <style>
+        *{
+            padding:0;
+            margin:0; 
+        }
+        .about-us-container{
+            padding:20px;
+        }
+        .contact-div button{
+            padding:3px;
+            border:0;
+            background-color: chocolate;
+            color:white;
+        }
+        .about-us{
+            border-bottom: 2px solid chocolate;
+            width:fit-content;
+        }
+    </style>
+</head>
+<body>
+    <!--TOP MORE INFO-->
+    <div class="top-more-info">
+        <div class="location"><i class="fa-solid fa-location-dot"></i></div>
+        <div class="info"><div class="icon"><i class="fa-regular fa-envelope"></i></div> <div class="email" onclick="window.location='mailto:lusawanasinethemba@gmail.com'">escaletech@gmail.com</div></div>
+    </div> 
+
+    <!--WRAP HEADER-->
+    <div class="wrap-header">
+        
+        <!--HEADER-->
+    <header onclick="window.location='index.html'">
+        <div class="web-logo">
+
+            <div class="wrap-web-name">
+                <div class="wrap-2-boxes">
+                    <div class="box1"></div>
+                <div class="box2"></div>
+                </div>
+                <div class="web-name">scaletech</div>
+            </div>
+    
+            <div class="box3"></div>
+        </div>
+    </header>
+</div>
+
+<!--MENU HEADER -SMALL SCREEN-->
+<div class="nav-small-screen">
+    <!--phone-->
+    <div class="phone">
+        <div class="icon"><i class="fa-solid fa-phone-flip"></i></div><div class="number" onclick="window.location='tel:+27786052462'" >+27786052462</div>
+    </div>
+    <div class="wrap-nav-small-screen">
+        <!--menu icon-->
+        <div id="menu-icon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <!--sign in icon-->
+        <div><li onclick="window.location='student_portal.html'" class="sign-in"><i class="fa-solid fa-right-to-bracket"></i></li></div>
+    </div>
+</div>
+     <!--ABOUT US-->
+     <div class="about-us-container">
+        <h3>About us</h3>
+        <p>
+            escaletech  is a group of diligent engineering enthusiasts who seek , at any given time to apply the laws and principles 
+        of electrical engineering and create something <u>significant </u> out of them.
+        <br><br>
+        In the process of designing, we take three steps to ensure that our designs are working accordingly and meet the objectives.
+        <br><br>
+        At escaletech, we understand that every project is unique. That is why we offer comprehensive 
+        electrical design services tailored to your specific needs.
+        <br><br>
+        Electricity is dangerous, that is why in each and every design we follow the <u>International Electricatronic Commission (IEC)</u> and 
+        <u>National Electrical Code (NEC)</u> standards.
+        <br><br>
+        <div class="contact-div">
+            <i>Contact us today to learn more about how we can help you with your 
+                electrical design needs.
+                <br><button><i>Contuct us</i></button>
+            </i>
+        </div>
+        </p> 
+     </div>
+    <!--FOOTER-->
+    <footer>
+        <div class="aboutt-us">
+            <h4>Company</h4>
+            <ul>
+                <li onclick="window.location='about-us.html'" >About us</li>
+                <li>Our Services</li>
+                <li>Our Team</li>
+                <li>Privacy & Policy</li>
+            </ul>
+        </div>
+
+        <div class="help">
+            <h4>Get Help</h4>
+            <ul>
+                <li>Consult</li>
+                <li>FAQs</li>
+                <li>Delivery</li>
+                <li>Payment Methods</li>
+            </ul>
+        </div>
+
+        <div class="online-services">
+            <h4>Online Activities</h4>
+            <ul>
+                <li>Blog</li>
+            <li>Hire</li>
+            <li>Buy</li>
+            <li>Learn</li>
+            </ul>
+        </div>
+
+        <div class="social-media">
+            <h4>Follow Us</h4>
+            <ul>
+                <li id="facebook"><i class="fa-brands fa-facebook"></i> Facebook</li>
+                <li id="twitter"> <i class="fa-brands fa-twitter"></i> Twitter</li>
+                <li id="whatsapp"><i class="fa-brands fa-whatsapp" ></i> WhatsApp</li>
+                <li id="youtube"><i class="fa-brands fa-youtube"></i> YouTube</li>
+            </ul>
+        </div>
+
+        <div class="contact-us-form" id="contact-us-form">
+            <h4>Contact Us</h4>
+            <form action="https://formsubmit.co/87fe266c27fb4d7c9ec7d8608d73b97d" method="POST">
+                <label for="email">Email:</label><br>
+                <input type="email" placeholder="example@gmail.com" name="Email">
+                <label for="message" class="message">Message:</label><br>
+                <textarea type="text" placeholder="Type here" name="Message"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+       
+    </footer>
+
+    <script src=index.js></script>
+</body>
+</html>
