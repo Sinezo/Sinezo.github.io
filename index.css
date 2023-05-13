@@ -28,7 +28,7 @@ body{
     border:0;
     transition: color 300ms ease-in-out;
     transition:  padding 300ms ease-in-out;
-    background-color:rgb(235, 107, 23);
+    background-color:rgb(19, 156, 197);
     padding:0 20px;
     border-radius: 4px;
 }
@@ -37,7 +37,7 @@ body{
 }
 .top-more-info .info:hover{
     cursor: pointer;
-    background-color:rgb(235, 107, 23) ;
+    background-color:rgb(15, 140, 179);
     padding:0 30px;
     border-radius: 4px;
 }
@@ -60,11 +60,12 @@ header{
 header .wrap-web-name{
     display:flex;
     gap:5px;
+    font-weight: 900;;
 }
 .wrap-web-name .box1{
     width:30px;
     height:4px;
-    background-color: rgb(45, 189, 233);
+    background-color: rgb(190, 194, 196);
     margin:0 0 5px 0;
     border-radius: 4px 0 0 0;
 }
@@ -75,7 +76,7 @@ header .wrap-web-name{
 }
 .web-logo .box3{
     height:4px;
-    background-color: rgb(45, 158, 233);
+    background-color: rgb(233, 130, 45);
     border-radius: 0 0 0 4px;
 }
 .wrap-web-name .web-name{
