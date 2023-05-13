@@ -162,11 +162,13 @@ header .wrap-web-name{
     gap:20px;
     justify-content: center;
     padding:20px;
+    background-color: rgb(194, 78, 1);
+    color:white;
 }
 .introduction h4{
     font-size: 40px;
     font-family: sans-serif;
-    color:rgb(230, 118, 27);
+    color:rgb(238, 234, 231);
     padding:10px 0;
 
 }
@@ -177,7 +179,7 @@ header .wrap-web-name{
 .introduction .message button{
     background-color: unset;
     border:0;
-    color:rgb(145, 142, 142);
+    color:rgb(0, 0, 0);
 }
 .introduction .picture{
     width:600px;
@@ -242,7 +244,7 @@ header .wrap-web-name{
     justify-content: center;
     padding:20px;
     gap:20px;
-    background-color: rgb(194, 78, 1);
+    background-color: rgb(241, 237, 234);
 }
 .top-service-faqs-wrap h4{
     font-family: sans-serif;
