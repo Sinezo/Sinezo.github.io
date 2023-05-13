@@ -214,11 +214,13 @@ header .wrap-web-name{
     border:1px solid rgb(235, 232, 232);
     margin-bottom: 10px;
     border-radius: 14px;
+    box-shadow:1px 1px 3px lightgrey;
 }
 .services-brief .service2{
     width:500px;
     border:1px solid rgb(235, 232, 232);
     border-radius: 14px;
+    box-shadow:1px 1px 3px lightgrey
 }
 .services-brief button{
     padding:20px;
@@ -232,6 +234,7 @@ header .wrap-web-name{
     width:500px;
     border:1px solid rgb(235, 232, 232);
     border-radius: 14px;
+    box-shadow:1px 1px 3px lightgrey
 }
 .services-brief button:hover{
     cursor: pointer;
