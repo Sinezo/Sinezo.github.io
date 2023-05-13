@@ -279,6 +279,19 @@ header .wrap-web-name{
 .ans2,.ans3, .ans4,.ans5,.ans6{
     display:none; 
 }
+/*hire us*/
+.hire-us{
+    padding:30px;
+    text-align: center;
+}
+.hire-us button{
+    padding:20px;
+    width:150px;
+    background-color: rgb(43, 46, 46);
+    color:rgb(219, 125, 37);
+    border:0;
+    border-radius: 4px;
+}
 /*footer*/
 footer{
     display:flex;
