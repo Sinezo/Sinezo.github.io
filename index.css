@@ -218,7 +218,8 @@ header .wrap-web-name{
 .services-brief button{
     padding:20px;
     background-color: unset;
-    border:1px solid rgb(95, 94, 94);
+    border:1px solid chocolate;
+    color:rgb(0, 0, 0);
     margin:20px 0;
     border-radius: 4px;
 }
@@ -240,17 +241,17 @@ header .wrap-web-name{
     padding:20px;
     gap:20px;
     background-color: rgb(194, 78, 1);
-    color:white;
 }
 .top-service-faqs-wrap h4{
     font-family: sans-serif;
     font-size: 20px;
     padding:10px 0;
+    color:rgb(194, 78, 1);
 }
 
 .top-service-faqs-wrap .top-services{
     width:500px; 
-    background-color: rgb(212, 102, 28);
+    background-color: rgb(255, 255, 255);
     padding:10px;
     border-radius: 4px;
 }
@@ -262,22 +263,18 @@ header .wrap-web-name{
 }
 .top-service-faqs-wrap .faqs{
     width:500px;
-    background-color: rgb(212, 102, 28);
+    background-color: rgb(255, 255, 255);
     padding:10px;
     border-radius: 4px;
 }
 .top-service-faqs-wrap .faqs ul{
     list-style: decimal;
-    color:rgb(255, 255, 255);
-    
     font-weight: 100;
     padding:0 0 0 20px;
     
 }
 .top-service-faqs-wrap .faqs ul li{
     list-style: decimal;
-    color:rgb(255, 255, 255);
-    font-weight: 600;
 }
 .ans2,.ans3, .ans4,.ans5,.ans6{
     display:none; 

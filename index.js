@@ -1,7 +1,7 @@
 
 //menu icon click
 var menu = document.querySelector('#menu-icon');
-var menu_status=1;
+var menu_status=1; 
 menu.addEventListener('click', function(){
     if(menu_status==1){
     document.querySelector('.bar1').style.transform='rotate(45deg)';
