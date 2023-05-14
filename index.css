@@ -2,13 +2,13 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 html{
     scroll-behavior: smooth;
 }
 body{
-    color:rgb(0, 0, 0);
+    color:rgb(15, 140, 179);
     background-color: rgb(255, 252, 252);
 }
 /*font-family: 'Poppins', sans-serif;*/
@@ -61,31 +61,9 @@ header .wrap-web-name{
     gap:5px;
     font-weight: 900;;
 }
-.wrap-web-name .box1{
-    width:30px;
-    height:4px;
-    background-color: rgb(190, 194, 196);
-    margin:0 0 5px 0;
-    border-radius: 4px 0 0 0;
+header .web-logo img{
+    width:100%;
 }
-.wrap-web-name .box2{
-    width:30px;
-    height:4px;
-    background-color: rgb(90, 88, 88);
-}
-.web-logo .box3{
-    background-color: rgb(255, 255, 255);
-    border-radius: 0 0 0 4px;
-    color:rgb(0, 0, 0);
-    font-size: xx-small;
-    padding:0 10px;
-}
-.wrap-web-name .web-name{
-    font-size:large;
-    margin:-4px 0 0 0;
-}
-
-
 /*nav-small-screen*/
 .nav-small-screen{
     display:flex;
@@ -198,12 +176,11 @@ header .wrap-web-name{
     justify-content: center;
     padding:20px;
     background-color: rgb(255, 255, 255);
-    color:rgb(0, 0, 0);
 }
 .introduction h4{
     font-size: 40px;
     font-family: sans-serif;
-    color:rgb(15, 140, 179);
+    color:rgb(0, 0, 0);
     padding:10px 0;
 
 }
@@ -214,7 +191,14 @@ header .wrap-web-name{
 .introduction .message button{
     background-color: unset;
     border:0;
-    color:rgb(231, 225, 221);
+    color:rgb(162, 190, 37);
+    padding:10px 0;
+    transition: padding 300ms ease-in-out;
+}
+.introduction .message button:hover{
+    cursor: pointer;
+    color:rgb(85, 100, 16);
+    padding-left:10px;
 }
 .introduction .picture{
     width:600px;
@@ -222,7 +206,10 @@ header .wrap-web-name{
 .introduction .picture img{
     width:100%;
 }
-
+.introduction b{
+    text-decoration: underline;
+    color:rgb(228, 117, 74);
+}
 /*services-brief*/
 .services-brief{
     display:flex;
@@ -231,10 +218,14 @@ header .wrap-web-name{
     text-align: center;
     gap:20px;
 }
+.service1 b{
+    text-decoration: underline;
+    color:rgb(228, 117, 74);
+}
 .services-brief h3{
     font-size: x-large;
     font-family: sans-serif;
-    color:rgb(15, 140, 179);
+    color:rgb(0, 0, 0);
     padding:10px 0;
 }
 .services-brief .icon{
@@ -329,7 +320,6 @@ header .wrap-web-name{
 }
 .top-service-faqs-wrap .faqs ul{
     list-style: decimal;
-    font-weight: 100;
     padding:0 0 0 20px;
     
 }
@@ -348,7 +338,10 @@ header .wrap-web-name{
 .ans2,.ans3, .ans4,.ans5,.ans6{
     display:none; 
 }
-
+.ans1,.ans2,.ans3, .ans4,.ans5,.ans6{
+    font-weight:100;
+    background-color: rgb(43, 155, 189);
+}
 /*master-footer*/
 .master-footer{
     background-color: rgb(16, 126, 160);
