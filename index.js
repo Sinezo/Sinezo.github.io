@@ -58,3 +58,94 @@ function scrolling(){
 }
 
 */
+
+//FREQUENTLY ASKED QUESTIONS
+//question1
+var menu = document.querySelector('.quest1');
+var ans1_status=1; 
+menu.addEventListener('click', function(){
+    if(ans1_status==1){
+        document.querySelector('.ans1').style.display='none';
+    ans1_status=0;
+    }
+    else{
+        document.querySelector('.ans1').style.display='block';
+    ans1_status=1;
+    }
+
+});
+
+//question2
+var menu = document.querySelector('.quest2');
+var ans2_status=1; 
+menu.addEventListener('click', function(){
+    if(ans2_status==1){
+        document.querySelector('.ans2').style.display='block';
+    ans2_status=0;
+    }
+    else{
+        document.querySelector('.ans2').style.display='none';
+    ans2_status=1;
+    }
+
+});
+
+//question3
+var menu = document.querySelector('.quest3');
+var ans3_status=1; 
+menu.addEventListener('click', function(){
+    if(ans3_status==1){
+        document.querySelector('.ans3').style.display='block';
+    ans3_status=0;
+    }
+    else{
+        document.querySelector('.ans3').style.display='none';
+    ans3_status=1;
+    }
+
+});
+
+//question4
+var menu = document.querySelector('.quest4');
+var ans4_status=1; 
+menu.addEventListener('click', function(){
+    if(ans4_status==1){
+        document.querySelector('.ans4').style.display='block';
+    ans4_status=0;
+    }
+    else{
+        document.querySelector('.ans4').style.display='none';
+    ans2_status=1;
+    }
+
+});
+
+//question5
+var menu = document.querySelector('.quest5');
+var ans5_status=1; 
+menu.addEventListener('click', function(){
+    if(ans5_status==1){
+        document.querySelector('.ans5').style.display='block';
+    ans5_status=0;
+    }
+    else{
+        document.querySelector('.ans5').style.display='none';
+    ans5_status=1;
+    }
+
+});
+
+//question6
+var menu = document.querySelector('.quest6');
+var ans6_status=1; 
+menu.addEventListener('click', function(){
+    if(ans6_status==1){
+        document.querySelector('.ans6').style.display='block';
+    ans6_status=0;
+    }
+    else{
+        document.querySelector('.ans6').style.display='none';
+    ans2_status=6;
+    }
+
+});
