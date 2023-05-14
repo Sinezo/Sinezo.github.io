@@ -29,7 +29,7 @@ menu.addEventListener('click', function(){
 });
 
 //window scroll
-window.onscroll=function(){
+/* window.onscroll=function(){
     scrolling();
 };
 function scrolling(){
@@ -57,3 +57,4 @@ function scrolling(){
     }
 }
 
+*/

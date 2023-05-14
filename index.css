@@ -10,7 +10,6 @@ html{
 body{
     color:rgb(0, 0, 0);
     background-color: rgb(255, 252, 252);
-    overflow-x:hidden;
 }
 /*font-family: 'Poppins', sans-serif;*/
 /*top-more-info*/
@@ -28,7 +27,7 @@ body{
     border:0;
     transition: color 300ms ease-in-out;
     transition:  padding 300ms ease-in-out;
-    background-color:rgb(19, 156, 197);
+    background-color:rgb(22, 125, 156);
     padding:0 20px;
     border-radius: 4px;
 }
@@ -76,7 +75,7 @@ header .wrap-web-name{
 }
 .web-logo .box3{
     height:4px;
-    background-color: rgb(233, 130, 45);
+    background-color: rgb(49, 101, 114);
     border-radius: 0 0 0 4px;
 }
 .wrap-web-name .web-name{
@@ -164,13 +163,13 @@ header .wrap-web-name{
     gap:20px;
     justify-content: center;
     padding:20px;
-    background-color: rgb(15, 140, 179);
-    color:white;
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
 }
 .introduction h4{
     font-size: 40px;
     font-family: sans-serif;
-    color:rgb(238, 234, 231);
+    color:rgb(15, 140, 179);
     padding:10px 0;
 
 }
@@ -225,11 +224,12 @@ header .wrap-web-name{
 }
 .services-brief button{
     padding:20px;
-    background-color: rgb(235, 107, 23);
-    border:1px solid chocolate;
+    background-color: rgb(15, 140, 179);
+    border:0;
     color:rgb(255, 255, 255);
     margin:20px 0;
     border-radius: 4px;
+    transition: padding 300ms ease-in-out;
 }
 .services-brief .service3{
     width:500px;
@@ -239,8 +239,9 @@ header .wrap-web-name{
 }
 .services-brief button:hover{
     cursor: pointer;
-    background-color: rgb(194, 78, 1);
+    background-color: rgb(15, 109, 138);
     color:white;
+    padding:20px 30px;
 }
 
 /*top-service-faqs-wrap*/
@@ -249,18 +250,19 @@ header .wrap-web-name{
     justify-content: center;
     padding:20px;
     gap:20px;
-    background-color: rgb(241, 237, 234);
+    background-color: rgb(15, 140, 179);
+    color:white;
 }
 .top-service-faqs-wrap h4{
     font-family: sans-serif;
     font-size: 20px;
     padding:10px 0;
-    color:rgb(194, 78, 1);
+    color:rgb(8, 97, 109);
 }
 
 .top-service-faqs-wrap .top-services{
     width:500px; 
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(23, 150, 189);
     padding:10px;
     border-radius: 4px;
 }
@@ -270,9 +272,20 @@ header .wrap-web-name{
 .top-service-faqs-wrap .top-services ul{
     list-style:none;
 }
+.top-service-faqs-wrap .top-services ul li{
+    padding:10px;
+    border: 1px solid rgb(20, 132, 167);
+    margin-bottom:5px;
+    transition: padding 300ms ease-in-out;
+    border-radius:4px;
+}
+.top-service-faqs-wrap .top-services ul li:hover{
+    cursor: pointer;
+    padding-left: 20px;
+}
 .top-service-faqs-wrap .faqs{
     width:500px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(23, 150, 189);
     padding:10px;
     border-radius: 4px;
 }
@@ -285,78 +298,22 @@ header .wrap-web-name{
 .top-service-faqs-wrap .faqs ul li{
     list-style: decimal;
 }
+.top-service-faqs-wrap .faqs ul li{
+    padding:10px;
+    margin-bottom:5px;
+    transition: padding 300ms ease-in-out;
+}
+.top-service-faqs-wrap .faqs ul li:hover{
+    cursor: pointer;
+    padding-left: 20px;
+}
 .ans2,.ans3, .ans4,.ans5,.ans6{
     display:none; 
 }
-/*hire us*/
-.hire-us{
-    padding:30px;
-    text-align: center;
-}
-.hire-us button{
-    padding:20px;
-    width:150px;
-    background-color: rgb(43, 46, 46);
-    color:rgb(219, 125, 37);
-    border:0;
-    border-radius: 4px;
-}
-/*footer*/
-footer{
-    display:flex;
-    justify-content: center;
-    background-color: rgb(34, 32, 31);
-    color:rgb(212, 208, 208);
-    font-size:small;
-}
-footer ul{
-    list-style: none;
-    line-height: 30px;
-}
-footer ul li{
-    transition: all 300ms ease-in-out;
-    width:200px;
-}
-footer ul li:hover{
-    border-bottom:1px solid;
-    width:fit-content;
-    cursor: pointer;
-}
-footer div{
-    padding:20px;
-    width:250px;
-}
-footer div h4{
-    border-bottom: 2px solid chocolate;
-    width:fit-content;
-    padding:10px 0;
-    margin:10px 0;
-}
 
-.contact-us-form form input{
-    padding:10px;
-    width:100%; 
-    margin:0 0 10px 0;
-}
-.contact-us-form form textarea{
-    padding:10px;
-    width:100%; 
-    margin:0 0 10px 0;
-}
-.contact-us-form form label{
-    font-weight: 600;
-}
-.contact-us-form form button{
-    padding:10px;
-    width:100%;
-    background-color: chocolate;
-    border:0;
-    color:white;
-    border-radius: 4px;
-}
 /*master-footer*/
 .master-footer{
-    background-color: rgb(201, 134, 58);
+    background-color: rgb(16, 126, 160);
     color:white;
     text-align: center;
     padding:20px;
