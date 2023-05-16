@@ -62,13 +62,15 @@ header .wrap-web-name{
     font-weight: 900;;
 }
 header .web-logo img{
-    width:100%;
+    width:200px;
+    margin:-20px 0 0 0;
+    border-radius:0 0 10px 10px;
 }
 /*nav-small-screen*/
 .nav-small-screen{
     display:flex;
     justify-content: end;
-    margin-top:-70px;
+    margin-top:-100px;
     padding:20px;
     width:100%;
     transition:all 300ms ease-in-out;
@@ -145,6 +147,7 @@ header .web-logo img{
     height:0;
     overflow: hidden;
     transition:height 200ms ease-in-out;
+    margin-top:-1px;
 }
 .menu ul li{
     list-style: none;
@@ -180,6 +183,7 @@ header .web-logo img{
     background-size: cover;
     color:white;
     margin-top: -22px;
+    align-items: center;
 }
 .introduction h4{
     font-size: 40px;
@@ -195,9 +199,9 @@ header .web-logo img{
     background-color: chocolate;
     border:0;
     color:rgb(253, 253, 253);
-    padding:10px;
+    padding:20px;
     transition: padding 300ms ease-in-out;
-    margin:10px 0;
+    margin:20px 0;
     border-radius: 4px;
 }
 .introduction .message button:hover{
@@ -214,6 +218,14 @@ header .web-logo img{
 .introduction b{
     text-decoration: underline;
     color:rgb(243, 142, 59);
+}
+.founder{
+    padding:10px 0;
+    color:rgb(175, 175, 175);
+}
+.founder a{
+    color:rgb(45, 210, 30);
+    font-style:italic;
 }
 /*services-brief*/
 .services-brief{
@@ -247,6 +259,7 @@ header .web-logo img{
     border-radius: 14px;
     box-shadow:1px 1px 3px lightgrey;
     padding:10px;
+    height:fit-content;
 }
 .services-brief .service2{
     width:500px;
@@ -254,6 +267,7 @@ header .web-logo img{
     border-radius: 14px;
     box-shadow:1px 1px 3px lightgrey;
     padding:10px;
+    height:fit-content;
 }
 .services-brief button{
     padding:20px;
@@ -270,6 +284,7 @@ header .web-logo img{
     border-radius: 14px;
     box-shadow:1px 1px 3px lightgrey;
     padding:10px;
+    height:fit-content;
 }
 .services-brief button:hover{
     cursor: pointer;
@@ -284,19 +299,18 @@ header .web-logo img{
     justify-content: center;
     padding:20px;
     gap:20px;
-    background-color: rgb(15, 140, 179);
-    color:white;
+    background-color: rgb(255, 255, 255);
 }
 .top-service-faqs-wrap h4{
     font-family: sans-serif;
     font-size: 20px;
     padding:10px 0;
-    color:rgb(8, 97, 109);
+    color:chocolate;
 }
 
 .top-service-faqs-wrap .top-services{
     width:500px; 
-    background-color: rgb(23, 150, 189);
+    background-color: rgb(255, 255, 255);
     padding:10px;
     border-radius: 4px;
 }
@@ -319,9 +333,10 @@ header .web-logo img{
 }
 .top-service-faqs-wrap .faqs{
     width:500px;
-    background-color: rgb(23, 150, 189);
+    background-color: rgb(80, 83, 83);
     padding:10px;
     border-radius: 4px;
+    color:white;
 }
 .top-service-faqs-wrap .faqs ul{
     list-style: decimal;
@@ -345,7 +360,7 @@ header .web-logo img{
 }
 .ans1,.ans2,.ans3, .ans4,.ans5,.ans6{
     font-weight:100;
-    background-color: rgb(43, 155, 189);
+    background-color: rgb(76, 79, 80);
 }
 /*master-footer*/
 .master-footer{
@@ -359,6 +374,7 @@ header .web-logo img{
     /*introduction*/
 .introduction{
     flex-wrap: wrap;
+    text-align: center;
 }
 .introduction h4{
     font-size:x-large;
