@@ -104,11 +104,11 @@ header .web-logo img{
     transition:transform 300ms ease-in-out
 }
 .nav-small-screen .sign-in{
-    background-color: rgb(150, 160, 165);
+    background-color: unset;
     padding:5px;
     width:30px;
     text-align:center ;
-    color:white;
+    color:rgb(98, 104, 100);
     border-radius:4px ;
 }
 .nav-small-screen .phone{
@@ -249,7 +249,7 @@ header .web-logo img{
     padding:20px;
 }
 .services-brief .icon i{
-    font-size:30px;
+    font-size:100px;
     color:rgb(211, 204, 204);
 }
 .services-brief .service1{
