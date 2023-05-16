@@ -344,13 +344,12 @@ header .web-logo img{
     padding:0 0 0 20px;
     
 }
-.top-service-faqs-wrap .faqs ul li{
-    list-style: decimal;
-}
+
 .top-service-faqs-wrap .faqs ul li{
     padding:10px;
     margin-bottom:5px;
     transition: padding 300ms ease-in-out;
+    margin-left:-10px ;
 }
 .top-service-faqs-wrap .faqs ul li:hover{
     cursor: pointer;
