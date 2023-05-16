@@ -372,6 +372,10 @@ header .web-logo img{
     margin:20px;
     color:rgb(49, 105, 143);
 }
+.quote .icon{
+    padding:20px 0;
+    font-size:40px;
+}
 .quote p a{
     color:rgb(184, 109, 55);
 }
