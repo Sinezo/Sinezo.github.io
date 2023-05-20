@@ -79,10 +79,17 @@ var ans1_status=1;
 menu.addEventListener('click', function(){
     if(ans1_status==1){
         document.querySelector('.ans1').style.display='none';
+        document.querySelector('.one-bar2').style.transform='translate(0) rotate(90deg)';
+        document.querySelector('.one-bar2').style.opacity='1';
+        document.querySelector('.quest1').style.fontWeight='unset';
     ans1_status=0;
     }
     else{
         document.querySelector('.ans1').style.display='block';
+        document.querySelector('.one-bar2').style.transform='rotate(180deg)';
+        document.querySelector('.one-bar2').style.opacity='0';
+        document.querySelector('.quest1').style.fontWeight='900';
+
     ans1_status=1;
     }
 
@@ -94,10 +101,16 @@ var ans2_status=1;
 menu.addEventListener('click', function(){
     if(ans2_status==1){
         document.querySelector('.ans2').style.display='block';
+        document.querySelector('.two-bar2').style.transform='rotate(180deg)';
+        document.querySelector('.two-bar2').style.opacity='0';
+        document.querySelector('.quest2').style.fontWeight='900';
     ans2_status=0;
     }
     else{
         document.querySelector('.ans2').style.display='none';
+        document.querySelector('.two-bar2').style.transform='rotate(90deg)';
+        document.querySelector('.two-bar2').style.opacity='1';
+        document.querySelector('.quest2').style.fontWeight='unset';
     ans2_status=1;
     }
 
@@ -109,10 +122,16 @@ var ans3_status=1;
 menu.addEventListener('click', function(){
     if(ans3_status==1){
         document.querySelector('.ans3').style.display='block';
+        document.querySelector('.three-bar2').style.transform='rotate(180deg)';
+        document.querySelector('.three-bar2').style.opacity='0';
+        document.querySelector('.quest3').style.fontWeight='900';
     ans3_status=0;
     }
     else{
         document.querySelector('.ans3').style.display='none';
+        document.querySelector('.three-bar2').style.transform='rotate(90deg)';
+        document.querySelector('.three-bar2').style.opacity='1';
+        document.querySelector('.quest3').style.fontWeight='unset';
     ans3_status=1;
     }
 
@@ -124,11 +143,17 @@ var ans4_status=1;
 menu.addEventListener('click', function(){
     if(ans4_status==1){
         document.querySelector('.ans4').style.display='block';
+        document.querySelector('.four-bar2').style.transform=' rotate(180deg)';
+        document.querySelector('.four-bar2').style.opacity='0';
+        document.querySelector('.quest4').style.fontWeight='900';
     ans4_status=0;
     }
     else{
         document.querySelector('.ans4').style.display='none';
-    ans2_status=1;
+        document.querySelector('.four-bar2').style.transform='rotate(90deg)';
+        document.querySelector('.four-bar2').style.opacity='1';
+        document.querySelector('.quest4').style.fontWeight='unset';
+    ans4_status=1;
     }
 
 });
@@ -139,10 +164,16 @@ var ans5_status=1;
 menu.addEventListener('click', function(){
     if(ans5_status==1){
         document.querySelector('.ans5').style.display='block';
+        document.querySelector('.five-bar2').style.transform='rotate(180deg)';
+        document.querySelector('.five-bar2').style.opacity='0';
+        document.querySelector('.quest5').style.fontWeight='900';
     ans5_status=0;
     }
     else{
         document.querySelector('.ans5').style.display='none';
+        document.querySelector('.five-bar2').style.transform='rotate(90deg)';
+        document.querySelector('.five-bar2').style.opacity='1';
+        document.querySelector('.quest5').style.fontWeight='unset';
     ans5_status=1;
     }
 
@@ -154,11 +185,17 @@ var ans6_status=1;
 menu.addEventListener('click', function(){
     if(ans6_status==1){
         document.querySelector('.ans6').style.display='block';
+        document.querySelector('.six-bar2').style.transform='rotate(180deg)';
+        document.querySelector('.six-bar2').style.opacity='0';
+        document.querySelector('.quest6').style.fontWeight='900';
     ans6_status=0;
     }
     else{
         document.querySelector('.ans6').style.display='none';
-    ans2_status=6;
+        document.querySelector('.six-bar2').style.transform='rotate(90deg)';
+        document.querySelector('.six-bar2').style.opacity='1';
+        document.querySelector('.quest6').style.fontWeight='unset';
+    ans6_status=1;
     }
 
 });
