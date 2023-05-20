@@ -144,23 +144,26 @@ header .web-logo span{
     gap:20px;
     justify-content: center;
     padding:20px;
-    background-color: rgb(255, 255, 255);
-   /* background-image: url('Screenshot_20230514-174328_Gallery.jpg');
-    background-size: cover;*/
-    color:rgb(0, 0, 0);
+   background-image: url('Screenshot_20230427-084427_Gallery.jpg');
+    background-size: cover;
+    color:rgb(233, 233, 233);
     margin-top: -22px;
     align-items: center;
+    text-align: center;
 }
 .introduction h4{
-    font-size: 40px;
+    font-size: 70px;
     font-family: sans-serif;
-    color:rgb(34, 32, 32);
+    color:chocolate;
     padding:10px 0;
+    margin-bottom: 70px;
 
 }
+.introduction h4 span{
+    color:white;
+}
 .introduction .message{
-    width:500px;
-    text-align: start;
+    height:500px;
 }
 .introduction .message button{
     background-color: unset;
@@ -177,12 +180,6 @@ header .web-logo span{
     background-color:rgb(17, 128, 161);
     color:white;
     padding-left:30px;
-}
-.introduction .picture{
-    width:600px;
-}
-.introduction .picture img{
-    width:100%;
 }
 .introduction b{
     text-decoration: underline;
@@ -436,14 +433,14 @@ header .web-logo span{
 @media screen and (max-width:500px) {
     /*introduction*/
 .introduction{
-    flex-wrap: wrap;
-    text-align: center;
+    text-align:start;
 }
 .introduction h4{
     font-size:x-large;
 }
 .introduction .message{
     margin-top:40px;
+    height: fit-content;
 }
 .introduction .message button{
     width:100%;
