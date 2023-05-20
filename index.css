@@ -8,7 +8,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    color:rgb(0, 0, 0);
+    color:rgb(46, 45, 45);
     background-color: rgb(255, 255, 255);
 }
 /*font-family: 'Poppins', sans-serif;*/
@@ -28,7 +28,7 @@ header .web-logo{
     color:white;
 }
 header .web-logo span{
-    color:chocolate;
+    color:rgb(247, 199, 56);
 }
 /*nav-small-screen*/
 .nav-small-screen{
@@ -154,7 +154,7 @@ header .web-logo span{
 .introduction h4{
     font-size: 70px;
     font-family: 'Roboto', sans-serif;
-    color:chocolate;
+    color:rgb(247, 199, 56);
     padding:10px 0;
     margin-bottom: 70px;
 
@@ -166,10 +166,11 @@ header .web-logo span{
     height:500px;
 }
 .introduction .message button{
-    background-color: unset;
-    border:2px solid;
+    background-color: rgb(46, 45, 44);
+   border:0;
     font-weight:600;
-    color:chocolate;
+    color:rgb(247, 199, 56);
+    opacity:.9;
     padding:20px;
     transition: padding 300ms ease-in-out;
     margin:20px 0;
@@ -225,7 +226,7 @@ header .web-logo span{
     border:1px solid;
     margin:20px 0; 
     border-radius:4px;
-    width:100%;
+    width:60%;
 }
 /*services-brief*/
 .services-brief{
@@ -237,12 +238,11 @@ header .web-logo span{
 }
 .service1 b{
     text-decoration: underline;
-    color:rgb(228, 117, 74);
+    color:rgb(168, 132, 90);
 }
 .services-brief h3{
     font-size: x-large;
-    
-    color:rgb(0, 0, 0);
+    color:rgb(73, 73, 72);
     padding:10px 0;
 }
 .services-brief .icon{
@@ -250,12 +250,12 @@ header .web-logo span{
 }
 .services-brief .icon i{
     font-size:100px;
-    color:rgb(247, 232, 150);
+    color:rgb(247, 199, 56);
 }
 .services-brief .service1{
     width:500px;
     box-shadow:1px 1px 7px rgb(190, 189, 189);
-    margin:10px 20px;
+    margin:10px 10px;
     border-radius: 0px;
     padding:10px;
     height:fit-content;;
@@ -266,18 +266,18 @@ header .web-logo span{
     border-radius: 0px;
     padding:10px;
     height:fit-content;
-    margin:10px 20px;
+    margin:10px 10px;
 }
 .services-brief button{
     padding:20px;
-    background-color: unset;
-    border:2px solid chocolate;
-    color:chocolate;
+    background-color: rgb(31, 30, 29);
+    border:0;
+    color:rgb(255, 255, 255);
     font-weight:900;
     margin:20px 0;
     border-radius: 4px;
     transition: padding 300ms ease-in-out;
-    width:100%;
+    width:56%;
 }
 .services-brief .service3{
     width:500px;
@@ -285,7 +285,7 @@ header .web-logo span{
     border-radius: 0px;
     padding:10px;
     height:fit-content;
-    margin:10px 20px;
+    margin:10px 10px;
 }
 .services-brief button:hover{
     cursor: pointer;
@@ -306,8 +306,11 @@ header .web-logo span{
 .top-service-faqs-wrap h4{
     font-family: sans-serif;
     font-size: 20px;
-    padding:10px 0;
-    color:chocolate;
+    padding:30px 5px;
+    color:rgb(247, 199, 56);
+    background-color: rgb(43, 44, 44);
+    border-bottom: 2px solid rgb(247, 199, 56);
+    margin: 0 0 20px 0;
 }
 
 .top-service-faqs-wrap .top-services{
@@ -335,7 +338,6 @@ header .web-logo span{
 }
 .top-service-faqs-wrap .faqs{
     width:500px;
-    background-color: rgb(43, 44, 44);
     padding:10px;
     border-radius: 4px;
     color:white;
@@ -355,7 +357,7 @@ header .web-logo span{
 }
 .quest1{
     font-weight:900;
-    color:chocolate;
+    color:rgb(247, 199, 56);
 }
 .ans2,.ans3, .ans4,.ans5,.ans6{
     display:none; 
@@ -420,7 +422,7 @@ header .web-logo span{
     font-size:40px;
 }
 .quote p a{
-    color:rgb(184, 109, 55);
+    color:rgb(247, 199, 56)
 }
 /*master-footer*/
 .master-footer{
