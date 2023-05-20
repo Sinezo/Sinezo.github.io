@@ -364,14 +364,30 @@ header .web-logo{
     transform:rotate(180deg);
     opacity:0;
 }
-/*quote*/
+/*Empowerment*/
+.empowerment{
+    padding:20px;
+}
+.empowerment .text{
+    border-bottom: 2px solid;
+    width:fit-content;
+    padding:10px 0;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+/*quotes*/
+.quotes{
+    display:flex;
+    overflow-x: scroll;
+}
 .quote{
     padding:30px;
     font-size: larger;
-    border:1px solid lightgrey;
+    box-shadow:1px 1px 7px lightgrey;
     margin:20px;
     color:rgb(44, 45, 46);
     font-style: oblique;
+    width:600px;
 }
 .quote .icon{
     padding:20px 0;
@@ -414,6 +430,10 @@ header .web-logo{
 /*menu*/
 .menu{
     width:100%;
+}
+/*quotes*/
+.quote{
+    min-width:300px;
 }
 /*footer*/
 footer{
