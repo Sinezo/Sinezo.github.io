@@ -11,6 +11,7 @@ menu.addEventListener('click', function(){
 
     document.querySelector('.menu').style.height='200px';
     document.querySelector('.menu').style.padding='20px';
+    document.querySelector('.menu').style.borderTop='2px solid chocolate';
     document.querySelector('.about-list').style.transform='translate(0)';
     document.querySelector('.talk-list').style.transform='translate(0)';
     document.querySelector('.request-list').style.transform='translate(0)';
@@ -29,6 +30,7 @@ menu.addEventListener('click', function(){
 
     document.querySelector('.menu').style.height='0';
     document.querySelector('.menu').style.padding='0';
+    document.querySelector('.menu').style.borderTop='0';
     document.querySelector('.about-list').style.transform='translate(-200%)';
     document.querySelector('.talk-list').style.transform='translate(-200%';
     document.querySelector('.request-list').style.transform='translate(-200%)';
@@ -74,7 +76,7 @@ function scrolling(){
 
 //FREQUENTLY ASKED QUESTIONS
 //question1
-var menu = document.querySelector('.quest1');
+var menu = document.querySelector('.plus1');
 var ans1_status=1; 
 menu.addEventListener('click', function(){
     if(ans1_status==1){
@@ -82,6 +84,7 @@ menu.addEventListener('click', function(){
         document.querySelector('.one-bar2').style.transform='translate(0) rotate(90deg)';
         document.querySelector('.one-bar2').style.opacity='1';
         document.querySelector('.quest1').style.fontWeight='unset';
+        document.querySelector('.quest1').style.color='white';
     ans1_status=0;
     }
     else{
@@ -89,6 +92,7 @@ menu.addEventListener('click', function(){
         document.querySelector('.one-bar2').style.transform='rotate(180deg)';
         document.querySelector('.one-bar2').style.opacity='0';
         document.querySelector('.quest1').style.fontWeight='900';
+        document.querySelector('.quest1').style.color='chocolate';
 
     ans1_status=1;
     }
@@ -96,7 +100,7 @@ menu.addEventListener('click', function(){
 });
 
 //question2
-var menu = document.querySelector('.quest2');
+var menu = document.querySelector('.plus2');
 var ans2_status=1; 
 menu.addEventListener('click', function(){
     if(ans2_status==1){
@@ -104,6 +108,7 @@ menu.addEventListener('click', function(){
         document.querySelector('.two-bar2').style.transform='rotate(180deg)';
         document.querySelector('.two-bar2').style.opacity='0';
         document.querySelector('.quest2').style.fontWeight='900';
+        document.querySelector('.quest2').style.color='chocolate';
     ans2_status=0;
     }
     else{
@@ -111,13 +116,14 @@ menu.addEventListener('click', function(){
         document.querySelector('.two-bar2').style.transform='rotate(90deg)';
         document.querySelector('.two-bar2').style.opacity='1';
         document.querySelector('.quest2').style.fontWeight='unset';
+        document.querySelector('.quest2').style.color='white';
     ans2_status=1;
     }
 
 });
 
 //question3
-var menu = document.querySelector('.quest3');
+var menu = document.querySelector('.plus3');
 var ans3_status=1; 
 menu.addEventListener('click', function(){
     if(ans3_status==1){
@@ -125,6 +131,7 @@ menu.addEventListener('click', function(){
         document.querySelector('.three-bar2').style.transform='rotate(180deg)';
         document.querySelector('.three-bar2').style.opacity='0';
         document.querySelector('.quest3').style.fontWeight='900';
+        document.querySelector('.quest3').style.color='chocolate';
     ans3_status=0;
     }
     else{
@@ -132,13 +139,14 @@ menu.addEventListener('click', function(){
         document.querySelector('.three-bar2').style.transform='rotate(90deg)';
         document.querySelector('.three-bar2').style.opacity='1';
         document.querySelector('.quest3').style.fontWeight='unset';
+        document.querySelector('.quest3').style.color='white';
     ans3_status=1;
     }
 
 });
 
 //question4
-var menu = document.querySelector('.quest4');
+var menu = document.querySelector('.plus4');
 var ans4_status=1; 
 menu.addEventListener('click', function(){
     if(ans4_status==1){
@@ -146,6 +154,7 @@ menu.addEventListener('click', function(){
         document.querySelector('.four-bar2').style.transform=' rotate(180deg)';
         document.querySelector('.four-bar2').style.opacity='0';
         document.querySelector('.quest4').style.fontWeight='900';
+        document.querySelector('.quest4').style.color='chocolate';
     ans4_status=0;
     }
     else{
@@ -153,13 +162,14 @@ menu.addEventListener('click', function(){
         document.querySelector('.four-bar2').style.transform='rotate(90deg)';
         document.querySelector('.four-bar2').style.opacity='1';
         document.querySelector('.quest4').style.fontWeight='unset';
+        document.querySelector('.quest4').style.color='white';
     ans4_status=1;
     }
 
 });
 
 //question5
-var menu = document.querySelector('.quest5');
+var menu = document.querySelector('.plus5');
 var ans5_status=1; 
 menu.addEventListener('click', function(){
     if(ans5_status==1){
@@ -167,6 +177,8 @@ menu.addEventListener('click', function(){
         document.querySelector('.five-bar2').style.transform='rotate(180deg)';
         document.querySelector('.five-bar2').style.opacity='0';
         document.querySelector('.quest5').style.fontWeight='900';
+        document.querySelector('.quest5').style.color='chocolate';
+
     ans5_status=0;
     }
     else{
@@ -174,13 +186,14 @@ menu.addEventListener('click', function(){
         document.querySelector('.five-bar2').style.transform='rotate(90deg)';
         document.querySelector('.five-bar2').style.opacity='1';
         document.querySelector('.quest5').style.fontWeight='unset';
+        document.querySelector('.quest5').style.color='white';
     ans5_status=1;
     }
 
 });
 
 //question6
-var menu = document.querySelector('.quest6');
+var menu = document.querySelector('.plus6');
 var ans6_status=1; 
 menu.addEventListener('click', function(){
     if(ans6_status==1){
@@ -188,6 +201,7 @@ menu.addEventListener('click', function(){
         document.querySelector('.six-bar2').style.transform='rotate(180deg)';
         document.querySelector('.six-bar2').style.opacity='0';
         document.querySelector('.quest6').style.fontWeight='900';
+        document.querySelector('.quest6').style.color='chocolate';
     ans6_status=0;
     }
     else{
@@ -195,6 +209,7 @@ menu.addEventListener('click', function(){
         document.querySelector('.six-bar2').style.transform='rotate(90deg)';
         document.querySelector('.six-bar2').style.opacity='1';
         document.querySelector('.quest6').style.fontWeight='unset';
+        document.querySelector('.quest6').style.color='white';
     ans6_status=1;
     }
 
