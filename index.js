@@ -11,7 +11,7 @@ menu.addEventListener('click', function(){
 
     document.querySelector('.menu').style.height='200px';
     document.querySelector('.menu').style.padding='20px';
-    document.querySelector('.menu').style.borderTop='2px solid chocolate';
+    document.querySelector('.menu').style.borderTop='2px solid yellow';
     document.querySelector('.about-list').style.transform='translate(0)';
     document.querySelector('.talk-list').style.transform='translate(0)';
     document.querySelector('.request-list').style.transform='translate(0)';
@@ -92,7 +92,7 @@ menu.addEventListener('click', function(){
         document.querySelector('.one-bar2').style.transform='rotate(180deg)';
         document.querySelector('.one-bar2').style.opacity='0';
         document.querySelector('.quest1').style.fontWeight='900';
-        document.querySelector('.quest1').style.color='chocolate';
+        document.querySelector('.quest1').style.color='yellow';
 
     ans1_status=1;
     }
@@ -108,7 +108,7 @@ menu.addEventListener('click', function(){
         document.querySelector('.two-bar2').style.transform='rotate(180deg)';
         document.querySelector('.two-bar2').style.opacity='0';
         document.querySelector('.quest2').style.fontWeight='900';
-        document.querySelector('.quest2').style.color='chocolate';
+        document.querySelector('.quest2').style.color='yellow';
     ans2_status=0;
     }
     else{
@@ -131,7 +131,7 @@ menu.addEventListener('click', function(){
         document.querySelector('.three-bar2').style.transform='rotate(180deg)';
         document.querySelector('.three-bar2').style.opacity='0';
         document.querySelector('.quest3').style.fontWeight='900';
-        document.querySelector('.quest3').style.color='chocolate';
+        document.querySelector('.quest3').style.color='yellow';
     ans3_status=0;
     }
     else{
@@ -154,7 +154,7 @@ menu.addEventListener('click', function(){
         document.querySelector('.four-bar2').style.transform=' rotate(180deg)';
         document.querySelector('.four-bar2').style.opacity='0';
         document.querySelector('.quest4').style.fontWeight='900';
-        document.querySelector('.quest4').style.color='chocolate';
+        document.querySelector('.quest4').style.color='yellow';
     ans4_status=0;
     }
     else{
@@ -177,7 +177,7 @@ menu.addEventListener('click', function(){
         document.querySelector('.five-bar2').style.transform='rotate(180deg)';
         document.querySelector('.five-bar2').style.opacity='0';
         document.querySelector('.quest5').style.fontWeight='900';
-        document.querySelector('.quest5').style.color='chocolate';
+        document.querySelector('.quest5').style.color='yellow';
 
     ans5_status=0;
     }
