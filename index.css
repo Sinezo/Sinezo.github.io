@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 html{
     scroll-behavior: smooth;
@@ -28,12 +28,15 @@ header .web-logo img{
 header .web-logo{
     color:rgb(183, 198, 229);
     font-weight:900;
+    font-family: 'Pacifico', cursive;
 }
 header .web-logo span{
     color:rgb(238, 216, 16);
+    font-family: 'Pacifico', cursive;
 }
 header .web-logo .subject{
     font-size: xx-small;
+    font-family: 'Pacifico', cursive;
 }
 /*nav-small-screen*/
 .nav-small-screen{
@@ -138,7 +141,7 @@ header .web-logo .subject{
     background-color: unset;
 }
 .introduction h4{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Alfa Slab One', cursive;
     padding:10px 0;
     margin-bottom: 10px;
     font-size:70px;
@@ -198,6 +201,7 @@ header .web-logo .subject{
     padding:10px 0;
     border-bottom: 2px solid rgb(238, 216, 16);
     color:rgb(230, 224, 224);
+    font-family: 'Alfa Slab One', cursive;
 
 }
 .about-us .text p{
@@ -239,6 +243,7 @@ header .web-logo .subject{
 }
 .what-we-do h2{
     text-align:center;
+    font-family: 'Alfa Slab One', cursive;
 }
 /*services*/
 .services{
@@ -256,6 +261,7 @@ header .web-logo .subject{
     border-bottom: 2px solid rgb(238, 216, 16);
     font-size:larger;
     margin:0 20px;
+    font-family: 'Alfa Slab One', cursive;
 }
 .services .electrical-design h5{
     padding:20px;
@@ -291,6 +297,7 @@ header .web-logo .subject{
     padding:20px 0;
     border-bottom: 2px solid rgb(238, 216, 16);
     font-size:larger;
+    font-family: 'Alfa Slab One', cursive;
 }
 .services .advance-knowledge h5{
     padding:10px 0 10px 0; 
@@ -316,6 +323,7 @@ header .web-logo .subject{
 .top-educational-projects h2{
     text-align:center;
     padding:20px;
+    font-family: 'Alfa Slab One', cursive;
 }
 .top-educational-projects .projects .projects-list h3{
     padding:5px 0;
