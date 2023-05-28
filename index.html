@@ -82,7 +82,7 @@
 
     <!--SEARCH BAR-->
     <div class="search-bar">
-        <input type="search" placeholder="Search Project"> <button><i class="fa-solid fa-book-open"></i> LEARN</button> <button><i class="fa-solid fa-hand-holding"></i> REQUEST  DESIGN</button> <button><i class="fa-solid fa-eye"></i> EXPLORE</button><button><i class="fa-solid fa-person-running"></i> COMPETITIONS</button> <button><i class="fa-solid fa-people-group"></i> JOIN TEAM</button>
+        <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div><input type="search" placeholder="Search Project"> <button><i class="fa-solid fa-book-open"></i> LEARN</button> <button><i class="fa-solid fa-hand-holding"></i> REQUEST  DESIGN</button> <button><i class="fa-solid fa-eye"></i> EXPLORE</button><button><i class="fa-solid fa-person-running"></i> COMPETITIONS</button> <button><i class="fa-solid fa-people-group"></i> JOIN TEAM</button>
     </div>
 <br>
      <!--INTRODUCTION-->
@@ -93,7 +93,7 @@
             <p>
                 From <span class="text-animation"></span> to designing a smart and interactive system that meets your specific needs and budget. 
             </p>
-            <button onclick="window.location='about-us.html'" class="get-started">Get started</button>
+            <button class="get-started" onclick="window.location='index.html#what-we-do'">Get started</button>
         </div>
      </div>     
 
@@ -121,7 +121,7 @@
      </div>
 
      <!--WHAT WE DO-->
-     <div class="what-we-do">
+     <div class="what-we-do" id="what-we-do">
         <h2>WHAT WE DO</h2>
      </div>
 
@@ -214,7 +214,18 @@
      </div>
 
      <!--FOOTER-->
-     <footer></footer>
+     <footer>
+        <!--social media-->
+        <div class="social-media">
+            <h4>Follow us</h4>
+            <div class="wrap-all">
+                <div class="facebook"><i class="fa-brands fa-facebook"></i> Facebook</div>
+                <div class="whatsapp"><i class="fa-brands fa-whatsapp"></i> WhatsApp</div>
+                <div class="twitter"><i class="fa-brands fa-twitter"></i> Twitter</div>
+                <div class="youtube"><i class="fa-brands fa-youtube"></i> YouTube</div>
+            </div>
+        </div>
+     </footer>
     <script src="index.js"></script>
 </body>
 </html>
