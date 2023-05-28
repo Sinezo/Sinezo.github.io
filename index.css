@@ -2,14 +2,14 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 html{
     scroll-behavior: smooth;
 }
 body{
-    color: rgb(12, 36, 88);
-    background-color: rgb(247, 244, 244);
+    color: rgb(33, 34, 36);
+    background-color: rgb(255, 255, 255);
 
 }
 /*font-family: 'Poppins', sans-serif;*/
@@ -18,7 +18,7 @@ header{
     display:flex;
     padding:20px;
     box-shadow:1px 1px 3px lightgray;
-    background-color: unset;
+    background-color: rgb(31, 32, 32);
 }
 header .web-logo img{
     width:200px;
@@ -26,16 +26,20 @@ header .web-logo img{
     border-radius:0 0 10px 10px;
 }
 header .web-logo{
-    color:rgb(12, 36, 88);
+    color:rgb(183, 198, 229);
+    font-weight:900;
 }
 header .web-logo span{
-    color:yellow;
+    color:rgb(238, 216, 16);
+}
+header .web-logo .subject{
+    font-size: xx-small;
 }
 /*nav-small-screen*/
 .nav-small-screen{
     display:flex;
     justify-content: end;
-    margin-top:-65px;
+    margin-top:-69px;
     padding:20px;
     width:100%;
     transition:all 300ms ease-in-out;
@@ -51,21 +55,21 @@ header .web-logo span{
 #menu-icon .bar1{
     width:20px;
     height:3px;
-    background-color: rgb(12, 36, 88);
+    background-color: rgb(221, 200, 11);
     margin-bottom:3px;
     transition:transform 300ms ease-in-out
 }
 #menu-icon .bar2{
     width:20px;
     height:3px;
-    background-color: rgb(12, 36, 88);
+    background-color: rgb(221, 200, 11);
     margin-bottom:3px;
     transition:transform 300ms ease-in-out
 }
 #menu-icon .bar3{
     width:20px;
     height:3px;
-    background-color: rgb(12, 36, 88);
+    background-color: rgb(221, 200, 11);
     transition:transform 300ms ease-in-out
 }
 .nav-small-screen .sign-in{
@@ -73,47 +77,42 @@ header .web-logo span{
     padding:5px;
     width:px;
     text-align:center ;
-    color:rgb(12, 36, 88);
+    color:rgb(221, 200, 11);
     border-radius:4px ;
     margin:3px 0 0 0;
 }
-
-
-/*menu*/
-.menu{
-    text-align:end;
-    position:absolute;
-    background-color: rgb(12, 36, 88);
-    color:white;
-    height:0;
-    width:50%;
-    overflow: hidden;
-    transition:height 200ms ease-in-out;
-    margin-top:-4px;
+.nav-small-screen .more-menu{
+    color:rgb(148, 136, 33);
+    margin:10px 0;
 }
-.menu ul li{
+.nav-small-screen .more-menu ul{
+    display:flex;
+    gap:10px;
     list-style: none;
-    background-color: rgb(15, 43, 105);
+}
+/*search-bar*/
+.search-bar{
+    display:flex;
+    justify-content: center;
+    padding:20px;
+    margin-top: 30px;
+    gap:10px;
+}
+.search-bar input{
     padding:10px;
-    margin:10px;
-    border-radius: 4px;
+    border-radius: 20px;
+    width:30%;
+    border:1px solid;
 }
-.menu ul li:hover{
+.search-bar button{
+    padding:5px;
+    background-color: unset;
+    border-color:rgb(255, 217, 0);
+}
+.search-bar button:hover{
     cursor: pointer;
-    padding-right:30px;
-    background-color: rgb(11, 33, 80);
-}
-.menu .about-list{
-    transform: translate(-200%);
-    transition:all 300ms ease-in-out;
-}
-.menu .talk-list{
-    transform: translate(-200%);
-    transition:all 500ms ease-in-out;
-}
-.menu .request-list{
-    transform: translate(-200%);
-    transition:all 700ms ease-in-out;
+    background-color: rgb(31, 32, 32);
+    color:rgb(255, 217, 0);
 }
 /*introduction*/
 .introduction{
@@ -124,346 +123,247 @@ header .web-logo span{
     margin-top: -22px;
     align-items: center;
     text-align: center;
+    background-color: unset;
 }
 .introduction h4{
-    font-size: 70px;
     font-family: 'Roboto', sans-serif;
-    color:rgb(156, 151, 151);
     padding:10px 0;
-    margin-bottom: 70px;
+    margin-bottom: 10px;
+    font-size:70px;
 
 }
 .introduction h4 span{
     color:rgb(12, 36, 88);
 }
-.introduction .message{
-    height:500px;
+.introduction .text-animation::after{
+    content:"Animation";
+    padding:5px;
+    background-color: unset;
+    animation:text_anim 6s infinite;
+    width:120px;
+    display:inline-block;
+    color:rgb(238, 216, 16);
+    border:1px solid rgb(228, 223, 176);
+    border-radius: 2px;
 }
-.introduction .message button{
-    background-color: rgb(12, 36, 88);
-   border:0;
-    font-weight:600;
-    color:rgb(255, 255, 255);
-    opacity:.9;
-    padding:20px;
+@keyframes text_anim {
+    0% {content:"Fault finding";}
+    50% {content:"Fixing";}
+    100% {content:"Fault finding";}
+}
+.introduction .message .get-started{
+    background-color: unset;
+   border:1px solid;
+    padding:10px;
     transition: padding 300ms ease-in-out;
-    margin:20px 0;
-    border-radius: 4px;
+    margin:30px 0;
+    border-radius: 20px;
+    width:30%;
 }
 .introduction .message button:hover{
     cursor: pointer;
-    background-color:rgb(16, 49, 122);
-    color:white;
-    padding-left:30px;
+    background-color:rgb(31, 32, 32);
+    color:rgb(238, 216, 16);
 }
-.introduction b{
-    text-decoration: underline;
-    color:rgb(104, 101, 99);
-}
-.founder{
-    padding:10px 0;
-    color:rgb(175, 175, 175);
-}
-.founder a{
-    color:yellow;
-    font-style:italic;
-}
-/*summarised-services*/
-.summarised-services{
-    padding:20px;
-    background-color: rgb(12, 36, 88); 
+
+/*about us*/
+.about-us{
     display:flex;
-    justify-content:center;
     gap:20px;
+    padding:20px;
+    justify-content: center;
 }
-.summarised-services .wrap-paragraph{
+.about-us .text{
     width:500px;
-    box-shadow:1px 1px 7px black;
-}
-.summarised-services .text{
-    padding:40px 10px 0 10px;
-    background-color: rgb(237, 240, 245);
-    color:rgb(12, 36, 88);
-    height:100px;
-    text-transform: uppercase;
-    display:flex;
-    font-weight:600;
-    font-family: sans-serif;
-    border-bottom:2px solid yellow; 
-    font-size:large;
-    text-align:center;
-}
-.summarised-services .paragraph{
-    background-color: rgb(237, 240, 245);
-    
     padding:10px;
 }
-.summarised-services .paragraph button{
-    padding:20px;
-    background-color:unset;
-    color:rgb(12, 36, 88);
-    background-color: yellow;
-    border:1px solid;
-    margin:20px 0; 
-    border-radius:4px;
-    width:60%;
+.about-us .text h2{
+    padding:10px 0;
+    border-bottom: 2px solid rgb(238, 216, 16);
+
 }
-.summarised-services .image{
-    width:400px;
+.about-us .text p{
+    padding-top: 10px;
 }
-.summarised-services .image img{
+.about-us .picture{
+    width:500px;
+}
+.about-us .picture img{
     width:100%;
 }
-/*services-brief*/
-.services-brief{
-    display:flex;
-    justify-content: center;
-    padding:20px;
-    gap:20px;
-}
-.service1 b{
-    text-decoration: underline;
-    color:rgb(168, 132, 90);
-}
-.services-brief h3{
-    font-size: x-large;
-    padding:10px 0;
-    color:rgb(12, 36, 88);
-}
-.services-brief .icon{
-    padding:20px;
-}
-.services-brief .icon i{
-    font-size:100px;
-    color:rgb(247, 199, 56);
-}
-.services-brief .service1{
-    width:500px;
-    box-shadow:1px 1px 7px rgb(190, 189, 189);
-    margin:10px 10px;
-    border-radius: 0px;
-    padding:10px;
-    height:fit-content;;
-}
-.services-brief .service2{
-    width:500px;
-    box-shadow:1px 1px 7px rgb(190, 189, 189);
-    border-radius: 0px;
-    padding:10px;
-    height:fit-content;
-    margin:10px 10px;
-}
-.services-brief button{
-    padding:20px;
-    background-color: yellow;
-    border:0;
-    color:rgb(12, 36, 88);
-    font-weight:900;
-    margin:20px 0;
-    border-radius: 4px;
-    transition: padding 300ms ease-in-out;
-    width:56%;
-}
-.services-brief .service3{
-    width:500px;
-    box-shadow:1px 1px 7px rgb(190, 189, 189);
-    border-radius: 0px;
-    padding:10px;
-    height:fit-content;
-    margin:10px 10px;
-}
-.services-brief button:hover{
-    cursor: pointer;
-    background-color: rgb(226, 226, 15);
-    color:white;
-    padding-left:30px;
-}
 
-/*top-service-faqs-wrap*/
-.top-service-faqs-wrap{
-    display:flex;
-    justify-content: center;
+/*what-we-do*/
+.what-we-do{
     padding:20px;
+}
+.what-we-do h2{
+    text-align:center;
+}
+/*services*/
+.services{
+    padding:20px;
+    display:flex;
     gap:20px;
-    background-color: rgb(141, 9, 9);
-    color:white; 
+    justify-content: center;
 }
-.top-service-faqs-wrap h4{
-    font-family: sans-serif;
-    font-size: 20px;
-    padding:30px 5px;
-    color:rgb(226, 226, 223);
-    background-color: rgb(163, 11, 11);
-    border-bottom: 2px solid rgb(223, 223, 215);
-    margin: 0 0 20px 0;
+.services .electrical-design{
+    border: 1px solid lightgrey;
+    width:500px;
 }
-
-.top-service-faqs-wrap .top-services{
-    width:500px; 
+.services .electrical-design h4{
+    padding:10px;
+    border-bottom: 2px solid rgb(238, 216, 16);
+}
+.services .electrical-design h5{
+    padding:10px;
+}
+.services .electrical-design p{
+    padding:10px;
+}
+.services .electrical-design button{
+    padding:10px;
+    border-radius: 20px;
+    border:1px solid;
+    margin:0 0 10px 10px;
     background-color: unset;
-    padding:10px;
-    border-radius: 4px;
 }
-.top-service-faqs-wrap .top-services i{
-    font-size: xx-small;
-}
-.top-service-faqs-wrap .top-services ul{
-    list-style:none;
-}
-.top-service-faqs-wrap .top-services ul li{
-    padding:30px 10px;
-    background-color: rgb(163, 11, 11);
-    margin-bottom:5px;
-    transition: padding 300ms ease-in-out;
-    border-radius:4px;
-}
-.top-service-faqs-wrap .top-services ul li:hover{
+.services .electrical-design button:hover{
     cursor: pointer;
-    padding-left: 20px;
+    background-color: black;
+    color:rgb(238, 216, 16);
 }
-.top-service-faqs-wrap .faqs{
+.services .electrical-design img{
+    width:100%;
+}
+
+.services .advance-knowledge{
+    border: 1px solid lightgrey;
     width:500px;
-    padding:10px;
-    border-radius: 4px;
-    color:white;
-    height:fit-content;
 }
-.top-service-faqs-wrap .faqs ul{
-    list-style: none;
-}
-.top-service-faqs-wrap .faqs ul li{
-    padding:10px;
-    margin-bottom:5px;
-    transition: padding 300ms ease-in-out;
-    background-color: rgb(163, 11, 11);
-    margin-left:-10px ;
-}
-.top-service-faqs-wrap .faqs ul li:hover{
-    cursor: pointer;
-}
-.quest1{
-    font-weight:900;
-    color:yellow;
-}
-.ans2,.ans3, .ans4,.ans5,.ans6{
-    display:none; 
-}
-.ans1,.ans2,.ans3, .ans4,.ans5,.ans6{
-    padding:20px; 
-    margin: 5px -20px 0 -10px;
-    font-style:oblique;
-}
-.plus1,.plus2,.plus3,.plus4,.plus5,.plus6{
-    float:right;
+.services .advance-knowledge div{
     padding:10px;
 }
-
-.one-bar1,.two-bar1,.three-bar1,.four-bar1,.five-bar1,.six-bar1{
-    width:14px;
-    height:2px;
-    background-color: rgb(233, 153, 62);
-    border-radius: 10px;
-}
-.one-bar2,.two-bar2,.three-bar2,.four-bar2,.five-bar2,.six-bar2{
-    width:14px;
-    height:2px;
-    background-color: rgb(233, 153, 62);
-    transform: rotate(90deg);
-    margin:-2px 0 0 0;
-    border-radius: 10px;
-    transition: all 200ms ease-in-out;
-}
-.one-bar2{
-    transform:rotate(180deg);
-    opacity:0;
-}
-/*Empowerment*/
-.empowerment{
-    padding:20px;
-}
-.empowerment .text{
-    border-bottom: 2px solid;
-    width:fit-content;
+.services .advance-knowledge h4{
     padding:10px 0;
-    font-family: sans-serif;
-    font-weight: 600;
+    border-bottom: 2px solid rgb(238, 216, 16);
 }
-/*quotes*/
-.quotes{
-    display:flex;
-    overflow-x: scroll;
+.services .advance-knowledge h5{
+    padding:0 0 10px 0; 
 }
-.quote{
-    padding:30px;
-    font-size: larger;
-    box-shadow:1px 1px 7px lightgrey;
-    margin:20px;
-    color:rgb(44, 45, 46);
-    font-style: oblique;
-    width:600px;
+.services .advance-knowledge img{
+    width:100%;
 }
-.quote .icon{
-    padding:20px 0;
-    font-size:40px;
+.services .advance-knowledge button{
+    margin-top: 10px;
+    padding:10px;
+    border-radius: 20px;
+    border:1px solid;
+    background-color: unset;
 }
-.quote p a{
-    color:rgb(247, 199, 56)
-}
-/*master-footer*/
-.master-footer{
-    background-color: rgb(36, 35, 34);
-    color:white;
-    text-align: center;
-    padding:20px;
-}
-/*SMALL SCREEN*/
-@media screen and (max-width:500px) {
-    /*introduction*/
-.introduction{
-    text-align:start;
-}
-.introduction h4{
-    font-size:x-large;
-}
-.introduction .message{
-    margin-top:40px;
-    height: fit-content;
+.services .advance-knowledge button:hover{
+    cursor: pointer;
+    background-color: black;
+    color:rgb(238, 216, 16);
 }
 
-/*summarised-services*/
-.summarised-services{
-    flex-wrap:wrap;
+/*top-educational-projects*/
+.top-educational-projects{
+    
 }
-.summarised-services .wrap-paragraph{
-    margin-top:-25px;
+.top-educational-projects h2{
+    text-align:center;
+    padding:20px;
 }
-/*services-brief*/
-.services-brief{
-    flex-wrap: wrap;
+.top-educational-projects .projects{
+    display:flex;
+    justify-content: center;
 }
-/*top-service-faqs-wrap*/
-.top-service-faqs-wrap{
-    flex-wrap:wrap;
+.top-educational-projects .projects .projects-list{
+    height:500px;
+    width:100%;
+    background-color: rgb(240, 206, 18);
 }
 /*menu*/
 .menu{
+    position:absolute;
+    background-color: rgb(31, 32, 32);
+    color:white;
+    height:0;
+    width:100%;
+    overflow: hidden;
+    transition:height 200ms ease-in-out;
+    margin-top:-4px;
+}
+.menu ul li{
+    list-style: none;
+    background-color: rgb(238, 216, 16);
+    padding:10px;
+    margin:10px;
+    border-radius: 4px;
+    color:rgb(31, 30, 30);
+}
+.menu ul li:hover{
+    cursor: pointer;
+    background-color: rgb(161, 147, 19);
+}
+.menu .about-list{
+    transform: translate(-200%);
+    transition:all 200ms ease-in-out;
+}
+.menu .talk-list{
+    transform: translate(-200%);
+    transition:all 500ms ease-in-out;
+}
+.menu .request-list{
+    transform: translate(-200%);
+    transition:all 700ms ease-in-out;
+}
+.menu .social-media{
+    padding:10px;
+}
+.menu .social-media .wrap-all{
+    display:flex;
+    gap:10px;
+    padding:10px 0;
+}
+.menu .social-media .wrap-all i{
+    font-size:x-large;
+}
+
+
+
+/*SMall Screens*/
+@media screen and (max-width:500px) {
+.nav-small-screen .more-menu{
+       display:none;
+    }
+/*search-bar*/
+.search-bar input{
     width:100%;
 }
-/*quotes*/
-.quote{
-    min-width:300px;
+.search-bar button{
+    display:none;
 }
-/*footer*/
-footer{
-    flex-wrap:wrap;
-    justify-content: start;
+/*introduction*/
+.introduction h4{
+    font-size:30px;
 }
-footer div{
-    padding:30px;
+.introduction .message .get-started{
     width:50%;
 }
-/*contact us form*/
-.contact-us-form{
-    width:100%;
+/*about us*/
+.about-us{
+    flex-wrap: wrap;
+}
+.about-us .text{
+    margin:-44px 10px 0 10px;
+    background-color: rgb(250, 245, 245);
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px lightgrey;
+}
+/*services*/
+.services{
+    flex-wrap: wrap;
+    gap:0;
 }
 }
