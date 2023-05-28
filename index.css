@@ -142,7 +142,7 @@ header .web-logo .subject{
     animation:text_anim 6s infinite;
     width:120px;
     display:inline-block;
-    color:rgb(238, 216, 16);
+    color:rgb(42, 238, 16);
     border:1px solid rgb(228, 223, 176);
     border-radius: 2px;
 }
@@ -240,20 +240,23 @@ header .web-logo .subject{
     width:500px;
 }
 .services .electrical-design h4{
-    padding:10px;
+    padding:20px;
     border-bottom: 2px solid rgb(238, 216, 16);
+    font-size:larger;
+    margin:0 20px;
 }
 .services .electrical-design h5{
-    padding:10px;
+    padding:20px;
+    font-size:large;
 }
 .services .electrical-design p{
-    padding:10px;
+    padding:0 20px 10px 20px;
 }
 .services .electrical-design button{
     padding:10px;
     border-radius: 20px;
     border:1px solid;
-    margin:0 0 10px 10px;
+    margin:0 0 10px 20px;
     background-color: unset;
 }
 .services .electrical-design button:hover{
@@ -270,14 +273,16 @@ header .web-logo .subject{
     width:500px;
 }
 .services .advance-knowledge div{
-    padding:10px;
+    padding:20px;
 }
 .services .advance-knowledge h4{
-    padding:10px 0;
+    padding:20px 0;
     border-bottom: 2px solid rgb(238, 216, 16);
+    font-size:larger;
 }
 .services .advance-knowledge h5{
-    padding:0 0 10px 0; 
+    padding:10px 0 10px 0; 
+    font-size:large;
 }
 .services .advance-knowledge img{
     width:100%;
@@ -296,21 +301,82 @@ header .web-logo .subject{
 }
 
 /*top-educational-projects*/
-.top-educational-projects{
-    
-}
 .top-educational-projects h2{
     text-align:center;
     padding:20px;
 }
+.top-educational-projects .projects .projects-list h3{
+    padding:5px 0;
+}
 .top-educational-projects .projects{
-    display:flex;
-    justify-content: center;
+    background-color: rgb(240, 206, 18);
 }
 .top-educational-projects .projects .projects-list{
-    height:500px;
     width:100%;
-    background-color: rgb(240, 206, 18);
+    display:flex;
+    overflow-x:scroll;
+    padding:20px;
+    gap:20px;
+}
+.projects .projects-list .project1{
+    min-width:500px;
+}
+.projects .projects-list .project1 img{
+    width:100%;
+    border-radius:10px;
+}
+.projects .projects-list .wrap{
+    padding:20px;
+    background-color: rgb(255, 255, 255);
+    margin:10px 0;
+}
+.projects .projects-list .project2{
+    min-width:500px;
+}
+.projects .projects-list .project2 img{
+    width:100%;
+    border-radius:10px;
+}
+.projects .projects-list .project3{
+    min-width:500px;
+}
+.projects .projects-list .project3 img{
+    width:100%;
+    border-radius:10px;
+}
+.top-educational-projects .projects .projects-list button{
+    padding:5px;
+    background-color: white;
+    border:1px solid;
+}
+.top-educational-projects .projects .projects-list .learn-more{
+    padding:10px;
+    border-radius: 20px;
+}
+/*position*/
+.top-educational-projects .position{
+    padding:20px;
+    display:flex;
+    gap:10px;
+    justify-content: center;
+}
+.top-educational-projects .position div{
+    width:50px;
+    height:3px;
+    border:1px solid rgb(255, 255, 255);
+    padding:1px;
+}
+/*skip-project*/
+.top-educational-projects .skip-project{
+    padding:0 5px;
+    font-size:40px;
+    position:absolute;
+    width:100%;
+    margin-top:-350px;
+    color:white;
+}
+.top-educational-projects .skip-project #next{
+    float:right;
 }
 /*menu*/
 .menu{
@@ -386,14 +452,26 @@ header .web-logo .subject{
     flex-wrap: wrap;
 }
 .about-us .text{
-    margin:-204px 10px 0 10px;
-    border-radius: 5px;
+    margin:-24px 0 0 0;
     box-shadow: 1px 2px 3px rgb(39, 38, 38);
-    opacity:.9;
 }
 /*services*/
 .services{
     flex-wrap: wrap;
     gap:0;
+}
+.services h4{
+    text-align: center;
+}
+/*.top-educational-projects*/
+.top-educational-projects .projects .projects-list{
+    overflow-x:scroll;
+}
+.projects .projects-list .project1,.projects .projects-list .project2,.projects .projects-list .project3{
+    min-width:300px;
+}
+/*position*/
+.top-educational-projects .position{
+    margin-top:-50px;
 }
 }
