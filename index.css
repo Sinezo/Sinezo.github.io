@@ -115,6 +115,22 @@ header .web-logo .subject{
     background-color: rgb(31, 32, 32);
     color:rgb(255, 217, 0);
 }
+/*introduction*/
+.introduction{
+    display:flex;
+    justify-content: center;
+}
+.introduction .text{
+    padding:20px;
+}
+.introduction .text h2{
+    font-size:50px; 
+}
+.introduction .text button{
+    padding:10px;
+    background-color: unset;
+    margin:20px 0;
+}
 /*top-educational-projects*/
 .top-educational-projects h2{
     text-align:center;
@@ -267,12 +283,6 @@ footer .social-media .wrap-all{
     display:none;
 }
 /*introduction*/
-.introduction h4{
-    font-size:30px;
-}
-.introduction .message .get-started{
-    width:50%;
-}
 /*.top-educational-projects*/
 .top-educational-projects .projects .projects-list{
     overflow-x:scroll;
