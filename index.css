@@ -18,7 +18,7 @@ header{
     display:flex;
     padding:20px;
     box-shadow:1px 1px 3px lightgray;
-    background-color: rgb(81, 82, 80);
+    background-color:rgb(31, 32, 32);
 }
 header .web-logo img{
     width:200px;
@@ -82,7 +82,7 @@ header .web-logo .subject{
     margin:3px 0 0 0;
 }
 .nav-small-screen .more-menu{
-    color:rgb(148, 46, 33);
+    color:rgb(247, 241, 240);
     margin:10px 0;
 }
 .nav-small-screen .more-menu ul{
@@ -159,13 +159,13 @@ header .web-logo .subject{
     margin:30px 0;
     border-radius: 20px;
     width:30%;
-    background-color: rgb(78, 78, 77);
+    background-color: rgb(31, 32, 32);
     color:rgb(230, 222, 222);
 }
 .introduction .message button:hover{
     cursor: pointer;
     background-color:rgb(31, 32, 32);
-    color:  rgb(238, 216, 16);
+    color:  rgb(226, 226, 222);
 }
 
 /*top-educational-projects*/
@@ -177,7 +177,7 @@ header .web-logo .subject{
     padding:5px 0;
 }
 .top-educational-projects .projects{
-    background-color: rgb(81, 82, 80);
+    background-color: rgb(31, 32, 32);
 }
 .top-educational-projects .projects .projects-list{
     width:100%;
@@ -250,7 +250,6 @@ header .web-logo .subject{
 .menu{
     position:absolute;
     background-color: rgb(31, 32, 32);
-    color:white;
     height:0;
     width:100%;
     overflow: hidden;
@@ -260,15 +259,15 @@ header .web-logo .subject{
 }
 .menu ul li{
     list-style: none;
-    background-color: rgb(238, 216, 16);
+    background-color: rgb(255, 255, 255);
     padding:10px;
     margin:10px;
     border-radius: 4px;
-    color:rgb(31, 30, 30);
 }
 .menu ul li:hover{
     cursor: pointer;
-    background-color: rgb(161, 147, 19);
+    background-color: rgb(29, 29, 28);
+    color:white;
 }
 .menu .about-list{
     transform: translate(-200%);
@@ -284,10 +283,12 @@ header .web-logo .subject{
 }
 .menu .social-media{
     padding:10px;
+    color:white;
 }
 .menu .social-media .wrap-all{
     display:flex;
     gap:10px;
+    
     padding:10px 0;
 }
 .menu .social-media .wrap-all i{

@@ -12,7 +12,7 @@ menu.addEventListener('click', function(){
 
     document.querySelector('.menu').style.height='100%';
     document.querySelector('.menu').style.padding='20px';
-    document.querySelector('.menu').style.borderTop='2px solid yellow';
+    document.querySelector('.menu').style.borderTop='2px solid';
     document.querySelector('.about-list').style.transform='translate(0)';
     document.querySelector('.talk-list').style.transform='translate(0)';
     document.querySelector('.request-list').style.transform='translate(0)';
