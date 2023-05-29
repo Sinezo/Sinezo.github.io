@@ -216,7 +216,7 @@ header .web-logo .subject{
     height:0;
     width:100%;
     overflow: hidden;
-    transition:height 200ms ease-in-out;
+    transition:height 500ms ease-in-out;
     margin-top:-4px;
     z-index:1;
     color:white;
