@@ -21,82 +21,46 @@
             padding:0;
             margin:0; 
         }
-        .about-us-container{
-            padding:20px;
-        }
-        .about-us-container p{
-            padding:5px;
-        }
-        .contact-div button{
-            padding:3px;
-            border:0;
-            background-color: chocolate;
-            color:white;
-        }
-        .about-us{
-            border-bottom: 2px solid chocolate;
-            width:fit-content;
-        }
-        h3{
-            font-family: sans-serif;
-            font-size: 20px;
-            padding:30px 5px;
-            color:rgb(247, 199, 56);
-            background-color: rgb(43, 44, 44);
-            border-bottom: 2px solid rgb(247, 199, 56);
-            margin: 0 0 20px 0;
-        }
     </style>
 </head>
 <body>
 
-<!--WRAP HEADER-->
+<!--HEADER CONTAINER-->
+<div class="header-container">
+    <!--WRAP HEADER-->
 <div class="wrap-header">
-        
+    
     <!--HEADER-->
 <header onclick="window.location='index.html'">
     <div class="web-logo">
-        <i class="fa-solid fa-bolt-lightning"></i> ESCALE<span>TECH</span>
+    Dark<span>VALLEY</span>
+        <div class="subject"></div>
     </div>
 </header>
 </div>
 
 <!--MENU HEADER -SMALL SCREEN-->
 <div class="nav-small-screen">
-    <div class="wrap-nav-small-screen">
-        <!--menu icon-->
-        <div id="menu-icon">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
+<div class="wrap-nav-small-screen">
+    <div class="more-menu">
+        <ul>
+            <li>ABOUT</li>
+        <li>TALK TO US</li>
+        </ul>
+    </div>
+    <!--sign in-->
+    <div class="sign-in">
+        <i class="fa-regular fa-circle-user"></i> LOG IN
+    </div>
+    <!--menu icon-->
+    <div id="menu-icon">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
     </div>
 </div>
-     <!--ABOUT US-->
-     <div class="about-us-container">
-        <h3>About us</h3>
-        <p>
-            escaletech  is a group of diligent engineering enthusiasts who seek , at any given time to apply the laws and principles 
-        of electrical engineering and create something <u>significant </u> out of them.
-        <br><br>
-        In the process of designing, we take three steps to ensure that our designs are working accordingly and meet the objectives.
-        <br><br>
-        At escaletech, we understand that every project is unique. That is why we offer comprehensive 
-        electrical design services tailored to your specific needs.
-        <br><br>
-        Electricity is dangerous, that is why in each and every design we follow the <u>International Electricatronic Commission (IEC)</u> and 
-        <u>National Electrical Code (NEC)</u> standards.
-        <br><br>
-        <div class="contact-div">
-            <i>Contact us today to learn more about how we can help you with your 
-                electrical design needs.
-                <br><button><i>Contuct us</i></button>
-            </i>
-        </div>
-        </p> 
-     </div>
-     <div class="master-footer">&copy;escaletech 2023
-    </div>
+</div>
+</div>
     <script src=index.js></script>
 </body>
 </html>

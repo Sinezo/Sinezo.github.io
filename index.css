@@ -137,7 +137,7 @@ header .web-logo .subject{
     padding:20px;
 }
 .top-educational-projects .projects .projects-list h3{
-    padding:5px 0;
+    padding:10px 0;
 }
 .top-educational-projects .projects{
     background-color: unset
@@ -151,10 +151,11 @@ header .web-logo .subject{
 }
 .projects .projects-list .project1{
     min-width:500px;
+    border:1px solid lightgrey;
 }
 .projects .projects-list .project1 img{
     width:100%;
-    border-radius:10px;
+   
 }
 .projects .projects-list .wrap{
     padding:20px;
@@ -163,26 +164,30 @@ header .web-logo .subject{
 }
 .projects .projects-list .project2{
     min-width:500px;
+    border:1px solid lightgrey;
 }
 .projects .projects-list .project2 img{
     width:100%;
-    border-radius:10px;
+   
 }
 .projects .projects-list .project3{
     min-width:500px;
+    border:1px solid lightgrey;
 }
 .projects .projects-list .project3 img{
     width:100%;
-    border-radius:10px;
+   
 }
 .top-educational-projects .projects .projects-list button{
     padding:5px;
     background-color: white;
     border:1px solid;
+    margin:10px 0;
 }
 .top-educational-projects .projects .projects-list .learn-more{
     padding:10px;
     border-radius: 20px;
+    margin-top:20px;
 }
 /*position*/
 .top-educational-projects .position{
@@ -204,7 +209,7 @@ header .web-logo .subject{
     position:absolute;
     width:100%;
     margin-top:-350px;
-    color:white;
+    color:rgb(168, 162, 162);
 }
 .top-educational-projects .skip-project #next{
     float:right;
@@ -269,7 +274,15 @@ footer .social-media .wrap-all{
     display:flex;
     gap:10px;
 }
-
+footer .email-us{
+    padding:0px;
+    margin:20px 0;
+}
+footer .email-us button{
+    padding:20px;
+    border:0;
+    background-color: white;
+}
 /*SMall Screens*/
 @media screen and (max-width:500px) {
 .nav-small-screen .more-menu{
@@ -297,5 +310,8 @@ footer .social-media .wrap-all{
 /*footer*/
 footer .social-media .wrap-all{
     flex-wrap: wrap;
+}
+footer .email-us button{
+    width:100%;
 }
 }
