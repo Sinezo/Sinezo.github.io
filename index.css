@@ -18,7 +18,7 @@ header{
     display:flex;
     padding:20px;
     box-shadow:1px 1px 3px lightgray;
-    background-color: rgb(31, 32, 32);
+    background-color: rgb(81, 82, 80);
 }
 header .web-logo img{
     width:200px;
@@ -30,7 +30,7 @@ header .web-logo{
     font-weight:900;
 }
 header .web-logo span{
-    color:rgb(238, 216, 16);
+    color:rgb(243, 242, 237);
 }
 header .web-logo .subject{
     font-size: xx-small;
@@ -55,21 +55,21 @@ header .web-logo .subject{
 #menu-icon .bar1{
     width:20px;
     height:3px;
-    background-color: rgb(221, 200, 11);
+    background-color: rgb(230, 228, 213);
     margin-bottom:3px;
     transition:transform 300ms ease-in-out
 }
 #menu-icon .bar2{
     width:20px;
     height:3px;
-    background-color: rgb(221, 200, 11);
+    background-color: rgb(230, 228, 213);
     margin-bottom:3px;
     transition:transform 300ms ease-in-out
 }
 #menu-icon .bar3{
     width:20px;
     height:3px;
-    background-color: rgb(221, 200, 11);
+    background-color: rgb(230, 228, 213);
     transition:transform 300ms ease-in-out
 }
 .nav-small-screen .sign-in{
@@ -77,12 +77,12 @@ header .web-logo .subject{
     padding:5px;
     width:px;
     text-align:center ;
-    color:rgb(221, 200, 11);
+    color:rgb(230, 228, 213);
     border-radius:4px ;
     margin:3px 0 0 0;
 }
 .nav-small-screen .more-menu{
-    color:rgb(148, 136, 33);
+    color:rgb(148, 46, 33);
     margin:10px 0;
 }
 .nav-small-screen .more-menu ul{
@@ -108,7 +108,7 @@ header .web-logo .subject{
     padding:5px;
     background-color: unset;
     border: 1px solid;
-    border-color:rgb(255, 217, 0);
+    border-color:rgb(31, 31, 30);
 }
 .search-bar button:hover{
     cursor: pointer;
@@ -159,143 +159,13 @@ header .web-logo .subject{
     margin:30px 0;
     border-radius: 20px;
     width:30%;
-    background-color: rgb(238, 216, 16);
-    color:rgb(0, 0, 0);
+    background-color: rgb(78, 78, 77);
+    color:rgb(230, 222, 222);
 }
 .introduction .message button:hover{
     cursor: pointer;
     background-color:rgb(31, 32, 32);
     color:  rgb(238, 216, 16);
-}
-
-/*about us*/
-.about-us{
-    display:flex;
-    gap:20px;
-    padding:0 20px;
-    justify-content: center;
-    background-color: rgb(31, 32, 32);
-}
-.about-us .text{
-    width:500px;
-    padding:10px;
-    background-color: rgb(255, 255, 255);
-}
-.about-us .text h2{
-    padding:10px 0;
-    border-bottom: 2px solid rgb(238, 216, 16);
-
-}
-.about-us .text p{
-    padding-top: 10px;
-}
-.about-us .picture{
-    width:500px;
-}
-.about-us .picture img{
-    width:100%;
-}
-
-.about-us .buttons{
-    padding:20px 0;
-}
-.about-us .buttons button{
-    padding:10px;
-    background-color: unset;
-    border-radius:20px;
-    width:30%;
-}
-.about-us .buttons button:hover{
-    cursor: pointer;
-    background-color:rgb(238, 216, 16);
-    color:rgb(2, 2, 2);
-}
-.about-us .buttons .learn-more{
-    color:rgb(238, 216, 16);
-    border:1px solid;
-}
-.about-us .buttons .contact-us{
-    color:rgb(2, 2, 2);
-    border:1px solid;
-    background-color: rgb(238, 216, 16);
-}
-/*what-we-do*/
-.what-we-do{
-    padding:20px;
-}
-.what-we-do h2{
-    text-align:center;
-}
-/*services*/
-.services{
-    padding:20px;
-    display:flex;
-    gap:20px;
-    justify-content: center;
-}
-.services .electrical-design{
-    border: 1px solid lightgrey;
-    width:500px;
-}
-.services .electrical-design h4{
-    padding:20px;
-    border-bottom: 2px solid rgb(238, 216, 16);
-    font-size:larger;
-    margin:0 20px;
-}
-.services .electrical-design h5{
-    padding:20px;
-    font-size:large;
-}
-.services .electrical-design p{
-    padding:0 20px 10px 20px;
-}
-.services .electrical-design button{
-    padding:10px;
-    border-radius: 20px;
-    border:1px solid;
-    margin:0 0 10px 20px;
-    background-color: unset;
-}
-.services .electrical-design button:hover{
-    cursor: pointer;
-    background-color: black;
-    color:rgb(238, 216, 16);
-}
-.services .electrical-design img{
-    width:100%;
-}
-
-.services .advance-knowledge{
-    border: 1px solid lightgrey;
-    width:500px;
-}
-.services .advance-knowledge div{
-    padding:20px;
-}
-.services .advance-knowledge h4{
-    padding:20px 0;
-    border-bottom: 2px solid rgb(238, 216, 16);
-    font-size:larger;
-}
-.services .advance-knowledge h5{
-    padding:10px 0 10px 0; 
-    font-size:large;
-}
-.services .advance-knowledge img{
-    width:100%;
-}
-.services .advance-knowledge button{
-    margin-top: 10px;
-    padding:10px;
-    border-radius: 20px;
-    border:1px solid;
-    background-color: unset;
-}
-.services .advance-knowledge button:hover{
-    cursor: pointer;
-    background-color: black;
-    color:rgb(238, 216, 16);
 }
 
 /*top-educational-projects*/
@@ -307,7 +177,7 @@ header .web-logo .subject{
     padding:5px 0;
 }
 .top-educational-projects .projects{
-    background-color: rgb(240, 206, 18);
+    background-color: rgb(81, 82, 80);
 }
 .top-educational-projects .projects .projects-list{
     width:100%;
@@ -453,22 +323,6 @@ footer .social-media .wrap-all{
 }
 .introduction .message .get-started{
     width:50%;
-}
-/*about us*/
-.about-us{
-    flex-wrap: wrap;
-}
-.about-us .text{
-    margin:-24px 0 0 0;
-    box-shadow: 1px 2px 3px rgb(39, 38, 38);
-}
-/*services*/
-.services{
-    flex-wrap: wrap;
-    gap:0;
-}
-.services h4{
-    text-align: center;
 }
 /*.top-educational-projects*/
 .top-educational-projects .projects .projects-list{
