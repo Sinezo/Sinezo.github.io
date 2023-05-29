@@ -115,59 +115,6 @@ header .web-logo .subject{
     background-color: rgb(31, 32, 32);
     color:rgb(255, 217, 0);
 }
-/*introduction*/
-.introduction{
-    display:flex;
-    gap:20px;
-    justify-content: center;
-    padding:20px;
-    margin-top: -22px;
-    align-items: center;
-    text-align: center;
-    background-color: unset;
-}
-.introduction h4{
-    padding:10px 0;
-    margin-bottom: 10px;
-    font-size:70px;
-
-}
-.introduction h4 span{
-    color:rgb(12, 36, 88);
-}
-.introduction .text-animation::after{
-    content:"Animation";
-    padding:5px;
-    background-color: unset;
-    animation:text_anim 6s infinite;
-    width:120px;
-    display:inline-block;
-    color:rgb(8, 8, 8);
-    border:1px solid rgb(228, 223, 176);
-    border-radius: 2px;
-}
-@keyframes text_anim {
-    0% {content:"Fault finding";}
-    50% {content:"Fixing";}
-    100% {content:"Fault finding";}
-}
-.introduction .message .get-started{
-    background-color: unset;
-   border:1px solid;
-    padding:10px;
-    transition: padding 300ms ease-in-out;
-    margin:30px 0;
-    border-radius: 20px;
-    width:30%;
-    background-color: rgb(31, 32, 32);
-    color:rgb(230, 222, 222);
-}
-.introduction .message button:hover{
-    cursor: pointer;
-    background-color:rgb(31, 32, 32);
-    color:  rgb(226, 226, 222);
-}
-
 /*top-educational-projects*/
 .top-educational-projects h2{
     text-align:center;
@@ -177,7 +124,7 @@ header .web-logo .subject{
     padding:5px 0;
 }
 .top-educational-projects .projects{
-    background-color: rgb(31, 32, 32);
+    background-color: unset
 }
 .top-educational-projects .projects .projects-list{
     width:100%;
@@ -256,10 +203,11 @@ header .web-logo .subject{
     transition:height 200ms ease-in-out;
     margin-top:-4px;
     z-index:1;
+    color:white;
 }
 .menu ul li{
     list-style: none;
-    background-color: rgb(255, 255, 255);
+    background-color: unset;
     padding:10px;
     margin:10px;
     border-radius: 4px;
