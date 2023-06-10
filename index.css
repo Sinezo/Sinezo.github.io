@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size:small;
 }
 html{
@@ -147,7 +147,13 @@ header .web-logo .subject{
     padding:0 10px;
 }
 .subjects-projects-wrapper .subjects h3{
-    padding:10px 0;
+    padding:10px;
+    background-color: rgb(90, 8, 59);
+    border-radius: 20px 20px 0 0;
+    color:white;
+}
+.subjects-projects-wrapper .subjects div div div{
+    padding:0 10px 10px 10px;
 }
 .subjects-projects-wrapper .subjects h4{
     padding:5px 0;
@@ -161,8 +167,7 @@ header .web-logo .subject{
 .electrical-technology,.technical-mathematics,.technical-sciences,.egd{
     width:100%;
     border:1px solid rgb(128, 115, 0);
-    padding:20px;
-    border-radius:20px
+    border-radius:20px;
 }
 .subjects-projects-wrapper .subjects .subjects-list ul{
     list-style-position: inside;
@@ -184,6 +189,7 @@ header .web-logo .subject{
 .top-educational-projects h2{
     text-align:center;
     padding:20px;
+    background-color: rgb(165, 42, 79);
 }
 .top-educational-projects .projects .projects-list h3{
     padding:10px 0;
