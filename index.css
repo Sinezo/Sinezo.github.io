@@ -329,6 +329,9 @@ footer{
     color:rgb(223, 217, 217);
     padding:20px;
 }
+footer .social-media h4{
+    padding:20px 0;
+}
 footer .social-media .wrap-all{
     display:flex;
     gap:10px;
@@ -341,6 +344,8 @@ footer .email-us button{
     padding:20px;
     border:0;
     background-color: white;
+    border-radius: 20px;
+    color:rgb(90, 8, 59);
 }
 /*SMall Screens*/
 @media screen and (max-width:500px) {
