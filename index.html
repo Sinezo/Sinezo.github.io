@@ -20,11 +20,16 @@
             <div class="wrap-header">
                 
                 <!--HEADER-->
-            <header onclick="window.location='index.html'">
-                <div class="web-logo">
-                Dark<span>VALLEY</span>
-                    <div class="subject"></div>
+            <header id="background-color">
+                <div class="web-logo" onclick="window.location='index.html'">
+                    <!--logo abbreviation-->
+                    <div class="logo-abbr">goN</div>
+                    <div class="subject"> go<span>Ntwana</span></div>
                 </div>
+                    <!--SEARCH BAR-->
+                    <div class="search-bar">
+                        <input type="search" placeholder="Search Subject">
+                    </div>
             </header>
         </div>
 
@@ -52,7 +57,7 @@
     </div>
 
     <!--MENU-->
-    <div class="menu">
+    <div class="menu" id="background-color">
         <ul>
             <li class="about-list" onclick="window.location='about-us.html'">About</li>
             <li class="talk-list" onclick="window.location='mailto:lusawanasinethemba@gmail.com'">Talk to us</li>
@@ -72,22 +77,115 @@
                 <div class="youtube"><i class="fa-brands fa-youtube"></i></div>
             </div>
         </div>
-    </div>
 
-    <!--SEARCH BAR-->
-    <div class="search-bar">
-        <input type="search" placeholder="Search Subject"> <button><i class="fa-solid fa-book-open"></i> LEARN</button> <button><i class="fa-solid fa-eye"></i> EXPLORE</button><button><i class="fa-solid fa-person-running"></i> COMPETITIONS</button> <button><i class="fa-solid fa-people-group"></i> JOIN TEAM</button>
+        <!--buttons-->
+        <div class="buttons">
+            <button class="login-btn">LOGIN</button> <button class="create-account">CREATE ACCOUNT</button>
+        </div>
     </div>
 
     <!--INTRODCUTION-->
     <div class="introduction">
         <div class="text">
-            <h2>It takes courage to step onto the dark valley.</h2>
+            <h2>It takes more than courage to step up and persue your dream.</h2>
             are you courageous enough?
-            <br><button>Yeah, Let' s go!</button>
+            <br><button onclick="window.location='index.html#subjects-projects-wrapper'">Yeah, Let' s go!</button>
         </div>
 
     </div>
+
+    <!--SUBJECTS PROJECTS WRAPPER"-->
+    <div class="subjects-projects-wrapper" id="subjects-projects-wrapper">
+     <!--SUBJECTS-->
+    <div class="subjects">
+        <h2>SUBJECTS</h2>
+        <div class="subjects-list">
+            <!--electrical technology-->
+            <div class="electrical-technology">
+                <h3>Electrical Technology</h3>
+                <p>
+                    <h4>The subject covers: </h4>
+                    <ul>
+                        <li>Direct Current Electricity (DC)</li>
+                        <li>Alternating Current Electricity (AC)</li>
+                        <li>Ohm's Law</li>
+                        <li>Kirchoff' s Voltage Law</li>
+                        <li>Kirchoff' s Current Law</li>
+                        <li>RLC Circuits</li>
+                        <li>Electromagnetic Induction</li>
+                        <li>AC Motors</li>
+                        <li> Single Phase Transformers</li>
+                        <li>Three Phase Transformers</li>
+                    </ul>
+                    <button class="start-learning">Start learning</button>
+                </p>
+            </div>
+
+            <!--technical mathematics-->
+            <div class="technical-mathematics">
+                <h3>Technical Mathematics</h3>
+                <p>
+                    <h4>The subject covers: </h4>
+                    <ul>
+                        <li>Direct Current Electricity (DC)</li>
+                        <li>Alternating Current Electricity (AC)</li>
+                        <li>Ohm's Law</li>
+                        <li>Kirchoff' s Voltage Law</li>
+                        <li>Kirchoff' s Current Law</li>
+                        <li>RLC Circuits</li>
+                        <li>Electromagnetic Induction</li>
+                        <li>AC Motors</li>
+                        <li> Single Phase Transformers</li>
+                        <li>Three Phase Transformers</li>
+                    </ul>
+                    <button class="start-learning">Start learning</button>
+                </p>
+            </div>
+
+            <!--technical sciences-->
+            <div class="technical-sciences">
+                <h3>Technical Sciences</h3>
+                <p>
+                    <h4>The subject covers: </h4>
+                    <ul>
+                        <li>Direct Current Electricity (DC)</li>
+                        <li>Alternating Current Electricity (AC)</li>
+                        <li>Ohm's Law</li>
+                        <li>Kirchoff' s Voltage Law</li>
+                        <li>Kirchoff' s Current Law</li>
+                        <li>RLC Circuits</li>
+                        <li>Electromagnetic Induction</li>
+                        <li>AC Motors</li>
+                        <li> Single Phase Transformers</li>
+                        <li>Three Phase Transformers</li>
+                    </ul>
+                    <button class="start-learning">Start learning</button>
+                </p>
+            </div>
+
+            <!--engineering graphics and design-->
+            <div class="egd">
+                <h3>Engineering Graphics & Design</h3>
+                <p>
+                    <h4>The subject covers: </h4>
+                    <ul>
+                        <li>Direct Current Electricity (DC)</li>
+                        <li>Alternating Current Electricity (AC)</li>
+                        <li>Ohm's Law</li>
+                        <li>Kirchoff' s Voltage Law</li>
+                        <li>Kirchoff' s Current Law</li>
+                        <li>RLC Circuits</li>
+                        <li>Electromagnetic Induction</li>
+                        <li>AC Motors</li>
+                        <li> Single Phase Transformers</li>
+                        <li>Three Phase Transformers</li>
+                    </ul>
+                    <button class="start-learning">Start learning</button>
+                </p>
+            </div>
+        </div>
+    </div>
+
      <!--TOP EDUCATIONAL PROJECTS-->
      <div class="top-educational-projects">
         <h2>TOP EDUCATIONAL DESIGNS</h2>
@@ -146,6 +244,7 @@
             <i class="fa-solid fa-circle-chevron-left" id="prev"></i> <i class="fa-solid fa-circle-chevron-right" id="next"></i>
         </div>
      </div>
+    </div>
 
      <!--FOOTER-->
      <footer>
