@@ -52,15 +52,31 @@ projects_navigation.addEventListener('click', function(){
     document.querySelector('.subjects').style.display='none';
     document.querySelector('#subjects-nav').style.borderBottom='0';
     document.querySelector('#projects-nav').style.borderBottom='2px solid';
+    document.querySelector('.question-papers').style.display='none';
+    document.querySelector('#question-papers-nav').style.borderBottom='0';
     
 });
 
-//projects subjects nav
+//subjects nav click
 var subjects_navigation = document.querySelector('#subjects-nav');
 subjects_navigation.addEventListener('click', function(){
     document.querySelector('.top-educational-projects').style.display='none';
     document.querySelector('.subjects').style.display='block';
     document.querySelector('#subjects-nav').style.borderBottom='2px solid';
+    document.querySelector('#projects-nav').style.borderBottom='0';
+    document.querySelector('.question-papers').style.display='none';
+    document.querySelector('#question-papers-nav').style.borderBottom='0';
+    
+});
+
+//question papers nav click
+var question_papers_navigation = document.querySelector('#question-papers-nav');
+question_papers_navigation.addEventListener('click', function(){
+    document.querySelector('.question-papers').style.display='block';
+    document.querySelector('.top-educational-projects').style.display='none';
+    document.querySelector('.subjects').style.display='none';
+    document.querySelector('#question-papers-nav').style.borderBottom='2px solid';
+    document.querySelector('#subjects-nav').style.borderBottom='0';
     document.querySelector('#projects-nav').style.borderBottom='0';
     
 });
