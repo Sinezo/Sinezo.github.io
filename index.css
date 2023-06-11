@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 html{
     scroll-behavior: smooth;
@@ -31,15 +31,18 @@ header .web-logo img{
 header .web-logo{
     color:rgb(209, 200, 201);
     font-weight:900;
+    font-family: 'Exo 2', sans-serif;
 }
 header .web-logo span{
     color:rgb(243, 242, 237);
+    font-family: 'Exo 2', sans-serif;
 }
 header .web-logo .subject{
    
 }
 .logo-abbr{
     font-size:50px;
+    font-family: 'Exo 2', sans-serif;
 }
 /*nav-small-screen*/
 .nav-small-screen{
@@ -86,6 +89,7 @@ header .web-logo .subject{
     color:rgb(230, 228, 213);
     border-radius:4px ;
     margin:3px 0 0 0;
+    font-family: 'Exo 2', sans-serif;
 }
 .nav-small-screen .more-menu{
     color:rgb(247, 241, 240);
@@ -107,6 +111,7 @@ header .web-logo .subject{
     width:30%;
     border:1px solid;
     border-radius:7px;
+    font-family: 'Exo 2', sans-serif;
 }
 .search-bar button{
     padding:5px;
@@ -149,8 +154,8 @@ header .web-logo .subject{
 .subjects-projects-wrapper .horizontal-nav{
     position:absolute;
     text-align: center;
-    width:100%;
-    margin-top:-40px;
+    min-width:100%;
+    margin-top:-50px;
 }
 .subjects-projects-wrapper .horizontal-nav button{
     padding:10px;
@@ -192,7 +197,7 @@ header .web-logo .subject{
 }
 .electrical-technology,.technical-mathematics,.technical-sciences,.egd{
     width:100%;
-    border:1px solid rgb(128, 115, 0);
+    box-shadow:1px 1px 3px rgb(134, 133, 133);
     border-radius:20px;
 }
 .subjects-projects-wrapper .subjects .subjects-list ul{
@@ -218,88 +223,18 @@ header .web-logo .subject{
 .top-educational-projects{
     width:500px;
 }
-.top-educational-projects h2{
-    text-align:center;
-    padding:20px;
-    background-color: rgb(165, 42, 79);
-}
-.top-educational-projects .projects .projects-list h3{
-    padding:10px 0;
-}
 .top-educational-projects .projects{
-    background-color: unset
-}
-.top-educational-projects .projects .projects-list{
-    width:100%;
-    display:flex;
-    overflow-x:scroll;
     padding:20px;
-    gap:20px;
+    text-align: center;
+    box-shadow:1px 2px 3px lightgrey;
+    margin:20px;
 }
-.projects .projects-list .project1{
-    min-width:500px;
-    border:1px solid lightgrey;
+.top-educational-projects .projects i{
+    font-size: 40px;
 }
-.projects .projects-list .project1 img{
-    width:100%;
-   
-}
-.projects .projects-list .wrap{
+.top-educational-projects .projects h6{
     padding:20px;
-    background-color: rgb(255, 255, 255);
-    margin:10px 0;
-}
-.projects .projects-list .project2{
-    min-width:500px;
-    border:1px solid lightgrey;
-}
-.projects .projects-list .project2 img{
-    width:100%;
-   
-}
-.projects .projects-list .project3{
-    min-width:500px;
-    border:1px solid lightgrey;
-}
-.projects .projects-list .project3 img{
-    width:100%;
-   
-}
-.top-educational-projects .projects .projects-list button{
-    padding:5px;
-    background-color: white;
-    border:1px solid;
-    margin:10px 0;
-}
-.top-educational-projects .projects .projects-list .learn-more{
-    padding:10px;
-    border-radius: 20px;
-    margin-top:20px;
-}
-/*position*/
-.top-educational-projects .position{
-    padding:20px;
-    display:flex;
-    gap:10px;
-    justify-content: center;
-}
-.top-educational-projects .position div{
-    width:50px;
-    height:3px;
-    border:1px solid rgb(255, 255, 255);
-    padding:1px;
-}
-/*skip-project*/
-.top-educational-projects .skip-project{
-    padding:0 5px;
-    font-size:40px;
-    position:absolute;
-    width:100%;
-    margin-top:-350px;
-    color:rgb(168, 162, 162);
-}
-.top-educational-projects .skip-project #next{
-    float:right;
+    color:#E86820;
 }
 /*menu*/
 .menu{
