@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 html{
     scroll-behavior: smooth;
@@ -21,7 +21,7 @@ header{
     display:flex;
     padding:20px;
     gap:5px;
-    box-shadow:1px 1px 3px lightgray;
+    box-shadow:1px 1px 3px rgb(0, 0, 0);
 }
 header .web-logo img{
     width:200px;
@@ -129,13 +129,21 @@ header .web-logo span{
 .introduction .text h1{
     font-family: 'Rock 3D', cursive;
     padding:20px 0;
-    color:#E86820;
+    color:#1b1a1a;
+    text-align: center;
+}
+.introduction .text .grades{
+    font-weight: 600;
     text-align: center;
 }
 .introduction .text button{
     padding:10px;
     background-color: unset;
     margin:20px 0;
+    width:100%;
+    border-radius: 20px;
+    box-shadow:1px 1px 3px rgb(0, 0, 0);
+    border:1px solid
 }
 .introduction .text button:hover{
     cursor: pointer;
@@ -203,7 +211,7 @@ header .web-logo span{
 }
 .electrical-technology,.technical-mathematics,.technical-sciences,.egd{
     width:100%;
-    box-shadow:1px 1px 3px rgb(134, 133, 133);
+    box-shadow:1px 1px 3px black;
     border-radius:20px;
 }
 .subjects-projects-wrapper .subjects .subjects-list ul{
@@ -239,7 +247,8 @@ header .web-logo span{
     background-color: #E86820;
     border:0;
     color:white;
-    border-radius:20px
+    border-radius:20px;
+    box-shadow:1px 1px 3px rgb(0, 0, 0);
 }
 .question-papers button:hover{
     cursor: pointer;
@@ -252,7 +261,7 @@ header .web-logo span{
 .top-educational-projects .projects{
     padding:20px;
     text-align: center;
-    box-shadow:1px 2px 3px lightgrey;
+    box-shadow:1px 2px 3px black;
     margin:20px;
 }
 .top-educational-projects .projects i{
@@ -283,7 +292,7 @@ header .web-logo span{
 }
 .menu ul li:hover{
     cursor: pointer;
-    background-color: rgb(71, 4, 46);;
+    background-color:#ca5511;
     color:white;
 }
 .menu .about-list{
@@ -337,6 +346,7 @@ footer .about-us{
     margin-top:-40px;
     border-radius:20px;
     border:1px solid #E86820;
+    box-shadow:1px 1px 3px rgb(0, 0, 0);
 }
 footer .social-media h4{
     padding:20px 0;
