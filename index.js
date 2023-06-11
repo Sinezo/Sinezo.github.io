@@ -45,6 +45,25 @@ menu.addEventListener('click', function(){
 
 });
 
+//projects nav click
+var projects_navigation = document.querySelector('#projects-nav');
+projects_navigation.addEventListener('click', function(){
+    document.querySelector('.top-educational-projects').style.display='block';
+    document.querySelector('.subjects').style.display='none';
+    document.querySelector('#subjects-nav').style.borderBottom='0';
+    document.querySelector('#projects-nav').style.borderBottom='2px solid';
+    
+});
+
+//projects subjects nav
+var subjects_navigation = document.querySelector('#subjects-nav');
+subjects_navigation.addEventListener('click', function(){
+    document.querySelector('.top-educational-projects').style.display='none';
+    document.querySelector('.subjects').style.display='block';
+    document.querySelector('#subjects-nav').style.borderBottom='2px solid';
+    document.querySelector('#projects-nav').style.borderBottom='0';
+    
+});
 //window scroll
 /* window.onscroll=function(){
     scrolling();
