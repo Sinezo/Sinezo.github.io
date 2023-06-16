@@ -8,18 +8,19 @@ menu.addEventListener('click', function(){
     document.querySelector('.bar2').style.transform='translate(-30px)';
     document.querySelector('.bar2').style.opacity='0';
     document.querySelector('.bar3').style.transform='rotate(-45deg)';
-    document.querySelector('#menu-icon').style.margin='5px 0 0 0';
 
-    document.querySelector('.menu').style.height='100%';
+    document.querySelector('.menu').style.width='fit-content';
+    document.querySelector('.menu').style.height='fit-content';
     document.querySelector('.menu').style.padding='20px';
     document.querySelector('.menu').style.borderTop='2px solid';
     document.querySelector('.about-list').style.transform='translate(0)';
     document.querySelector('.talk-list').style.transform='translate(0)';
     document.querySelector('.request-list').style.transform='translate(0)';
+    document.querySelector('#menu-icon').style.margin='-35px 0 0 0';
 
 
     document.querySelector('.bar1').style.margin='11px 0px 0 0';
-    document.querySelector('.bar3').style.margin='-8.9px 0 0 0';
+    document.querySelector('.bar3').style.margin='-7.2px 0 0 0';
     menu_status=0;
     }
     else{
@@ -28,9 +29,8 @@ menu.addEventListener('click', function(){
     document.querySelector('.bar2').style.transform='translate(0)';
     document.querySelector('.bar2').style.opacity='1';
     document.querySelector('.bar3').style.transform='rotate(0)';
-    document.querySelector('#menu-icon').style.margin='10px 0 0 0';
 
-    document.querySelector('.menu').style.height='0';
+    document.querySelector('.menu').style.width='0';
     document.querySelector('.menu').style.padding='0';
     document.querySelector('.menu').style.borderTop='0';
     document.querySelector('.about-list').style.transform='translate(-200%)';
@@ -40,73 +40,8 @@ menu.addEventListener('click', function(){
     document.querySelector('.bar1').style.margin='0 0 3px 0';
     document.querySelector('.bar2').style.margin='0 0 3px 0';
     document.querySelector('.bar3').style.margin='0 0 3px 0';
+    document.querySelector('#menu-icon').style.margin='-30px 0 0 0';
     menu_status=1;
     }
 
 });
-
-//projects nav click
-var projects_navigation = document.querySelector('#projects-nav');
-projects_navigation.addEventListener('click', function(){
-    document.querySelector('.top-educational-projects').style.display='block';
-    document.querySelector('.subjects').style.display='none';
-    document.querySelector('#subjects-nav').style.borderBottom='0';
-    document.querySelector('#projects-nav').style.borderBottom='2px solid';
-    document.querySelector('.question-papers').style.display='none';
-    document.querySelector('#question-papers-nav').style.borderBottom='0';
-    
-});
-
-//subjects nav click
-var subjects_navigation = document.querySelector('#subjects-nav');
-subjects_navigation.addEventListener('click', function(){
-    document.querySelector('.top-educational-projects').style.display='none';
-    document.querySelector('.subjects').style.display='block';
-    document.querySelector('#subjects-nav').style.borderBottom='2px solid';
-    document.querySelector('#projects-nav').style.borderBottom='0';
-    document.querySelector('.question-papers').style.display='none';
-    document.querySelector('#question-papers-nav').style.borderBottom='0';
-    
-});
-
-//question papers nav click
-var question_papers_navigation = document.querySelector('#question-papers-nav');
-question_papers_navigation.addEventListener('click', function(){
-    document.querySelector('.question-papers').style.display='block';
-    document.querySelector('.top-educational-projects').style.display='none';
-    document.querySelector('.subjects').style.display='none';
-    document.querySelector('#question-papers-nav').style.borderBottom='2px solid';
-    document.querySelector('#subjects-nav').style.borderBottom='0';
-    document.querySelector('#projects-nav').style.borderBottom='0';
-    
-});
-//window scroll
-/* window.onscroll=function(){
-    scrolling();
-};
-function scrolling(){
-    if(document.body.scrollTop > 0 || document.documentElement.scrollTop >0){
-        document.querySelector('.nav-small-screen').style.backgroundColor='white';
-        document.querySelector('.nav-small-screen').style.marginTop='-110px';
-        document.querySelector('.nav-small-screen').style.position='fixed';
-        document.querySelector('.nav-small-screen').style.boxShadow='1px 1px 3px lightgrey';
-        document.querySelector('.phone').style.width='170px';
-        document.querySelector('.phone').style.border='1px solid lightgrey';
-        //document.querySelector('.web-name').style.fontSize="10px";
-        //document.querySelector('.web-name').style.color='chocolate';
-        
-
-    }
-    else{
-        document.querySelector('.nav-small-screen').style.backgroundColor='unset';
-        document.querySelector('.nav-small-screen').style.boxShadow='none';
-        document.querySelector('.nav-small-screen').style.position='relative';
-        document.querySelector('.nav-small-screen').style.marginTop='-70px';
-        document.querySelector('.phone').style.width='0';
-        document.querySelector('.phone').style.border='0';
-        //document.querySelector('.web-name').style.fontSize="x-large";
-        //document.querySelector('.web-name').style.color='black';
-    }
-}
-
-*/
