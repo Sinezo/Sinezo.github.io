@@ -158,19 +158,35 @@ header .website-name span{
 
 /*tutoring*/
 .tutoring{
-    width:100%;
-    height:300px;
     background-color: black;
     border-radius: 20px 20px 0 0;
     margin-top:30px;
     padding:20px;
     color:rgb(126, 122, 122);
+    display:flex;
+    gap:20px;
+    justify-content: center;
 }
 .tutoring h2{
     color:rgb(99, 139, 161);
 }
+.tutoring .box1{
+    width:500px;
+}
 .tutoring .box1 button{
     padding:20px
+}
+.tutoring .box1 .learn-online-btn{
+    background-color: unset;
+    color:white;
+    border:1px solid;
+}
+.tutoring .box2{
+    width:500px;
+}
+.tutoring .box2 iframe{
+    width:100%;
+    border-radius: 20px;
 }
 /*menu*/
 .menu{
@@ -270,5 +286,9 @@ footer .contact-us button{
 .bragging{
     flex-wrap:wrap;
     gap:20px;
+}
+/*tutoring*/
+.tutoring{
+   flex-wrap:wrap;
 }
 }
