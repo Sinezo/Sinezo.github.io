@@ -136,6 +136,25 @@ header .website-name span{
     border:1px solid;
     border-radius: 4px;
 }
+
+/*bragging*/
+.bragging{
+    padding:10px;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    gap:20px;
+}
+.bragging i{
+    font-size: 50px;
+    color:rgb(29, 158, 218);
+}
+.brag1,.brag2,.brag3{
+    width:400px;
+    border:1px solid lightgrey;
+    padding:10px;
+    border-radius: 4px;
+}
 /*menu*/
 .menu{
     background-color: rgb(255, 255, 255);;
@@ -229,5 +248,10 @@ footer .contact-us button{
 /*specialisation*/
 .specialisation{
     flex-wrap:wrap;
+}
+/*bragging*/
+.bragging{
+    flex-wrap:wrap;
+    gap:20px;
 }
 }
