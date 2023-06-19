@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Marmelad', sans-serif;
 }
 html{
     scroll-behavior: smooth;
@@ -62,12 +62,25 @@ header .website-name span{
 /*welcome box*/
 .welcome-box{
     padding:20px;
+    display:flex;
+    justify-content: center;
+    background-color: rgb(10, 10, 10);
+    width:100%;
+    color:white;
+    gap:20px;
+}
+.welcome-box .image{
+    width:500px;
+}
+.welcome-box .image img{
+    width:100%;
 }
 .welcome-box .paragraph{
-    text-align:center;
+    text-align:start;
+    width:500px;
 }
 .welcome-box h3{
-    font-size:100px;
+    font-size:70px;
 }
 .welcome-box h5{
     color:rgb(31, 97, 141);
@@ -75,88 +88,50 @@ header .website-name span{
 }
 .welcome-box .paragraph button{
     padding:20px;
-    width:50%;
-    margin:20px 0;
-    background-color: lightblue;
+    margin:5px 0;
+    background-color: rgb(230, 232, 233);
     border:1px solid lightblue;
-    border-radius:20px
+    border-radius:4px
 }
-/*activities*/
-.activities{
-    padding:20px;
-    background-color: lightblue;
-}
-.activities h5{
-    padding:20px 0;
-    color:rgb(0, 0, 0);
-    font-weight:100;
-    font-size:larger;
-}
-.activities div{
-    width:fit-content;
-}
-.activities .lessons{
-    padding:20px;
+.welcome-box .paragraph .explore{
     background-color: unset;
-    border:1px solid lightgrey ;
-    border-radius:20px;
-    margin-bottom: 10px;
+    border:2px solid lightblue ;
+    color:white;
 }
-.activities .lessons:hover{
-    cursor: pointer;
-    box-shadow: 1px 1px 3px;
-}
-.activities .quizzes{
-    padding:20px;
-    background-color: unset;
-    border:1px solid lightgrey;
-    border-radius:20px;
-    margin-bottom: 10px;
-}
-.activities .quizzes:hover{
-    cursor: pointer;
-    box-shadow: 1px 1px 3px;
-}
-.activities .question-papers{
-    padding:20px;
-    background-color: unset;
-    border:1px solid lightgrey;
-    border-radius:20px;
-    margin-bottom: 10px;
-}
-.activities .question-papers:hover{
-    cursor: pointer;
-    box-shadow: 1px 1px 3px;
-}
-.activities .sub-text{
-    font-size: small;
-    color:rgb(29, 158, 218);
-}
-/*about subject*/
-.about-subject{
-    padding:20px;
-    border:1px solid lightgray;
-    margin:10px;
-}
-.about-subject .about-subject-text{
-    padding:10px 0;
-}
-/*why us*/
-.why-us{
+
+/*specialisation*/
+.specialisation{
     padding:10px;
+    display:flex;
+    justify-content: center;
+    gap:20px;
 }
-.why-us h4 span span{
-    color:rgb(29, 158, 218);;
+.specialisation .paragraph{
+    width:500px;
+}
+.specialisation .paragraph button{
+    padding:20px;
+    background-color: unset;
+    color:rgb(61, 60, 60);
+    border:1px solid;
+    border-radius:4px;
+    
+}
+.specialisation .image{
+    width:500px;
+}
+.specialisation .image img{
+    width:100%;
 }
 /*menu*/
 .menu{
-    background-color: rgb(29, 158, 218);;
+    background-color: rgb(255, 255, 255);;
     height:0;
     width:0;
     position: absolute;
     overflow: hidden;
     color:rgb(37, 36, 36);
-    border-radius:20px 20px 0 0;
+    border-radius:20px;
     margin:20px;
     top:30px;
 }
@@ -169,7 +144,7 @@ header .website-name span{
 }
 .menu ul li:hover{
     cursor: pointer;
-    background-color:#115bca;
+    background-color:#5075ad;
     color:white;
 }
 .menu .about-list{
@@ -186,7 +161,7 @@ header .website-name span{
 }
 .menu .social-media{
     padding:10px;
-    color:white;
+    color:rgb(49, 47, 47);
 }
 .menu .social-media .wrap-all{
     display:flex;
@@ -200,6 +175,7 @@ header .website-name span{
 .menu .buttons button{
     padding:20px;
     color:rgb(46, 45, 45);
+    background-color: rgb(29, 158, 218);
     border-radius:20px;
     border:0;
     width:100%;
@@ -228,17 +204,17 @@ footer .contact-us button{
 /*AT SMALL SCREEN*/
 @media screen and (max-width:700px){
 /*welcome box*/
+.welcome-box{
+    flex-wrap: wrap;
+}
 .welcome-box h3{
     font-size:30px;
 }
-    /*activities*/
-.activities{
-    padding:20px;
-    display:block;
-    gap:10px;
+.welcome-box .paragraph{
+    text-align:center;
 }
-.activities div{
-    width:100%;
-    margin-bottom: 10px;
+/*specialisation*/
+.specialisation{
+    flex-wrap:wrap;
 }
 }

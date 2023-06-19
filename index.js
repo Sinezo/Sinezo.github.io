@@ -12,7 +12,7 @@ menu.addEventListener('click', function(){
     document.querySelector('.menu').style.width='fit-content';
     document.querySelector('.menu').style.height='fit-content';
     document.querySelector('.menu').style.padding='20px';
-    document.querySelector('.menu').style.borderTop='2px solid';
+    document.querySelector('.menu').style.border='2px solid';
     document.querySelector('.about-list').style.transform='translate(0)';
     document.querySelector('.talk-list').style.transform='translate(0)';
     document.querySelector('.request-list').style.transform='translate(0)';
@@ -32,7 +32,7 @@ menu.addEventListener('click', function(){
 
     document.querySelector('.menu').style.width='0';
     document.querySelector('.menu').style.padding='0';
-    document.querySelector('.menu').style.borderTop='0';
+    document.querySelector('.menu').style.border='0';
     document.querySelector('.about-list').style.transform='translate(-200%)';
     document.querySelector('.talk-list').style.transform='translate(-200%';
     document.querySelector('.request-list').style.transform='translate(-200%)';
