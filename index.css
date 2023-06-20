@@ -15,11 +15,11 @@ body{
 /*font-family: 'Poppins', sans-serif;*/
 /*header*/
 header{
-    padding:10px;
+    padding:20px;
 }
 header .website-name{
     font-weight:600;
-    font-size:larger
+    font-size:larger;
 }
 header .website-name span{
     color:rgb(29, 158, 218);;
@@ -59,6 +59,29 @@ header .website-name span{
     gap:10px;
     list-style: none;
 }
+/*big-screen-nav*/
+.big-screen-nav{
+    padding:20px;
+    position: absolute;
+    width:80%;
+    margin:-73px 0px 0 0;
+    border-radius:4px;
+}
+.list-on-small-screen{
+    display:none;
+}
+.big-screen-nav ul{
+    display:flex;
+    gap:20px;
+    float:right;
+    list-style: none;
+}
+.big-screen-nav ul li{
+    padding:10px;
+}
+.big-screen-nav ul .design{
+    background-color: lightgreen;
+}
 /*welcome box*/
 .welcome-box{
     padding:20px;
@@ -81,6 +104,7 @@ header .website-name span{
 }
 .welcome-box h3{
     font-size:70px;
+    font-family: sans-serif;
 }
 .welcome-box h5{
     color:rgb(31, 97, 141);
@@ -101,10 +125,13 @@ header .website-name span{
 
 /*specialisation*/
 .specialisation{
-    padding:10px;
+    padding:20px;
     display:flex;
     justify-content: center;
     gap:20px;
+}
+.specialisation h1{
+    font-family: sans-serif;
 }
 .specialisation .paragraph{
     width:500px;
@@ -145,6 +172,9 @@ header .website-name span{
     text-align: center;
     gap:20px;
 }
+.bragging h2{
+    font-family: sans-serif;
+}
 .bragging i{
     font-size: 50px;
     color:rgb(29, 158, 218);
@@ -166,9 +196,12 @@ header .website-name span{
     display:flex;
     gap:20px;
     justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
 }
 .tutoring h2{
-    color:rgb(99, 139, 161);
+    color:rgb(143, 146, 148);
+    font-family:sans-serif;
 }
 .tutoring .box1{
     width:500px;
@@ -187,6 +220,36 @@ header .website-name span{
 .tutoring .box2 iframe{
     width:100%;
     border-radius: 20px;
+}
+.box3{
+    width:500px;
+}
+.box3 h3{
+    font-family: sans-serif;
+}
+.box3 h4{
+    color:rgb(59, 57, 57);
+}
+.box3 button{
+    padding:10px;
+    background-color: red;
+    color:white;
+    border-radius:4px;
+    border:0;
+    margin-top: 10px;
+}
+.teacher1,.teacher2,.teacher3{
+    padding:2px 2px;
+    border:1px solid rgb(24, 23, 23);
+    margin-top: 10px;
+    width:fit-content;
+    border-radius:4px;
+}
+.box4{
+    width:500px;
+}
+.box4 img{
+    width:100%;
 }
 /*menu*/
 .menu{
@@ -290,5 +353,12 @@ footer .contact-us button{
 /*tutoring*/
 .tutoring{
    flex-wrap:wrap;
+}
+/*big-screen-nav*/
+.big-screen-nav{
+    display:none;
+}
+.list-on-small-screen{
+    display:block;
 }
 }
