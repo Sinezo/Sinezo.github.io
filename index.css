@@ -252,7 +252,7 @@ header .website-name span{
     align-items: center;
 }
 .tutoring h2{
-    color:rgb(143, 146, 148);
+    color:rgb(210, 216, 219);
     font-family:sans-serif;
 }
 .tutoring .box1{
@@ -263,6 +263,7 @@ header .website-name span{
     background-color: rgb(47, 109, 167);
     border-radius: 4px;
     color:white; 
+    border:0;
 }
 .tutoring .box1 .learn-online-btn{
     background-color: unset;
@@ -305,6 +306,37 @@ header .website-name span{
 }
 .box4 img{
     width:100%;
+}
+
+/*contact-us-box*/
+.contact-us-box{
+    padding:20px;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+}
+.contact-us-box h2{
+    font-family: sans-serif;
+    padding:10px 0;
+}
+.contact-us-box #communication{
+    padding:10px;
+    background-color: unset;
+    border-radius: 4px;
+}
+.contact-us-box button{
+    padding:10px;
+    background-color: rgb(48, 128, 48);
+    border:0;
+    border-radius:4px;
+    color:white;
+}
+.contact-us-box option{
+    color:rgb(23, 80, 146);
+}
+.contact-us-box p{
+    padding:20px;
+    font-size:small ;
 }
 /*menu*/
 .menu{
@@ -411,6 +443,10 @@ footer .contact-us button{
 /*tutoring*/
 .tutoring{
    flex-wrap:wrap;
+}
+.tutoring .box1 button{
+    width:100%;
+    margin: 0 0 10px 0;
 }
 /*big-screen-nav*/
 .big-screen-nav{
