@@ -238,6 +238,9 @@ header .website-name span{
     padding:20px;
     text-align: center;
 }
+.more-on-us h2{
+    font-family: sans-serif;
+}
 /*tutoring*/
 .tutoring{
     background-color: black;
