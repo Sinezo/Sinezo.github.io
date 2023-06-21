@@ -404,17 +404,10 @@ header .website-name span{
 
 /*footer*/
 footer{
-    background-color: rgb(29, 158, 218);;
-}
-footer .contact-us{
+    background-color: rgb(47, 109, 167);
+    text-align: center;
     padding:20px;
-}
-footer .contact-us p{
-    padding:10px 0;
-}
-footer .contact-us button{
-    padding:10px;
-    margin:10px 0;
+    color:rgb(221, 215, 215);
 }
 /*AT SMALL SCREEN*/
 @media screen and (max-width:700px){
