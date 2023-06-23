@@ -268,6 +268,7 @@ header .website-name span{
 }
 .tutoring h2{
     color:rgb(210, 216, 219);
+    font-family: 'Times New Roman', Times, serif;
 }
 .tutoring .box1{
     width:500px;
@@ -295,6 +296,7 @@ header .website-name span{
     width:500px;
 }
 .box3 h3{
+    font-family: 'Times New Roman', Times, serif;
 }
 .box3 h4{
     color:rgb(59, 57, 57);
@@ -330,6 +332,7 @@ header .website-name span{
 }
 .contact-us-box h2{
     padding:10px 0;
+    font-family: 'Times New Roman', Times, serif;
 }
 .contact-us-box #communication{
     padding:10px;
