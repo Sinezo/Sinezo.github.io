@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: 'Marmelad', sans-serif;
+  
 }
 html{
     scroll-behavior: smooth;
@@ -12,7 +12,8 @@ body{
     background-color: rgb(255, 255, 255);
 
 }
-/*font-family: 'Poppins', sans-serif;*/
+/*font-family: 'Poppins', sans-serif;
+  font-family: 'Marmelad', sans-serif;*/
 /*header*/
 header{
     padding:20px;
@@ -105,7 +106,6 @@ header .website-name span{
 }
 .welcome-box h3{
     font-size:70px;
-    font-family: sans-serif;
 }
 .welcome-box h7{
     color:rgb(78, 79, 80);
@@ -135,10 +135,8 @@ header .website-name span{
     margin:20px;
 }
 .specialisation h1{
-    font-family: sans-serif;
 }
 .specialisation h2{
-    font-family: sans-serif;
     border-bottom: 2px solid;
     width:fit-content;
     padding:5px 0;
@@ -185,7 +183,6 @@ header .website-name span{
     flex-wrap: wrap;
 }
 .design-box h1{
-    font-family: sans-serif;
     padding:5px 0;
 }
 .design-box h4{
@@ -228,7 +225,6 @@ header .website-name span{
     gap:20px;
 }
 .bragging h2{
-    font-family: sans-serif;
 }
 .bragging i{
     font-size: 50px;
@@ -247,7 +243,6 @@ header .website-name span{
     text-align: center;
 }
 .more-on-us h2{
-    font-family: sans-serif;
 }
 /*tutoring*/
 .tutoring{
@@ -264,7 +259,6 @@ header .website-name span{
 }
 .tutoring h2{
     color:rgb(210, 216, 219);
-    font-family:sans-serif;
 }
 .tutoring .box1{
     width:500px;
@@ -292,7 +286,6 @@ header .website-name span{
     width:500px;
 }
 .box3 h3{
-    font-family: sans-serif;
 }
 .box3 h4{
     color:rgb(59, 57, 57);
@@ -327,7 +320,6 @@ header .website-name span{
     text-align: center;
 }
 .contact-us-box h2{
-    font-family: sans-serif;
     padding:10px 0;
 }
 .contact-us-box #communication{
