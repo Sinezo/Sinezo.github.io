@@ -2,7 +2,6 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-  
 }
 html{
     scroll-behavior: smooth;
@@ -10,6 +9,7 @@ html{
 body{
     color: rgb(33, 34, 36);
     background-color: rgb(255, 255, 255);
+    font-family: 'Marmelad', sans-serif;
 
 }
 /*font-family: 'Poppins', sans-serif;
@@ -106,6 +106,7 @@ header .website-name span{
 }
 .welcome-box h3{
     font-size:70px;
+    font-family: 'Times New Roman', Times, serif;
 }
 .welcome-box h7{
     color:rgb(78, 79, 80);
@@ -135,12 +136,14 @@ header .website-name span{
     margin:20px;
 }
 .specialisation h1{
+    font-family: 'Times New Roman', Times, serif;
 }
 .specialisation h2{
     border-bottom: 2px solid;
     width:fit-content;
     padding:5px 0;
     color:rgb(89, 89, 90);
+    font-family: 'Times New Roman', Times, serif;
 }
 .specialisation .paragraph{
     width:500px;
@@ -184,6 +187,7 @@ header .website-name span{
 }
 .design-box h1{
     padding:5px 0;
+    font-family: 'Times New Roman', Times, serif;
 }
 .design-box h4{
     padding:0 0 5px 0;
@@ -213,6 +217,9 @@ header .website-name span{
     padding:20px;
     text-align: center;
 }
+.why-choose-us h2{
+    font-family: 'Times New Roman', Times, serif;
+}
 .why-choose-us h2 span{
     color:rgb(47, 109, 167);
 }
@@ -225,6 +232,7 @@ header .website-name span{
     gap:20px;
 }
 .bragging h2{
+    font-family: 'Times New Roman', Times, serif;
 }
 .bragging i{
     font-size: 50px;
@@ -243,6 +251,7 @@ header .website-name span{
     text-align: center;
 }
 .more-on-us h2{
+    font-family: 'Times New Roman', Times, serif;
 }
 /*tutoring*/
 .tutoring{
