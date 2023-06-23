@@ -16,6 +16,7 @@ body{
 /*header*/
 header{
     padding:20px;
+    box-shadow: 1px 1px 3px lightgrey;
 }
 header .website-name{
     font-weight:600;
@@ -84,10 +85,9 @@ header .website-name span{
 }
 /*welcome box*/
 .welcome-box{
-    padding:20px;
+    padding:120px;
     display:flex;
     justify-content: center;
-    background-color: rgb(10, 10, 10);
     width:100%;
     gap:20px;
 }
@@ -107,9 +107,8 @@ header .website-name span{
     font-size:70px;
     font-family: sans-serif;
 }
-.welcome-box h5{
+.welcome-box h7{
     color:rgb(78, 79, 80);
-    font-size:large;
     font-weight: 100;
 }
 .welcome-box .paragraph button{
@@ -132,9 +131,18 @@ header .website-name span{
     display:flex;
     justify-content: center;
     gap:20px;
+    box-shadow:1px 1px 3px lightgrey;
+    margin:20px;
 }
 .specialisation h1{
     font-family: sans-serif;
+}
+.specialisation h2{
+    font-family: sans-serif;
+    border-bottom: 2px solid;
+    width:fit-content;
+    padding:5px 0;
+    color:rgb(89, 89, 90);
 }
 .specialisation .paragraph{
     width:500px;
@@ -176,7 +184,7 @@ header .website-name span{
     align-items: center;
     flex-wrap: wrap;
 }
-.design-box h3{
+.design-box h1{
     font-family: sans-serif;
     padding:5px 0;
 }
@@ -193,13 +201,13 @@ header .website-name span{
 }
 .design-box .get-electrical-design{
     width:500px;
-    border:1px solid lightgrey;
+    box-shadow:1px 1px 3px lightgrey;
     padding:30px 10px;
     border-radius: 4px;
 }
 .design-box .request-electrical-design{
     width:500px;
-    border:1px solid lightgrey;
+    box-shadow:1px 1px 3px lightgrey;
     padding:30px 10px;
     border-radius: 4px;
 }
@@ -228,7 +236,7 @@ header .website-name span{
 }
 .brag1,.brag2,.brag3{
     width:400px;
-    border:1px solid lightgrey;
+    box-shadow:1px 1px 3px lightgrey;
     padding:30px 10px;
     border-radius: 4px;
 }
@@ -417,12 +425,14 @@ footer{
 /*welcome box*/
 .welcome-box{
     flex-wrap: wrap;
+    padding:40px 20px;
 }
 .welcome-box h3{
     font-size:30px;
 }
 .welcome-box .paragraph{
     text-align:center;
+
 }
 .welcome-box .paragraph button{
     width:100%;
