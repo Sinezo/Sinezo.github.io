@@ -1,473 +1,192 @@
 *{
     margin:0;
     padding:0;
-    box-sizing: border-box;
+    font-family: sans-serif;
 }
-html{
-    scroll-behavior: smooth;
-}
-body{
-    color: rgb(33, 34, 36);
-    background-color: rgb(255, 255, 255);
-    font-family: 'Marmelad', sans-serif;
-
-}
-/*font-family: 'Poppins', sans-serif;
-  font-family: 'Marmelad', sans-serif;*/
 /*header*/
 header{
-    padding:20px;
-    box-shadow: 1px 1px 3px lightgrey;
+    display:flex;
+    justify-content: center;
+    padding:20px 0;
+    gap:10px;
+    box-shadow:1px 1px 1px rgb(240, 237, 237)
 }
 header .website-name{
-    font-weight:600;
-    font-size:larger;
+    padding:10px;
 }
 header .website-name span{
-    color:rgb(47, 109, 167);
+    color:rgb(247, 223, 11);
+}
+header .search-design  input{
+    padding:10px;
+    border:1px solid rgb(83, 80, 80);
+    width:120px;
+}
+header .login{
+    padding:10px;
+    background-color: rgb(227, 230, 230);
 }
 /*menu icon*/
-#menu-icon{
-    margin:-30px 0 10px 0;
-    padding:10px 0;
-    float:right;
-}
-#menu-icon .bar1{
-    width:20px;
-    height:2px;
-    background-color: rgb(47, 109, 167);
-    margin-bottom:3px;
-    transition:transform 300ms ease-in-out
-}
-#menu-icon .bar2{
-    width:20px;
-    height:2px;
-    background-color: rgb(47, 109, 167);
-    margin-bottom:3px;
-    transition:transform 300ms ease-in-out
-}
-#menu-icon .bar3{
-    width:20px;
-    height:2px;
-    background-color: rgb(47, 109, 167);
-    transition:transform 300ms ease-in-out
-}
-.nav-small-screen .more-menu{
-    color:rgb(247, 241, 240);
-    margin:10px 0;
-}
-.nav-small-screen .more-menu ul{
-    display:flex;
-    gap:10px;
-    list-style: none;
-}
-/*big-screen-nav*/
-.big-screen-nav{
-    padding:20px;
-    position: absolute;
-    width:80%;
-    margin:-73px 0px 0 0;
-    border-radius:4px;
-}
-.list-on-small-screen{
-    display:none;
-}
-.big-screen-nav ul{
-    display:flex;
-    gap:20px;
-    float:right;
-    list-style: none;
-}
-.big-screen-nav ul li{
+.menu-icon{
     padding:10px;
+    background-color: rgb(227, 230, 230);
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
-.big-screen-nav ul .design{
-    background-color: lightgreen;
+.menu-icon .wrap-bars{
+    display:grid;
+    gap:3px;
 }
+.menu-icon .bar1,.menu-icon .bar2,.menu-icon .bar3{
+    width:15px;
+    height:2px;
+    background-color: black;
+}
+
 /*welcome box*/
 .welcome-box{
-    padding:120px;
-    display:flex;
-    justify-content: center;
+    background-image: url('Screenshot_20230516-195204_Gallery.jpg');
+    background-size: cover;
+    height:400px;
     width:100%;
-    gap:20px;
-}
-.welcome-box .image{
-    width:500px;
-}
-.welcome-box .image img{
-    width:100%;
-}
-.welcome-box .paragraph{
-    text-align:start;
-    width:500px;
-    background-color: white;
-    padding:10px;
-}
-.welcome-box h3{
-    font-size:70px;
-    font-family: 'Times New Roman', Times, serif;
-}
-.welcome-box h7{
-    color:rgb(78, 79, 80);
-    font-weight: 100;
-}
-.welcome-box .paragraph button{
-    padding:20px;
-    margin:5px 0;
-    background-color: rgb(47, 109, 167);
-    border-radius:4px;
-    border:0;
-    color:white;
-}
-.welcome-box .paragraph .explore{
-    background-color: unset;
-    border:2px solid rgb(47, 109, 167) ;
-    color:rgb(0, 0, 0);
-}
-
-/*specialisation*/
-.specialisation{
-    padding:20px;
+    color:rgb(199, 194, 194);
+    text-align: center;
     display:flex;
     justify-content: center;
-    gap:20px;
-    box-shadow:1px 1px 3px lightgrey;
-    margin:20px;
-}
-.specialisation h1{
-    font-family: 'Times New Roman', Times, serif;
-}
-.specialisation h2{
-    border-bottom: 2px solid;
-    width:fit-content;
-    padding:5px 0;
-    color:rgb(89, 89, 90);
-    font-family: 'Times New Roman', Times, serif;
-}
-.specialisation .paragraph{
-    width:500px;
-}
-.specialisation .paragraph button{
-    padding:20px;
-    background-color: unset;
-    color:rgb(61, 60, 60);
-    border:1px solid;
-    border-radius:4px;
-    
-}
-.specialisation .image{
-    width:500px;
-}
-.specialisation .image img{
-    width:100%;
-}
-
-/*services*/
-.services{
-    Padding:20px;
-    text-align: center;
-}
-.services button{
-    padding:10px;
-    margin-bottom: 5px;
-    background-color: unset;
-    border:1px solid;
-    border-radius: 4px;
-}
-
-/*design-box*/
-.design-box{
-    padding:20px;
-    display:flex;
-    justify-content: center;
-    gap:20px;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.design-box h1{
-    padding:5px 0;
-    font-family: 'Times New Roman', Times, serif;
-}
-.design-box h4{
-    padding:0 0 5px 0;
-}
-.design-box button{
-    padding:20px;
-    background-color: rgb(47, 109, 167);
-    color:white;
-    border:0;
-    border-radius: 4px;
-
-}
-.design-box .get-electrical-design{
-    width:500px;
-    box-shadow:1px 1px 3px lightgrey;
-    padding:30px 10px;
-    border-radius: 4px;
-}
-.design-box .request-electrical-design{
-    width:500px;
-    box-shadow:1px 1px 3px lightgrey;
-    padding:30px 10px;
-    border-radius: 4px;
-}
-/*why-choose-us*/
-.why-choose-us{
-    padding:20px;
-    text-align: center;
-}
-.why-choose-us h2{
-    font-family: 'Times New Roman', Times, serif;
-}
-.why-choose-us h2 span{
-    color:rgb(47, 109, 167);
-}
-/*bragging*/
-.bragging{
-    padding:20px;
-    display:flex;
-    justify-content: center;
-    text-align: center;
-    gap:20px;
-}
-.bragging h2{
-    font-family: 'Times New Roman', Times, serif;
-}
-.bragging i{
-    font-size: 50px;
-    color:rgb(47, 109, 167);
-}
-.brag1,.brag2,.brag3{
-    width:400px;
-    box-shadow:1px 1px 3px lightgrey;
-    padding:30px 10px;
-    border-radius: 4px;
-}
-
-/*more-on-us*/
-.more-on-us{
-    padding:20px;
-    text-align: center;
-}
-.more-on-us h2{
-    font-family: 'Times New Roman', Times, serif;
-}
-/*tutoring*/
-.tutoring{
-    background-color: black;
-    border-radius: 20px 20px 0 0;
-    margin-top:30px;
-    padding:20px;
-    color:rgb(126, 122, 122);
-    display:flex;
-    gap:20px;
-    justify-content: center;
-    flex-wrap: wrap;
     align-items: center;
 }
-.tutoring h2{
-    color:rgb(210, 216, 219);
-    font-family: 'Times New Roman', Times, serif;
+.welcome-box h1{
+    padding:20px 10px;
 }
-.tutoring .box1{
-    width:500px;
-}
-.tutoring .box1 button{
+.welcome-box p{
     padding:20px;
-    background-color: rgb(47, 109, 167);
-    border-radius: 4px;
-    color:white; 
-    border:0;
 }
-.tutoring .box1 .learn-online-btn{
+.welcome-box button{
+    padding:20px;
+    border:0;
+
+}
+.welcome-box .explore{
     background-color: unset;
     color:white;
     border:1px solid;
 }
-.tutoring .box2{
-    width:500px;
-}
-.tutoring .box2 iframe{
-    width:100%;
-    border-radius: 20px;
-}
-.box3{
-    width:500px;
-}
-.box3 h3{
-    font-family: 'Times New Roman', Times, serif;
-}
-.box3 h4{
-    color:rgb(59, 57, 57);
-}
-.box3 button{
-    padding:10px;
-    background-color: red;
-    color:white;
-    border-radius:4px;
-    border:0;
-    margin-top: 10px;
-}
-.teacher1,.teacher2,.teacher3{
-    padding:2px 2px;
-    border:1px solid rgb(24, 23, 23);
-    margin-top: 10px;
-    width:fit-content;
-    border-radius:4px;
-}
-.box4{
-    width:500px;
-}
-.box4 img{
-    width:100%;
-}
 
-/*contact-us-box*/
-.contact-us-box{
+/*what-we-do*/
+.what-we-do{
     padding:20px;
     display:flex;
     justify-content: center;
-    text-align: center;
 }
-.contact-us-box h2{
-    padding:10px 0;
-    font-family: 'Times New Roman', Times, serif;
-}
-.contact-us-box #communication{
-    padding:10px;
-    background-color: unset;
-    border-radius: 4px;
-}
-.contact-us-box button{
-    padding:10px;
-    background-color: rgb(48, 128, 48);
-    border:0;
-    border-radius:4px;
-    color:white;
-}
-.contact-us-box option{
-    color:rgb(23, 80, 146);
-}
-.contact-us-box p{
-    padding:20px;
-    font-size:small ;
-}
-/*menu*/
-.menu{
-    background-color: rgb(255, 255, 255);;
-    height:0;
-    width:0;
-    position: absolute;
-    overflow: hidden;
-    color:rgb(37, 36, 36);
-    border-radius:20px;
-    margin:20px;
-    top:30px;
-}
-.menu ul li{
-    list-style: none;
-    background-color: unset;
-    padding:10px;
-    margin:10px;
-    border-radius: 4px;
-}
-.menu ul li:hover{
-    cursor: pointer;
-    background-color:#5075ad;
-    color:white;
-}
-.menu .about-list{
-    transform: translate(-200%);
-    transition:all 200ms ease-in-out;
-}
-.menu .talk-list{
-    transform: translate(-200%);
-    transition:all 500ms ease-in-out;
-}
-.menu .request-list{
-    transform: translate(-200%);
-    transition:all 700ms ease-in-out;
-}
-.menu .social-media{
-    padding:10px;
-    color:rgb(49, 47, 47);
-}
-.menu .social-media .wrap-all{
+.what-we-do ul{
     display:flex;
     gap:10px;
-    
-    padding:10px 0;
+    list-style: none;
 }
-.menu .social-media .wrap-all i{
-    font-size:x-large;
+.what-we-do ul li{
+    background-color: rgb(227, 230, 230);
+    text-align: center;
+    padding:10px;
 }
-.menu .buttons button{
+.what-we-do ul li i{
+    color:rgb(255, 166, 0);
+}
+.what-we-do ul li span{
+    font-size: small;
+}
+/*about-us*/
+.about-us{
     padding:20px;
-    color:rgb(230, 223, 223);
-    background-color: rgb(47, 109, 167);
-    border-radius:20px;
-    border:0;
-    width:100%;
-    margin-bottom:10px;
 }
-.menu .buttons button:hover{
-    cursor: pointer;
-    box-shadow:1px 1px 3px rgb(255, 255, 255);
-    
+.about-us .content{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:20px;
+}
+.about-us .content .image{
+    width:500px;
+}
+.about-us .content .image h3{
+    padding:5px;
+    border-left: 4px solid yellow;
+    margin:10px 0;
+}
+.about-us .content .image .wrap-image{
+    background-color: yellow;
+}
+.about-us .content .image img{
+    width:100%;
+    margin:-10px 0 5px 10px;
+}
+.about-us .content .paragraph{
+    width:500px;
+}
+.about-us .content .paragraph button{
+    padding:10px;
+    margin:10px 0;
 }
 
-/*footer*/
-footer{
-    background-color: rgb(47, 109, 167);
-    text-align: center;
+/*professionalism*/
+.professionalism{
     padding:20px;
-    color:rgb(221, 215, 215);
+    display:flex;
+    justify-content: center;
+}
+.professionalism ul{
+    list-style: none ;
+    display:flex;
+    gap:10px;
+}
+.professionalism ul li{
+    background-color: rgb(227, 230, 230);
+    text-align: center;
+    padding:10px;
+}
+.professionalism ul li span{
+    font-size: small;
+}
+
+/*our-services*/
+.our-services{
+    padding:20px;
+    background-color:rgb(227, 230, 230) ;
+    text-align: center;
+    display:flex;
+    gap:20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.our-services-heading{
+    background-color: rgb(227, 230, 230) ;
+    padding:10px 0 0 20px ;
+    display:flex;
+    justify-content: center;
+}
+.our-services-heading h3{
+    padding:5px;
+    border-left: 4px solid yellow;
+    width:1050px;
+}
+.our-services div{
+    background-color: white;
+    padding:20px;
+    width:300px;
 }
 /*AT SMALL SCREEN*/
 @media screen and (max-width:700px){
-/*welcome box*/
-.welcome-box{
-    flex-wrap: wrap;
-    padding:40px 20px;
-}
-.welcome-box h3{
-    font-size:30px;
-}
-.welcome-box .paragraph{
-    text-align:center;
+    /*what-we-do*/
+    .what-we-do ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-}
-.welcome-box .paragraph button{
-    width:100%;
-}
-/*specialisation*/
-.specialisation{
-    flex-wrap:wrap;
-}
-/*bragging*/
-.bragging{
-    flex-wrap:wrap;
-    gap:20px;
-}
-/*tutoring*/
-.tutoring{
-   flex-wrap:wrap;
-}
-.tutoring .box1 button{
-    width:100%;
-    margin: 0 0 10px 0;
-}
-/*big-screen-nav*/
-.big-screen-nav{
-    display:none;
-}
-.list-on-small-screen{
-    display:block;
-}
-/*design box*/
-.design-box button{
-    width:100%;
-
-}
+    /*professionalism*/
+    .professionalism ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
 }
