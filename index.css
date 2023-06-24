@@ -13,6 +13,7 @@ header{
 }
 header .website-name{
     padding:10px;
+    font-weight:600;
 }
 header .website-name span{
     color:rgb(247, 223, 11);
@@ -164,6 +165,9 @@ header .login{
     padding:10px 0 0 20px ;
     display:flex;
     justify-content: center;
+}
+.our-services img{
+    width:100px; 
 }
 .our-services-heading h3{
     padding:5px;
