@@ -51,7 +51,7 @@ header .login{
     background-size: cover;
     height:400px;
     width:100%;
-    color:rgb(199, 194, 194);
+    color:rgb(255, 255, 255);
     text-align: center;
     display:flex;
     justify-content: center;
@@ -79,6 +79,7 @@ header .login{
     padding:20px;
     display:flex;
     justify-content: center;
+    margin-top: 30px;
 }
 .what-we-do ul{
     display:flex;
@@ -86,12 +87,12 @@ header .login{
     list-style: none;
 }
 .what-we-do ul li{
-    background-color: rgb(227, 230, 230);
+    background-color: rgb(245, 248, 248);
     text-align: center;
     padding:10px;
 }
 .what-we-do ul li i{
-    color:rgb(255, 166, 0);
+    color:rgb(151, 150, 149);
 }
 .what-we-do ul li span{
     font-size: small;
@@ -128,6 +129,7 @@ header .login{
 .about-us .content .paragraph button{
     padding:10px;
     margin:10px 0;
+    background-color: yellow;
 }
 
 /*professionalism*/
@@ -142,7 +144,7 @@ header .login{
     gap:10px;
 }
 .professionalism ul li{
-    background-color: rgb(227, 230, 230);
+    background-color: rgb(245, 248, 248);
     text-align: center;
     padding:10px;
 }
@@ -153,7 +155,7 @@ header .login{
 /*our-services*/
 .our-services{
     padding:20px;
-    background-color:rgb(227, 230, 230) ;
+    background-color:rgb(245, 248, 248) ;
     text-align: center;
     display:flex;
     gap:20px;
@@ -161,7 +163,7 @@ header .login{
     flex-wrap: wrap;
 }
 .our-services-heading{
-    background-color: rgb(227, 230, 230) ;
+    background-color: rgb(245, 248, 248) ;
     padding:10px 0 0 20px ;
     display:flex;
     justify-content: center;
@@ -178,6 +180,17 @@ header .login{
     background-color: white;
     padding:20px;
     width:300px;
+}
+.our-services div:hover img{
+    width:90px;
+    cursor: pointer;
+}
+.our-services button{
+    padding:10px;
+    margin:10px 0;
+    width:50%;
+    background-color: rgb(0, 0, 0);
+    color:yellow;
 }
 /*AT SMALL SCREEN*/
 @media screen and (max-width:700px){
