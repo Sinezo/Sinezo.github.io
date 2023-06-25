@@ -1,7 +1,7 @@
 *{
     margin:0;
     padding:0;
-    font-family: sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 /*header*/
 header{
@@ -9,34 +9,32 @@ header{
     justify-content: center;
     padding:20px 0;
     gap:10px;
-    box-shadow:1px 1px 1px rgb(240, 237, 237)
+    box-shadow:1px 1px 1px rgb(240, 237, 237);
+    color:white;
 }
 header .website-name{
     padding:10px;
     font-weight:600;
 }
 header .website-name span{
-    color:rgb(247, 223, 11);
+    color:rgb(20, 100, 175);
 }
 header .search-design  input{
     padding:10px;
     border:1px solid rgb(83, 80, 80);
     width:120px;
-    border-radius:10px; 
 }
 header .login{
     padding:10px;
-    background-color: rgb(227, 230, 230);
-    border-radius:10px;
+    background-color:rgb(20, 100, 175);
 }
 /*menu icon*/
 .menu-icon{
     padding:10px;
-    background-color: rgb(227, 230, 230);
+    background-color: rgb(20, 100, 175);
     display:flex;
     justify-content: center;
     align-items: center;
-    border-radius:10px;
 }
 .menu-icon .wrap-bars{
     display:grid;
@@ -91,10 +89,10 @@ header .login{
     list-style: none;
 }
 .what-we-do ul li{
-    background-color: rgb(245, 248, 248);
+    background-color: rgb(20, 100, 175);
     text-align: center;
     padding:10px;
-    border-radius:10px;
+    color:white;
 }
 .what-we-do ul li i{
     color:rgb(151, 150, 149);
@@ -154,10 +152,11 @@ header .login{
     gap:10px;
 }
 .professionalism ul li{
-    background-color: rgb(245, 248, 248);
+    background-color: rgb(20, 100, 175);
     text-align: center;
     padding:10px;
     border-radius:10px;
+    color:white;
 }
 .professionalism ul li span{
     font-size: small;
