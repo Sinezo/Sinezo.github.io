@@ -22,10 +22,12 @@ header .search-design  input{
     padding:10px;
     border:1px solid rgb(83, 80, 80);
     width:120px;
+    border-radius:10px; 
 }
 header .login{
     padding:10px;
     background-color: rgb(227, 230, 230);
+    border-radius:10px;
 }
 /*menu icon*/
 .menu-icon{
@@ -34,6 +36,7 @@ header .login{
     display:flex;
     justify-content: center;
     align-items: center;
+    border-radius:10px;
 }
 .menu-icon .wrap-bars{
     display:grid;
@@ -66,6 +69,7 @@ header .login{
 .welcome-box button{
     padding:20px;
     border:0;
+    border-radius:10px;
 
 }
 .welcome-box .explore{
@@ -90,6 +94,7 @@ header .login{
     background-color: rgb(245, 248, 248);
     text-align: center;
     padding:10px;
+    border-radius:10px;
 }
 .what-we-do ul li i{
     color:rgb(151, 150, 149);
@@ -113,11 +118,10 @@ header .login{
 }
 .about-us .content .image h3{
     padding:5px;
-    border-left: 4px solid yellow;
     margin:10px 0;
 }
 .about-us .content .image .wrap-image{
-    background-color: yellow;
+    background-color: rgb(218, 218, 194);
 }
 .about-us .content .image img{
     width:100%;
@@ -129,9 +133,15 @@ header .login{
 .about-us .content .paragraph button{
     padding:10px;
     margin:10px 0;
-    background-color: yellow;
+    background-color: unset;
+    border:1px solid; 
+    border-radius:10px;
 }
-
+.about-us .content .paragraph button:hover{
+    cursor: pointer;
+    background-color: black;
+    color:yellow;
+}
 /*professionalism*/
 .professionalism{
     padding:20px;
@@ -147,6 +157,7 @@ header .login{
     background-color: rgb(245, 248, 248);
     text-align: center;
     padding:10px;
+    border-radius:10px;
 }
 .professionalism ul li span{
     font-size: small;
@@ -173,7 +184,6 @@ header .login{
 }
 .our-services-heading h3{
     padding:5px;
-    border-left: 4px solid yellow;
     width:1050px;
 }
 .our-services div{
@@ -181,16 +191,68 @@ header .login{
     padding:20px;
     width:300px;
 }
-.our-services div:hover img{
-    width:90px;
-    cursor: pointer;
-}
 .our-services button{
     padding:10px;
     margin:10px 0;
     width:50%;
-    background-color: rgb(0, 0, 0);
+    background-color: unset ;
+    border:1px solid;
+    border-radius: 10px;
+   
+}
+.our-services button:hover{
+    cursor: pointer;
+    background-color: black;
     color:yellow;
+}
+
+/*design-contact-us*/
+.design-contact-us{
+    padding:20px;
+    display:flex;
+    gap:20px;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.design-contact-us .design{
+    width:500px;
+}
+.design-contact-us .contact-us{
+    width:500px;
+    padding:20px;
+}
+.design-contact-us .contact-us h3{
+    padding:10px 0;
+}
+.design-contact-us .contact-us select{
+    padding:5px;
+    border-radius: 10px ;
+}
+.design-contact-us .contact-us p{
+    padding:20px;
+    font-size: small;
+}
+
+.design-contact-us button{
+    padding:10px;
+    border-radius:10px;
+    margin-top: 10px;
+    width:100%;
+}
+.design-contact-us .request-design-btn{
+    background-color: yellow;
+    border:0;
+}
+.design-contact-us .see-designs{
+    background-color: lightgreen;
+    border:0;
+}
+.design-contact-us .contact-us-btn{
+    background-color: rgb(51, 113, 170);
+    width:50%;
+    border:0;
+    color:white;
 }
 /*AT SMALL SCREEN*/
 @media screen and (max-width:700px){
@@ -198,6 +260,11 @@ header .login{
     .what-we-do ul{
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    /*about us*/
+    .about-us .content{
+       text-align:center;
     }
 
     /*professionalism*/
