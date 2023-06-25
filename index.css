@@ -225,20 +225,6 @@ header .login{
 .design-contact-us .design{
     width:500px;
 }
-.design-contact-us .contact-us{
-    width:500px;
-    padding:20px;
-}
-.design-contact-us .contact-us h3{
-    padding:10px 0;
-}
-.design-contact-us .contact-us select{
-    padding:5px;
-}
-.design-contact-us .contact-us p{
-    padding:20px;
-    font-size: small;
-}
 
 .design-contact-us button{
     padding:20px;
@@ -259,6 +245,56 @@ header .login{
     width:50%;
     border:0;
     color:white;
+}
+
+footer{
+    background-color: rgb(8, 64, 109);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+footer .contact-us{
+    width:500px;
+    padding:20px;
+    text-align: center;
+    color:white; 
+}
+footer .contact-us h3{
+    padding:10px 0;
+    color:rgb(218, 212, 212);
+}
+footer .contact-us select{
+    padding:5px;
+}
+footer .contact-us p{
+    padding:20px;
+    font-size: small;
+}
+footer .contact-us button{
+    padding:20px;
+    background-color: rgb(182, 119, 37);
+    color:white;
+    border:0;
+}
+footer .location h3{
+    padding:10px;
+}
+footer .location{
+    text-align: center;
+    padding:20px;
+    color:rgb(226, 218, 218);
+    width:500px;
+}
+footer .location iframe{
+    width:100%;
+}
+footer .copyright{
+    width:100%;
+    text-align: center;
+    color:rgb(233, 224, 224);
+    font-size:small;
+    padding:20px;
 }
 /*AT SMALL SCREEN*/
 @media screen and (max-width:700px){
