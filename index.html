@@ -11,202 +11,106 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <title>Home | Escalatech</title>
+    <title>Thisinstead</title>
 </head>
 <body>
     <!--HEADER-->
     <header>
-        <!--website name-->
+        <!--website-name-->
         <div class="website-name">
-            <i class="fa-solid fa-layer-group"></i> <span>ELEK</span>DESIGN
-        </div>
-        <!--search design-->
-        <div class="search-design">
-            <input type="search" name="search_design" placeholder="Search design">
-        </div>
-        <!--login-->
-        <div class="login">
-            <i class="fa-regular fa-user"></i>
-        </div>
-        <!--menu icon-->
-        <div class="menu-icon">
-            <div class="wrap-bars">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
+            &#11145; <span>this</span>Instead - Online Learning Platform
         </div>
     </header>
 
-    <!--WELCOME BOX-->
-    <div class="welcome-box">
-        <!--paragraph-->
-        <div class="paragraph"> 
-            <h1>What idea would you like to implement today?</h1>
+    <!--MENU NAVIGATION-->
+    <nav>
+        <!--menu list items-->
+        <ul>
+            <li onclick="window.location='lessons.html'">Lessons</li>
+            <li onclick="window.location='quizz.html'">Quizz</li>
+            <li onclick="window.location='tests.html'">Tests</li>
+            <li onclick="window.location='study-material.html'">Study Material </li>
+            <li>Video Tutorials</li>
+        </ul>
+        <!--menu icon-->
+        <div class="menu-icon" onclick="MENU()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </nav>
+
+    <!--SIDE NAVIGATIONS-->
+    <div class="side-navigation-wrap">
+        <!--left side navigation-->
+        <div class="left-side-navigation">
+            <ul>
+                <li>Quizz</li>
+                <li onclick="window.location='lessons.html'">Lessons</li>
+                <li onclick="window.location='tests.html'">Tests</li>
+                <li>Assignments</li>
+                <li>Projects</li>
+                <li onclick="window.location='study-material.html'" >Study Material</li>
+                <li>Video Tutuorials</li>
+            </ul>
+        </div>
+        <!--right side navigation-->
+        <div class="right-side-navigation">
+            <img src="undraw_Reading_re_29f8.png" alt="">
             <p>
-                Our team would really love helping you bring that idea in your imaginative 
-                mind into reality.
+                Have the best of our simplified and less overwhelming online lessons specially prepared for you.
             </p>
-            <button>Get started</button> <button class="explore">Explore</button>
+            <div class="button"> <buttoN class="login">LOGIN</buttoN> <button class="register-btn" onclick="REGISTER()">REGISTER</button></div>
         </div>
     </div>
-
-    <!--WHAT WE DO-->
-    <div class="what-we-do">
-        <ul>
-            <li><i class="fa-solid fa-bolt-lightning"></i> <br><span>Electrical</span></li>
-            <li><i class="fa-solid fa-microchip"></i> <br><span>Electronics</span></li>
-            <li><i class="fa-solid fa-code"></i> <br><span>Arduino Programming</span></li>
-            <li><i class="fa-solid fa-palette"></i> <br><span>Electroplating</span></li>
-            <li><i class="fa-solid fa-layer-group"></i> <br><span>3D Printing</span></li>
-        </ul>
-    </div>
-
+    
     <!--ABOUT US-->
-    <h3 class="about-us-heading">About us</h3>
     <div class="about-us">
-        <!--content-->
-        <div class="content">
-            <!--image-->
-            <div class="image">
-                <div class="wrap-image"><img src="Screenshot_20230427-084427_Gallery.jpg" alt="image2"></div>
+        <p>
+            thisInstead is an online learning platform specially created for high school learners and university students. 
+            We focus more on technical subjects teaching the basic to advanced concepts preparing every student for 
+            examinations and for their engineering journey. We provide the best and less overwhelming lessons which 
+            make the whole journey more fun and fruitful. We have come with a different approach of teaching, we don't want to see 
+            students memorizing, <b>instead</b> we want to see them understanding and applying the laws and principles of science and mathematics being taught in class.
+        </p>
+    </div>
+
+     <!--REGISTER-->
+     <div class="register">
+        <div class="form-box">
+            <div class="close">
+                <div class="close-icon" onclick="REGISTER()">Close X</div>
             </div>
-            <!--paragraph-->
-            <div class="paragraph">
-                <h2>We specialize in Low Volatge Electrical Desin</h2>
-                <p>
-                    We design, from stretch, smart & interactive electrical + electronic systems to 
-                    solve real world problems. Throughout the design we follow all the Safety Rules and Regulations 
-                    of Occupational Health & Safety.
-                </p>
-                <button>Continue reading </button>
-            </div>
+            <h2>Registration Form</h2>
+            <p>
+                Completing reistrations means you are to access all that we have on our 
+                platform.
+            </p>
+            <form action="#" method="POST">
+                <input type="text" placeholder="Name & Surname">
+                <br><input type="tel" name="tel" id="tel" placeholder="Cell Number">
+                <br><input type="email" name="email" id="email" placeholder="Email Address">
+                <br><br><b>Level of Study</b>: <select name="level-of-study" id="level-of-study">
+                    <option value="high-school">HIGH SCHOOL</option>
+                    <option value="unirvesity">TERTIARY</option>
+                </select>
+                <br><input type="text" placeholder="Name of School">
+                <br><br>
+                <label>
+                    Subjects you want to learn with us:
+                </label>
+                <br><input type="checkbox" name="electrical-technology" id="electrical-technology"> Electrical Technology 
+                <br><input type="checkbox" name="mathematics" id="mathematics"> Mathematics
+    
+                <br><br><input type="checkbox" name="terms-condtions" id="terms-conditions"> <label class="t-cs">Terms & Conditions</label>
+                <br><button type="submit">Register</button>
+    
+            </form>
         </div>
     </div>
-
-    <!--PROFESSIONALISM-->
-    <div class="professionalism">
-        <ul>
-            <li>
-                <h2>2+</h2>
-                <br>
-                <span>yeas of experience</span>
-            </li>
-
-            <li>
-               <h2> 120+</h2>
-                <br>
-                <span>designs completed</span>
-            </li>
-
-            <li>
-                <h2>12+</h2>
-                <br><span>satisfied clients</span>
-            </li>
-
-            <li>
-                <h2>112+</h2>
-                <br><span>active students</span>
-            </li>
-        </ul>
-    </div>
-
-    <!--OUR SERVICES-->
-    <div class="our-services-heading">
-        <h3>Our services</h3>
-    </div>
-    <div class="our-services">
-        <!--electrical design-->
-        <div class="electrical-design">
-            <img src="Atyourservice-Service-Categories-Electrical.512.png" alt="image">
-            <h4>Electrical Design</h4>
-            <p>
-                We design, from stretch, smart & interactive electrical + electronic systems to solve real world problems.
-            </p>
-            <button>Learn more</button>
-        </div>
-        <!--electronic design-->
-        <div class="electronic-design">
-            <img src="Double-J-Design-Electronics-DIP-16-pin.256.png" alt="image">
-            <h4>Electronic Design</h4>
-            <p>
-                We design, from stretch, smart & interactive electrical + electronic systems to solve real world problems.
-            </p>
-            <button>Learn more</button>
-        </div>
-        <!--automation-->
-        <div class="automation">
-            <img src="Iconshock-Real-Vista-Development-Automation.256.png" alt="image">
-            <h4>Automation</h4>
-            <p>
-                We design, from stretch, smart & interactive electrical + electronic systems to solve real world problems.
-            </p>
-            <button>Learn more</button>
-        </div>
-        <!--electroplating-->
-        <div class="electroplating">
-            <img src="Iconsmind-Outline-Chemical-3.512.png" alt="image">
-            <h4>Electroplating</h4>
-            <p>
-                We design, from stretch, smart & interactive electrical + electronic systems to solve real world problems.
-            </p>
-            <button>Learn more</button>
-        </div>
-        <!--3D printing-->
-        <div class="printing">
-            <img src="Iynque-Flurry-Extras-8-123D-Make.512.png" alt="image">
-            <h4>3D Printing</h4>
-            <p>
-                We design, from stretch, smart & interactive electrical + electronic systems to solve real world problems.
-            </p>
-            <button>Learn more</button>
-        </div>
-        <!--tutoring-->
-        <div class="tutoring">
-            <img src="Babasse-Old-School-Illustrator-old-school.256.png" alt="image">
-            <h4>Tutoring</h4>
-            <p>
-                Unlock the power of electrical mastery with our premier tutoting services. From basic concepts to advanced problem-solving, 
-                we tailor our lessons to suit your unique needs.
-            </p>
-            <button>Learn more</button>
-        </div>
-    </div>
-
-    <!--DESIGN - CONTACT US-->\
-    <div class="design-contact-us">
-        <!--design-->
-        <div class="design">
-            <button class="request-design-btn">Request Design</button> <br>
-            <button class="see-designs">See all designs</button>
-        </div>
-    </div>
-
     <!--FOOTER-->
     <footer>
-
-         <!--contact us-->
-         <div class="contact-us">
-            <h3>Contact us</h3>
-            <span>VIA</span>: <select name="contact" id="contact-choice">
-                <option value="0786052462">Phone</option>
-                <option value="lusawanasinethemba@gmail.com">Email</option>
-                <option value="whatsapp">WhatsApp</option>
-                <option value="facebook">Facebook</option>
-            </select><br>
-            <p>We would really love hearing from you.</p>
-            <button class="contact-us-btn">Send Message</button>
-        </div>
-
-        <!--location-->
-        <div class="location">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108745.22877679953!2d28.704154892651687!3d-31.598556386322507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e5fd0c6cfc4a93b%3A0x37ca9bdb0e18b7f6!2sMthatha%2C%205100!5e0!3m2!1sen!2sza!4v1687693670054!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
-        <div class="copyright">
-            &copy;elekdesign 2023
-        </div>
-    
+        &copy;thisinstead 2023 | privacy of policy | T' s & C' s
     </footer>
     <script src="index.js"></script>
 </body>

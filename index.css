@@ -1,318 +1,195 @@
 *{
     margin:0;
     padding:0;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:arial;
 }
 /*header*/
 header{
-    display:flex;
-    justify-content: center;
-    padding:20px 0;
-    gap:10px;
-    box-shadow:1px 1px 1px rgb(240, 237, 237);
-}
-header .website-name{
+    background-color: rgb(67, 46, 128);
     padding:10px;
-    font-weight:600;
-    color:rgb(83, 81, 81); 
-}
-header .website-name span{
-    color:rgb(20, 100, 175);
-}
-header .search-design  input{
-    padding:10px;
-    border:1px solid rgb(83, 80, 80);
-    width:120px;
-}
-header .login{
-    padding:10px;
-    background-color:rgb(20, 100, 175);
     color:white;
+    border-bottom:1px solid
 }
-/*menu icon*/
-.menu-icon{
-    padding:10px;
-    background-color: rgb(20, 100, 175);
+/*nav*/
+nav{
     display:flex;
-    justify-content: center;
-    align-items: center;
+    gap:20px;
+    justify-content: end;
+    padding:0 10px;
+    margin: -40px 0 0 0;
+    color:white;
+    position:absolute;
+    width:95%;
 }
-.menu-icon .wrap-bars{
+nav ul{
+    display:flex;
+    list-style: none;
+    gap:20px;
+}
+nav ul li:hover{
+    cursor: pointer;
+    color:rgb(194, 188, 188);
+}
+.menu-icon{
     display:grid;
     gap:3px;
 }
-.menu-icon .bar1,.menu-icon .bar2,.menu-icon .bar3{
-    width:15px;
-    height:2px;
-    background-color: rgb(255, 255, 255);
+.menu-icon .bar1,.menu-icon .bar2, .menu-icon .bar3{
+    background: rgb(245, 241, 245);
+    width:20px;
+    height:4px;
+    transition: all 200ms ease-in-out;
 }
-
-/*welcome box*/
-.welcome-box{
-    background-image: url('Screenshot_20230516-195204_Gallery.jpg');
-    background-size: cover;
-    background-position: center;
-    height:400px;
-    width:100%;
-    color:rgb(255, 255, 255);
-    text-align: center;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+/*website-name*/
+.website-name{
+    padding:10px;
+    font-weight:bold;
+    font-size: larger;
 }
-.welcome-box h1{
-    padding:20px 10px;
+.website-name span{
+    font-size:medium;
+    color:rgb(28, 92, 189);
+    font-style: italic;
 }
-.welcome-box p{
-    padding:20px;
-}
-.welcome-box button{
-    padding:20px;
-    border:0;
-    background-color: rgb(20, 100, 175);
-    color:white;
-
-}
-.welcome-box .explore{
-    background-color: unset;
-    color:white;
-    border:1px solid;
-}
-
-/*what-we-do*/
-.what-we-do{
-    padding:20px;
-    display:flex;
-    justify-content: center;
-    margin-top: 30px;
-}
-.what-we-do ul{
+/*side-navigation-wrap*/
+.side-navigation-wrap{
     display:flex;
     gap:10px;
-    list-style: none;
+    overflow: hidden;
 }
-.what-we-do ul li{
-    background-color: rgb(20, 100, 175);
-    text-align: center;
-    padding:10px;
-    color:rgb(230, 223, 223);
-}
-.what-we-do ul li i{
+.side-navigation-wrap .left-side-navigation{
+    width:0;
+    background-color: rgb(67, 46, 128);
     color:rgb(255, 255, 255);
+    transition: width 300ms ease-in-out;
+    position:absolute;
+    overflow:hidden;
 }
-.what-we-do ul li span{
+.side-navigation-wrap .left-side-navigation ul{
+    list-style: none;
+    padding:10px;
+    line-height: 30px;
+    min-width: max-content;
+}
+.side-navigation-wrap .left-side-navigation ul li:hover{
+    cursor: pointer;
+    color:rgb(194, 188, 188);
+}
+.side-navigation-wrap .right-side-navigation{
+    width:100%;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding:20px;
+    transition: width 200ms ease-in-out;
+}
+.side-navigation-wrap .right-side-navigation img{
+    width:30%;
+}
+.side-navigation-wrap .right-side-navigation p{
+    padding:10px;
+}
+.side-navigation-wrap .right-side-navigation button{
+    padding:15px;
+    background-color: rgb(71, 22, 134);
+    color:white;
+    border:0;
+    width:20%;
+    margin-top: 10px;
+}
+.side-navigation-wrap .right-side-navigation button:hover{
+    cursor: pointer;
+    background-color: rgb(36, 11, 65);
+}
+/*register*/
+.register{
+    color:rgb(127, 33, 216);
+    display:flex;
+    justify-content: center;
+    position:absolute;
+    transition: all 300ms ease-in-out;
+    top:500px;
+    overflow:hidden;
+    width:100%;
+    height:0;
+}
+.register .form-box{
+    box-shadow: 1px 1px 3px;
+    margin:20px;
+    background-color:rgb(255, 255, 255);
+}
+.register .form-box h2{
+    padding:5px;
+}
+.register .form-box p{
     font-size: small;
+    padding:10px;
 }
-/*about-us*/
+.register form{
+    padding:20px;
+}
+.register form input{
+    padding:10px;
+    width:100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+.register form #electrical-technology, .register form #mathematics, .register form #terms-conditions{
+    width:fit-content;
+}
+.register form b{
+    margin:10px 0;
+}
+.t-cs{
+    color:blue;
+}
+.register form button{
+    padding:20px;
+    margin:10px 0;
+    width:100%;
+    background-color: rgb(43, 34, 124);
+    border:0;
+    color:white;
+}
+.close{
+    display:flex;
+    justify-content: end;
+    padding:10px;
+}
+.close .close-icon:hover{
+    cursor: pointer;
+    color:red;
+}
+/*about us*/
 .about-us{
     padding:20px;
-}
-.about-us .content{
-    display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    gap:20px;
-}
-.about-us .content .image{
-    width:500px;
-}
-.about-us-heading{
-    padding:20px;
-    text-align: center;
-    color:rgb(70, 68, 68);
-}
-.about-us .content .image .wrap-image{
-    background-color: rgb(218, 218, 194);
-}
-.about-us .content .image img{
-    width:100%;
-    margin:-10px 0 5px 10px;
-}
-.about-us .content .paragraph{
-    width:500px;
-}
-.about-us .content .paragraph button{
-    padding:10px;
-    margin:10px 0;
-    background-color: unset;
-    border:1px solid; 
-}
-.about-us .content .paragraph button:hover{
-    cursor: pointer;
-    background-color: black;
-    color:yellow;
-}
-/*professionalism*/
-.professionalism{
-    padding:20px;
-    display:flex;
-    justify-content: center;
-}
-.professionalism ul{
-    list-style: none ;
-    display:flex;
-    gap:10px;
-}
-.professionalism ul li{
-    background-color: rgb(20, 100, 175);
-    text-align: center;
-    padding:10px;
-    color:white;
-}
-.professionalism ul li span{
     font-size: small;
-}
-
-/*our-services*/
-.our-services{
-    padding:20px;
-    background-color:rgb(245, 248, 248) ;
-    text-align: center;
-    display:flex;
-    gap:20px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.our-services-heading{
-    background-color: rgb(245, 248, 248) ;
-    padding:10px 0 0 20px ;
     display:flex;
     justify-content: center;
-    text-align: center;
-    color:rgb(70, 68, 68);
 }
-.our-services img{
-    width:100px; 
-}
-.our-services-heading h3{
-    padding:5px;
-}
-.our-services h4{
-    color:rgb(20, 100, 175);
-    padding:10px;
-}
-.our-services div{
-    background-color: white;
-    padding:20px;
-    width:300px;
-}
-.our-services button{
-    padding:10px;
-    margin:10px 0;
-    width:50%;
-    background-color: rgb(20, 100, 175) ;
-    border:1px solid;
-    color:white;
-   
-}
-.our-services button:hover{
-    cursor: pointer;
-    background-color: rgb(17, 75, 129);
-    color:rgb(255, 255, 255);
+.about-us p{
+    width:700px;
+    border-top: 2px solid rgb(77, 36, 87);
+    padding-top: 20px;
 }
 
-/*design-contact-us*/
-.design-contact-us{
-    padding:20px;
-    display:flex;
-    gap:20px;
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
-    align-items: center;
-}
-.design-contact-us .design{
-    width:500px;
-}
-
-.design-contact-us button{
-    padding:20px;
-    margin-top: 10px;
-    width:50%;
-}
-.design-contact-us .request-design-btn{
-    background-color: rgb(30, 82, 161);
-    color:white;
-    border:0;
-}
-.design-contact-us .see-designs{
-    background-color: unset;
-    border:1px solid
-}
-.design-contact-us .contact-us-btn{
-    background-color: rgb(51, 170, 91);
-    width:50%;
-    border:0;
-    color:white;
-}
-
+/*footer*/
 footer{
-    background-color: rgb(8, 64, 109);
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-footer .contact-us{
-    width:500px;
-    padding:20px;
     text-align: center;
-    color:white; 
-}
-footer .contact-us h3{
-    padding:10px 0;
-    color:rgb(218, 212, 212);
-}
-footer .contact-us select{
-    padding:5px;
-}
-footer .contact-us p{
-    padding:20px;
     font-size: small;
-}
-footer .contact-us button{
-    padding:20px;
-    background-color: rgb(182, 119, 37);
-    color:white;
-    border:0;
-}
-footer .location h3{
-    padding:10px;
-}
-footer .location{
-    text-align: center;
-    padding:20px;
-    color:rgb(226, 218, 218);
-    width:500px;
-}
-footer .location iframe{
-    width:100%;
-}
-footer .copyright{
-    width:100%;
-    text-align: center;
-    color:rgb(233, 224, 224);
-    font-size:small;
     padding:20px;
 }
-/*AT SMALL SCREEN*/
-@media screen and (max-width:700px){
-    /*what-we-do*/
-    .what-we-do ul{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
 
-    /*about us*/
-    .about-us .content{
-       text-align:center;
+/*AT SMALL SCREENS*/
+@media screen and (max-width:950px){
+    /*nav*/
+    nav ul{
+        display:none;
     }
-
-    /*professionalism*/
-    .professionalism ul{
-        flex-wrap: wrap;
-        justify-content: center;
+    /*side-navigation-wrap*/
+    .side-navigation-wrap .right-side-navigation button{
+        width:100%;
     }
-    
+    .side-navigation-wrap .right-side-navigation img{
+        width:100%;
+    }
 }
