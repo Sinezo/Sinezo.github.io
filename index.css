@@ -5,7 +5,7 @@
 }
 /*header*/
 header{
-    background-color: rgb(67, 46, 128);
+    background-color: rgb(230, 130, 16);
     padding:10px;
     color:white;
     border-bottom:1px solid
@@ -51,6 +51,54 @@ nav ul li:hover{
     color:rgb(28, 92, 189);
     font-style: italic;
 }
+
+
+
+/*welcome-box*/
+.welcome-box{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    gap:20px;
+}
+.welcome-box .image{
+    width:500px;
+    display:flex;
+    justify-content: center;
+}
+.welcome-box .image img{
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+}
+.welcome-box .image .one{
+    border:4px solid chocolate;
+    border-radius: 50%;
+    width:200px;
+    height:200px;
+}
+
+.welcome-box .text{
+    width:500px
+}
+.welcome-box .text .buttons{
+    padding:20px; 
+}
+.welcome-box .text .buttons button{
+    padding:10px;
+}
+.welcome-box .text .read-more{
+    background-color: unset;
+    border:1px solid;
+}
+.welcome-box .text .facebook-profile{
+    background-color: blue;
+    color:white;
+    border:1px solid rgb(13, 35, 163);
+}
+
 /*side-navigation-wrap*/
 .side-navigation-wrap{
     display:flex;
@@ -58,10 +106,10 @@ nav ul li:hover{
     overflow: hidden;
 }
 .side-navigation-wrap .left-side-navigation{
-    width:0;
-    background-color: rgb(67, 46, 128);
+    height:0;
+    background-color: rgb(230, 114, 6);
     color:rgb(255, 255, 255);
-    transition: width 300ms ease-in-out;
+    transition: height 300ms ease-in-out;
     position:absolute;
     overflow:hidden;
 }
@@ -75,103 +123,20 @@ nav ul li:hover{
     cursor: pointer;
     color:rgb(194, 188, 188);
 }
-.side-navigation-wrap .right-side-navigation{
-    width:100%;
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    padding:20px;
-    transition: width 200ms ease-in-out;
-}
-.side-navigation-wrap .right-side-navigation img{
-    width:30%;
-}
-.side-navigation-wrap .right-side-navigation p{
+.get-a-tutor{
+    background-color: white;
     padding:10px;
+    color:black;
+    font-size:small;
 }
-.side-navigation-wrap .right-side-navigation button{
-    padding:15px;
-    background-color: rgb(71, 22, 134);
-    color:white;
-    border:0;
-    width:20%;
-    margin-top: 10px;
-}
-.side-navigation-wrap .right-side-navigation button:hover{
-    cursor: pointer;
-    background-color: rgb(36, 11, 65);
-}
-/*register*/
-.register{
-    color:rgb(127, 33, 216);
-    display:flex;
-    justify-content: center;
-    position:absolute;
-    transition: all 300ms ease-in-out;
-    top:500px;
-    overflow:hidden;
-    width:100%;
-    height:0;
-}
-.register .form-box{
-    box-shadow: 1px 1px 3px;
-    margin:20px;
-    background-color:rgb(255, 255, 255);
-}
-.register .form-box h2{
-    padding:5px;
-}
-.register .form-box p{
-    font-size: small;
+.get-a-tutor button{
     padding:10px;
-}
-.register form{
-    padding:20px;
-}
-.register form input{
-    padding:10px;
-    width:100%;
-    box-sizing: border-box;
-    margin-top: 10px;
-}
-.register form #electrical-technology, .register form #mathematics, .register form #terms-conditions{
-    width:fit-content;
-}
-.register form b{
-    margin:10px 0;
-}
-.t-cs{
-    color:blue;
-}
-.register form button{
-    padding:20px;
-    margin:10px 0;
-    width:100%;
-    background-color: rgb(43, 34, 124);
-    border:0;
+    background-color: rgb(7, 101, 129);
     color:white;
 }
-.close{
-    display:flex;
-    justify-content: end;
-    padding:10px;
+.get-a-tutor p{
+    padding:10px 0;
 }
-.close .close-icon:hover{
-    cursor: pointer;
-    color:red;
-}
-/*about us*/
-.about-us{
-    padding:20px;
-    font-size: small;
-    display:flex;
-    justify-content: center;
-}
-.about-us p{
-    width:700px;
-    border-top: 2px solid rgb(77, 36, 87);
-    padding-top: 20px;
-}
-
 /*footer*/
 footer{
     text-align: center;
@@ -191,5 +156,9 @@ footer{
     }
     .side-navigation-wrap .right-side-navigation img{
         width:100%;
+    }
+    /*welcome box*/
+    .welcome-box .text{
+        text-align:center;
     }
 }

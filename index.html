@@ -17,8 +17,8 @@
     <!--HEADER-->
     <header>
         <!--website-name-->
-        <div class="website-name">
-            &#11145; <span>this</span>Instead - Online Learning Platform
+        <div class="website-name" onclick="window.location='index.html'">
+            &#11145; Sinethemba 
         </div>
     </header>
 
@@ -26,11 +26,9 @@
     <nav>
         <!--menu list items-->
         <ul>
-            <li onclick="window.location='lessons.html'">Lessons</li>
-            <li onclick="window.location='quizz.html'">Quizz</li>
-            <li onclick="window.location='tests.html'">Tests</li>
-            <li onclick="window.location='study-material.html'">Study Material </li>
-            <li>Video Tutorials</li>
+           <li onclick="window.location='about.html'">About</li>
+           <li>Experience</li>
+           <li></li>
         </ul>
         <!--menu icon-->
         <div class="menu-icon" onclick="MENU()">
@@ -45,73 +43,36 @@
         <!--left side navigation-->
         <div class="left-side-navigation">
             <ul>
-                <li>Quizz</li>
-                <li onclick="window.location='lessons.html'">Lessons</li>
-                <li onclick="window.location='tests.html'">Tests</li>
-                <li>Assignments</li>
-                <li>Projects</li>
-                <li onclick="window.location='study-material.html'" >Study Material</li>
-                <li>Video Tutuorials</li>
+                <li onclick="window.location='about.html'">About</li>
+                <li>Experience</li>
+                <li></li>
             </ul>
+            <div class="get-a-tutor">
+                <button>Apply for Tutoring</button>
+                <p>
+                    I offer online and contact tutoring services equiping every learner with 
+                    simplified and less overwhelming lessons specially prepared for them.
+                </p>
+            </div>
         </div>
-        <!--right side navigation-->
-        <div class="right-side-navigation">
-            <img src="undraw_Reading_re_29f8.png" alt="">
-            <p>
-                Have the best of our simplified and less overwhelming online lessons specially prepared for you.
-            </p>
-            <div class="button"> <buttoN class="login">LOGIN</buttoN> <button class="register-btn" onclick="REGISTER()">REGISTER</button></div>
-        </div>
-    </div>
-    
-    <!--ABOUT US-->
-    <div class="about-us">
-        <p>
-            thisInstead is an online learning platform specially created for high school learners and university students. 
-            We focus more on technical subjects teaching the basic to advanced concepts preparing every student for 
-            examinations and for their engineering journey. We provide the best and less overwhelming lessons which 
-            make the whole journey more fun and fruitful. We have come with a different approach of teaching, we don't want to see 
-            students memorizing, <b>instead</b> we want to see them understanding and applying the laws and principles of science and mathematics being taught in class.
-        </p>
     </div>
 
-     <!--REGISTER-->
-     <div class="register">
-        <div class="form-box">
-            <div class="close">
-                <div class="close-icon" onclick="REGISTER()">Close X</div>
+    <!--WELCOME BOX-->
+    <div class="welcome-box">
+        <!--image-->
+        <div class="image">
+            <div class="one"><img src="Screenshot_20230706_171629_Gallery.jpg" alt="image"></div>
+        </div>
+        <!--text-->
+        <div class="text">
+            I am an Electrician Apprentice at <i>SNR Electrical & Mechanical Contractors</i>
+            <br>
+            <div class="buttons">
+                <button class="read-more" onclick="window.location='about.html'">Read More</button> <button class="facebook-profile">Facebook Profile</button> 
             </div>
-            <h2>Registration Form</h2>
-            <p>
-                Completing reistrations means you are to access all that we have on our 
-                platform.
-            </p>
-            <form action="#" method="POST">
-                <input type="text" placeholder="Name & Surname">
-                <br><input type="tel" name="tel" id="tel" placeholder="Cell Number">
-                <br><input type="email" name="email" id="email" placeholder="Email Address">
-                <br><br><b>Level of Study</b>: <select name="level-of-study" id="level-of-study">
-                    <option value="high-school">HIGH SCHOOL</option>
-                    <option value="unirvesity">TERTIARY</option>
-                </select>
-                <br><input type="text" placeholder="Name of School">
-                <br><br>
-                <label>
-                    Subjects you want to learn with us:
-                </label>
-                <br><input type="checkbox" name="electrical-technology" id="electrical-technology"> Electrical Technology 
-                <br><input type="checkbox" name="mathematics" id="mathematics"> Mathematics
-    
-                <br><br><input type="checkbox" name="terms-condtions" id="terms-conditions"> <label class="t-cs">Terms & Conditions</label>
-                <br><button type="submit">Register</button>
-    
-            </form>
         </div>
     </div>
-    <!--FOOTER-->
-    <footer>
-        &copy;thisinstead 2023 | privacy of policy | T' s & C' s
-    </footer>
+
     <script src="index.js"></script>
 </body>
 </html>
