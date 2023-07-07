@@ -45,6 +45,7 @@ nav ul li:hover{
     padding:10px;
     font-size: larger;
     color:blue;
+    width:fit-content;
 }
 
 
