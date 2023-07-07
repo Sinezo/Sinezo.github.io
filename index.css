@@ -119,7 +119,7 @@ nav ul li:hover{
 }
 .side-navigation-wrap .left-side-navigation{
     height:0;
-    background-color: rgb(230, 114, 6);
+    background-color: blue;
     color:rgb(255, 255, 255);
     transition: height 300ms ease-in-out;
     position:absolute;
@@ -143,8 +143,11 @@ nav ul li:hover{
 }
 .get-a-tutor button{
     padding:10px;
-    background-color: rgb(7, 101, 129);
+    background-color: blue;
+    font-weight:600;
     color:white;
+    border:0;
+    border-radius:4px;
 }
 .get-a-tutor p{
     padding:10px 0;
@@ -318,11 +321,21 @@ nav ul li:hover{
 .experience{
     padding:20px;
 }
+.experience-wrap{
+    display:flex;
+    justify-content: center;
+}
+.experience-wrap div{
+    width:500px;
+}
 .experience ul{
     list-style-position: inside;
     font-size: small;
     padding:10px 0;
     list-style-type:square;
+}
+.services{
+    padding:20px;
 }
 /*footer*/
 footer{
