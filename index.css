@@ -6,9 +6,8 @@
 }
 /*header*/
 header{
-    background-color: rgb(45, 121, 209);
+    background-color: rgb(255, 255, 255);
     padding:10px;
-    color:white;
     border-bottom:1px solid
 }
 /*nav*/
@@ -36,7 +35,7 @@ nav ul li:hover{
     gap:3px;
 }
 .menu-icon .bar1,.menu-icon .bar2, .menu-icon .bar3{
-    background: rgb(245, 241, 245);
+    background: rgb(196, 193, 196);
     width:20px;
     height:4px;
     transition: all 200ms ease-in-out;
@@ -45,11 +44,7 @@ nav ul li:hover{
 .website-name{
     padding:10px;
     font-size: larger;
-}
-.website-name span{
-    font-size:medium;
-    color:rgb(28, 92, 189);
-    font-style: italic;
+    color:blue;
 }
 
 
@@ -171,6 +166,49 @@ nav ul li:hover{
     padding:20px;
 }
 
+/*achievements*/
+.achievements{
+    padding:20px;
+}
+.achievements-wrap{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+.achievements img{
+    width:100%;
+}
+.achievements h5{
+    padding:0 0 5px 0;
+}
+.achievements .web-dev-certificates{
+    padding:10px 0;
+    width:500px;
+}
+.achievements .web-dev-certificates .image{
+    padding:10px 0;
+}
+.achievements .web-dev-certificates .skip-boxes{
+    display:flex;
+    gap:10px;
+    justify-content: center;
+    padding:20px;
+}
+.achievements .web-dev-certificates .skip-boxes div{
+    width:60px;
+    height:4px;
+    border:1px solid;
+}
+.achievements .poetry{
+    width:500px;
+}
+.achievements .poetry .video{
+    padding:10px 0;
+}
+.achievements .poetry video{
+    width:100%;
+}
 /*skills*/
 .skills{
     padding:10px;
@@ -274,6 +312,17 @@ nav ul li:hover{
     font-weight:600;
     border-radius: 4px;
     border:0;
+}
+
+/*experience*/
+.experience{
+    padding:20px;
+}
+.experience ul{
+    list-style-position: inside;
+    font-size: small;
+    padding:10px 0;
+    list-style-type:square;
 }
 /*footer*/
 footer{
