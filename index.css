@@ -16,7 +16,7 @@ nav{
     gap:20px;
     justify-content: end;
     padding:0 10px;
-    margin: -40px 0 0 0;
+    margin: -50px 0 0 0;
     color:white;
     position:absolute;
     width:95%;
@@ -33,6 +33,9 @@ nav ul li:hover{
 .menu-icon{
     display:grid;
     gap:3px;
+    border:1px solid #a5c2f0;
+    padding:10px;
+    border-radius: 50%;
 }
 .menu-icon .bar1,.menu-icon .bar2, .menu-icon .bar3{
     background: rgb(196, 193, 196);
@@ -312,7 +315,7 @@ nav ul li:hover{
     justify-content: center;
     align-items: center;
 }
-.skills .web-development button{
+.skills  button{
     padding:10px;
     margin:10px 0;
     background-color: rgb(201, 201, 196);
@@ -378,8 +381,12 @@ footer{
     text-align: center;
     font-size: small;
     padding:20px;
+    background-color: rgb(245, 240, 240);
 }
-
+footer ul{
+    list-style: none;
+    padding:20px 0;
+}
 /*AT SMALL SCREENS*/
 @media screen and (max-width:950px){
     /*nav*/
