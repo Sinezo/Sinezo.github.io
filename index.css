@@ -44,7 +44,7 @@ nav ul li:hover{
 .website-name{
     padding:10px;
     font-size: larger;
-    color:blue;
+    color:#3578E5;
     width:fit-content;
 }
 
@@ -105,9 +105,9 @@ nav ul li:hover{
     border:1px solid;
 }
 .welcome-box .text .facebook-profile{
-    background-color: blue;
+    background-color: #3578E5;;
     color:white;
-    border:1px solid rgb(13, 35, 163);
+    border:0;
 }
 .welcome-box .text .buttons .more,.welcome-box .text .buttons .read-more{
     background-color: rgb(201, 201, 196);
@@ -120,7 +120,7 @@ nav ul li:hover{
 }
 .side-navigation-wrap .left-side-navigation{
     height:0;
-    background-color: blue;
+    background-color: #3578E5;;
     color:rgb(255, 255, 255);
     transition: height 300ms ease-in-out;
     position:absolute;
@@ -144,7 +144,7 @@ nav ul li:hover{
 }
 .get-a-tutor button{
     padding:10px;
-    background-color: blue;
+    background-color: #3578E5;;
     font-weight:600;
     color:white;
     border:0;
@@ -185,6 +185,9 @@ nav ul li:hover{
 }
 .achievements h5{
     padding:0 0 5px 0;
+}
+.achievements b{
+    color:#3578E5;
 }
 .achievements .web-dev-certificates{
     padding:10px 0;
@@ -326,6 +329,9 @@ nav ul li:hover{
     display:flex;
     justify-content: center;
 }
+.experience b{
+    color:#3578E5;;
+}
 .experience-wrap div{
     width:500px;
 }
@@ -337,6 +343,35 @@ nav ul li:hover{
 }
 .services{
     padding:20px;
+}
+.services .services-wrap{
+    display:flex;
+    gap:20px;
+    overflow-x: scroll;
+    padding:10px 0;
+    text-align: center;
+}
+.services .services-wrap img{
+    width:100%;
+}
+.services .services-wrap .electrical-electronic,.services .services-wrap .automation,.services .services-wrap .web-development{
+    min-width:250px;
+    border:1px solid lightgrey;
+    padding:10px;
+    border-radius: 10px;
+}
+.services .services-wrap  p{
+    font-size:small;
+}
+.services .services-wrap button{
+    background-color: #3578E5;
+    border:0;
+    padding:10px;
+    border-radius: 4px;
+    color:white;
+    font-weight: 600;
+    margin:10px 0;
+    width:100%;
 }
 /*footer*/
 footer{
