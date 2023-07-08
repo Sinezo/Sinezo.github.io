@@ -123,10 +123,10 @@ nav ul li:hover{
 }
 .side-navigation-wrap .left-side-navigation{
     height:0;
-    background-color: #3578E5;;
-    color:rgb(255, 255, 255);
+    background-color: #ffffff;;
     transition: height 300ms ease-in-out;
-    position:absolute;
+    position:fixed;
+    bottom:0;
     overflow:hidden;
 }
 .side-navigation-wrap .left-side-navigation ul{
@@ -134,6 +134,7 @@ nav ul li:hover{
     padding:10px;
     line-height: 30px;
     min-width: max-content;
+    font-weight:600;
 }
 .side-navigation-wrap .left-side-navigation ul li:hover{
     cursor: pointer;
@@ -152,6 +153,7 @@ nav ul li:hover{
     color:white;
     border:0;
     border-radius:4px;
+    width:100%;
 }
 .get-a-tutor p{
     padding:10px 0;
@@ -173,6 +175,130 @@ nav ul li:hover{
     padding:20px;
 }
 
+/*featured-photos*/
+.featured-photos{
+    padding:10px;
+    display:flex;
+    gap:10px;
+}
+.featured-photos .box1,.featured-photos .photo1,.featured-photos .photo2,.featured-photos .photo3{
+    width:100px;
+    height:100px;
+    border-radius: 10px;
+}
+.featured-photos .box1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:small;
+    text-align: center;
+    border:1px solid lightgrey;
+}
+.featured-photos img{
+    width:100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.more-photos{
+    padding:10px;
+    text-align: end;
+}
+.more-photos button{
+    background-color: unset;
+    border:0;
+    color:#3578E5;
+    font-weight: 600;
+}
+/*skills*/
+.skills{
+    padding:10px;
+}
+.skills-wrap{
+    display:flex;
+    overflow-x: scroll;
+    gap:20px;
+    text-align:center;
+}
+.skills-wrap::-webkit-scrollbar{
+    display:none;
+}
+.skills .electrical-design,.skills .arduino-programming,.skills .web-development{
+    min-width:260px;
+    border:1px solid lightgrey;
+    padding:10px;
+    border-radius: 5px;
+}
+.skills .skills-wrap .scale{
+    margin:10px 0;
+    height:10px;
+}
+.skills .skills-wrap .scale .inner-scale2{
+    height:30px;
+    width:30px;
+    border-radius:50%;
+    background-color: #3578E5;
+    color:white;
+    margin:-13px 0 0 -10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-weight:600;
+}
+.skills h4{
+    padding:10px 0;
+}
+.skills p{
+    padding-top: 20px;
+    font-size:small;
+}
+.skills .electrical-design .scale{
+    width:100%;
+    border:1px solid lightgrey;
+    display:flex;
+    font-size:xx-small;
+    border-radius: 10px;
+}
+.skills .electrical-design .scale .inner-scale1{
+    height:100%;
+    width:50%;
+    background-color: #3578E5;
+}
+.skills .arduino-programming .scale{
+    width:100%;
+    border:1px solid lightgrey;
+    display:flex;
+    font-size:xx-small;
+    border-radius: 10px;
+}
+.skills .arduino-programming .scale .inner-scale1{
+    height:100%;
+    width:60%;
+    background-color: #3578E5;
+}
+
+
+.skills .web-development .scale{
+    width:100%;
+    border:1px solid lightgrey;
+    display:flex;
+    font-size:xx-small;
+    border-radius: 10px;
+}
+.skills .web-development .scale .inner-scale1{
+    height:100%;
+    width:75%;
+    background-color:#3578E5;
+}
+
+.skills  button{
+    padding:10px;
+    margin:10px 0;
+    background-color: rgb(201, 201, 196);
+    font-weight:600;
+    border-radius: 4px;
+    border:0;
+    width:100%;
+}
 /*achievements*/
 .achievements{
     padding:20px;
@@ -219,110 +345,6 @@ nav ul li:hover{
 .achievements .poetry video{
     width:100%;
 }
-/*skills*/
-.skills{
-    padding:10px;
-}
-.skills-wrap{
-    display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap:20px;
-}
-.skills .electrical-design,.skills .arduino-programming,.skills .web-development{
-    width:500px;
-    border:1px solid lightgrey;
-    padding:10px;
-    border-radius: 5px;
-}
-.skills h4{
-    padding:10px 0;
-}
-.skills p{
-    padding-top: 20px;
-    font-size:small;
-}
-.skills .electrical-design .scale{
-    width:100%;
-    height:4px;
-    border:1px solid lightgrey;
-    display:flex;
-    font-size:xx-small;
-    border-radius: 10px;
-}
-.skills .electrical-design .scale .inner-scale1{
-    height:100%;
-    width:50%;
-    background-color: rgb(201, 201, 196);
-}
-.skills .electrical-design .scale .inner-scale2{
-    height:30px;
-    width:30px;
-    border-radius:50%;
-    background-color: rgb(201, 201, 196);
-    margin:-15px 0 0 -10px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.skills .arduino-programming .scale{
-    width:100%;
-    height:4px;
-    border:1px solid lightgrey;
-    display:flex;
-    font-size:xx-small;
-    border-radius: 10px;
-}
-.skills .arduino-programming .scale .inner-scale1{
-    height:100%;
-    width:60%;
-    background-color: rgb(201, 201, 196);
-}
-.skills .arduino-programming .scale .inner-scale2{
-    height:30px;
-    width:30px;
-    border-radius:50%;
-    background-color: rgb(201, 201, 196);
-    margin:-15px 0 0 -10px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.skills .web-development .scale{
-    width:100%;
-    height:4px;
-    border:1px solid lightgrey;
-    display:flex;
-    font-size:xx-small;
-    border-radius: 10px;
-}
-.skills .web-development .scale .inner-scale1{
-    height:100%;
-    width:75%;
-    background-color: rgb(201, 201, 196);
-}
-.skills .web-development .scale .inner-scale2{
-    height:30px;
-    width:30px;
-    border-radius:50%;
-    background-color: rgb(201, 201, 196);
-    margin:-15px 0 0 -10px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-.skills  button{
-    padding:10px;
-    margin:10px 0;
-    background-color: rgb(201, 201, 196);
-    font-weight:600;
-    border-radius: 4px;
-    border:0;
-}
 
 /*experience*/
 .experience{
@@ -354,11 +376,15 @@ nav ul li:hover{
     padding:10px 0;
     text-align: center;
 }
+.services .services-wrap::-webkit-scrollbar{
+    display:none;
+}
 .services .services-wrap img{
     width:100%;
 }
 .services .services-wrap .electrical-electronic,.services .services-wrap .automation,.services .services-wrap .web-development{
     min-width:250px;
+    height:fit-content;
     border:1px solid lightgrey;
     padding:10px;
     border-radius: 10px;
