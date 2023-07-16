@@ -4,6 +4,10 @@
     font-family:arial;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+body{
+    background-color:rgb(22, 22, 22);
+    color:rgb(211, 206, 206);
+}
 /*header*/
 header{
     background-color:unset;
@@ -108,7 +112,7 @@ nav ul li:hover{
     border:1px solid;
 }
 .welcome-box .text .facebook-profile{
-    background-color: #3578E5;;
+    background-color: chocolate;
     color:white;
     border:0;
 }
@@ -124,6 +128,7 @@ nav ul li:hover{
 .side-navigation-wrap .left-side-navigation{
     height:0;
     background-color: #ffffff;;
+    color:black;
     transition: height 300ms ease-in-out;
     position:fixed;
     bottom:0;
@@ -148,7 +153,7 @@ nav ul li:hover{
 }
 .get-a-tutor button{
     padding:10px;
-    background-color: #3578E5;;
+    background-color: chocolate;
     font-weight:600;
     color:white;
     border:0;
@@ -206,7 +211,7 @@ nav ul li:hover{
 .more-photos button{
     background-color: unset;
     border:0;
-    color:#3578E5;
+    color:chocolate;
     font-weight: 600;
 }
 /*skills*/
@@ -293,7 +298,7 @@ nav ul li:hover{
 .skills  button{
     padding:10px;
     margin:10px 0;
-    background-color:#3578E5;
+    background-color:chocolate;
     color:white;
     font-weight:600;
     border-radius: 4px;
@@ -320,7 +325,7 @@ nav ul li:hover{
     padding:0 0 5px 0;
 }
 .achievements b{
-    color:#3578E5;
+    color:chocolate;
 }
 .achievements .web-dev-certificates{
     padding:10px;
@@ -335,7 +340,7 @@ nav ul li:hover{
     padding:10px;
     width:100%;
     box-sizing:border-box;
-    background-color: #3578E5;
+    background-color: chocolate;
     font-weight:600;
     color:white;
     border:0;
@@ -368,7 +373,7 @@ nav ul li:hover{
     justify-content: center;
 }
 .experience b{
-    color:#3578E5;;
+    color:chocolate
 }
 .experience-wrap div{
     width:500px;
@@ -383,12 +388,13 @@ nav ul li:hover{
     padding:10px;
     border:0;
     border-radius:4px;
-    background-color: #3578E5;
+    background-color: chocolate;
     font-weight:600;
     color:white;
     width:100%;
     margin:5px 0;
 }
+/*#3578E5;*/
 /*service*/
 .services{
     padding:20px;
@@ -417,7 +423,7 @@ nav ul li:hover{
     font-size:small;
 }
 .services .services-wrap button{
-    background-color: #3578E5;
+    background-color: chocolate;
     border:0;
     padding:10px;
     border-radius: 4px;
@@ -430,9 +436,9 @@ nav ul li:hover{
 footer{
     text-align: center;
     font-weight:600;
-    color:rgb(75, 73, 73);
+    color:rgb(168, 166, 166);
     padding:20px;
-    background-color: rgb(245, 240, 240);
+    background-color: rgb(20, 20, 20);
 }
 footer ul{
     list-style: none;
