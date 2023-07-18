@@ -10,7 +10,7 @@ body{
 }
 /*header*/
 header{
-    background-color:unset;
+    background-color:black;
     padding:10px;
 }
 /*nav*/
@@ -36,9 +36,10 @@ nav ul li:hover{
 .menu-icon{
     display:grid;
     gap:3px;
-    border:1px solid #a5c2f0;
+    border:2px solid #c77d0e;
     padding:10px;
     border-radius: 50%;
+    background-color: white;
 }
 .menu-icon .bar1,.menu-icon .bar2, .menu-icon .bar3{
     background: rgb(196, 193, 196);
@@ -50,7 +51,7 @@ nav ul li:hover{
 .website-name{
     padding:10px;
     font-size: larger;
-    color:#dae1ee;
+    color:chocolate;
     width:fit-content;
 }
 
@@ -86,26 +87,17 @@ nav ul li:hover{
 .welcome-box .image img{
     width:100%;
     height:100%;
-    border-radius: 50%;
+    border-radius:4px;
 }
 .welcome-box .image .one{
-    border:4px solid rgb(250, 247, 244);
-    border-radius: 50%;
-    width:100px;
-    height:100px;
+    border:4px solid rgb(20, 20, 20);
+    width:300px;
+    border-radius: 4px;
 }
 
 .welcome-box .text{
-    width:500px
-}
-.welcome-box .text .buttons{
-    padding:20px; 
-}
-.welcome-box .text .buttons button{
-    padding:10px;
-    border-radius: 4px;
-    font-weight: 600;
-
+    width:500px;
+    font-size: small;
 }
 .welcome-box .text .read-more{
     background-color: unset;
@@ -119,6 +111,56 @@ nav ul li:hover{
 .welcome-box .text .buttons .more,.welcome-box .text .buttons .read-more{
     background-color: rgb(201, 201, 196);
     border:0;}
+/*hero-navigation*/
+.hero-navigation{
+    padding:20px;
+    display:grid;
+    gap:10px;
+}
+.hero-navigation .read-more{
+    display:flex;
+    gap:10px;
+    border:1px solid rgb(20, 20, 20);
+    background-color: rgb(27, 27, 27);
+    padding:10px;
+    align-items: center;
+    border-radius: 4px;
+}
+.hero-navigation .read-more i{
+    color:rgb(211, 172, 90);
+}
+.hero-navigation .icon{
+    border:1px solid;
+    width:20px;
+    height:20px;
+    padding:5px;
+    border-radius:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-navigation .facebook-profile{
+    display:flex;
+    gap:10px;
+    border:1px solid rgb(20, 20, 20);
+    background-color: rgb(27, 27, 27);
+    padding:10px;
+    align-items: center;
+    border-radius: 4px;
+}
+.hero-navigation .facebook-profile i{
+    color:rgb(20, 83, 219);
+}
+.hero-navigation .more-on-me{
+    display:flex;
+    gap:10px;
+    border:1px solid rgb(20, 20, 20);
+    background-color: rgb(27, 27, 27);
+    padding:10px;
+    align-items: center;
+    border-radius: 4px;
+}
 /*side-navigation-wrap*/
 .side-navigation-wrap{
     display:flex;
@@ -167,17 +209,7 @@ nav ul li:hover{
 /*details*/
 .hr{
     height:10px;
-    background-color: rgb(201, 201, 196);
-}
-.details{
-    display:flex;
-    justify-content: center;
-}
-.details ul{
-    width:600px;
-    list-style: none;
-    line-height: 30px;
-    padding:20px;
+    background-color: rgb(14, 13, 13);
 }
 
 /*featured-photos*/
@@ -186,23 +218,14 @@ nav ul li:hover{
     display:flex;
     gap:10px;
 }
-.featured-photos .box1,.featured-photos .photo1,.featured-photos .photo2,.featured-photos .photo3{
+.featured-photos .photo1,.featured-photos .photo2,.featured-photos .photo3,.featured-photos .photo4{
     width:100px;
-    height:100px;
-    border-radius: 10px;
-}
-.featured-photos .box1{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-size:small;
-    text-align: center;
-    border:1px solid lightgrey;
+    border-radius: 4px;
 }
 .featured-photos img{
     width:100%;
     height: 100%;
-    border-radius: 10px;
+    border-radius:4px;
 }
 .more-photos{
     padding:10px;
@@ -214,6 +237,80 @@ nav ul li:hover{
     color:chocolate;
     font-weight: 600;
 }
+
+/*photo-popup*/
+.photo-popup{
+    padding:20px;
+    position:absolute;
+    background-color: rgb(255, 255, 255);
+    margin:10px;
+    transform: translate(-10%,-50%);
+    left:20%;
+    color:rgb(39, 38, 38);
+}
+.photo-popup{
+    display:none;
+}
+.photo-popup .close-icon{
+    display:flex;
+    justify-content: end;
+    padding:20px 0;
+    position:absolute;
+    width:100%;
+    margin:-70px -15px 0 0;
+}
+.photo-popup .close-icon .icon{
+    width:20px;
+    background-color: white;
+    color:rgb(180, 175, 175);
+    height:20px;
+    border-radius: 50%;
+    border:1px solid;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    padding:8px;
+    font-size:x-large
+}
+.photo-popup .popup-image img{
+    width:100%;
+}
+.photo-popup .info{
+    padding:10px 0;
+    display:flex;
+    gap:10px;
+}
+.photo-popup .info .one{
+    font-size:larger;
+    font-weight:600;
+}
+.photo-popup .info .two{
+    font-size:small;
+}
+.photo-popup .buttons{
+    padding:5px 0;
+}
+.photo-popup .download{
+    padding:15px;
+    width:100%;
+    background-color: chocolate;
+    border:0;
+    color:white;
+    border-radius:4px;
+    font-weight:600;
+}
+.photo-popup .close{
+    width:55%;
+    padding:15px;
+    background-color: rgb(182, 58, 58);
+    border:0;
+    color:white;
+    border-radius:4px;
+    font-weight:600;
+}
+.photo-popup .back,.photo-popup .next{
+    padding:15px;
+}
 /*skills*/
 .skills{
     padding:10px;
@@ -224,18 +321,22 @@ nav ul li:hover{
     gap:20px;
     text-align:center;
 }
+.skills img{
+    width:50%;
+}
 .skills-wrap::-webkit-scrollbar{
     display:none;
 }
 .skills .electrical-design,.skills .arduino-programming,.skills .web-development{
     min-width:260px;
-    border:1px solid lightgrey;
+    border:1px solid rgb(20, 20, 20);
+    background-color: rgb(27, 27, 27);
     padding:10px;
     border-radius: 5px;
 }
 .skills .skills-wrap .scale{
     margin:10px 0;
-    height:10px;
+    height:4px;
 }
 .skills .skills-wrap .scale .inner-scale2{
     height:30px;
@@ -330,7 +431,8 @@ nav ul li:hover{
 .achievements .web-dev-certificates{
     padding:10px;
     width:500px;
-    border:1px solid lightgrey;
+    border:1px solid rgb(20, 20, 20);
+    background-color: rgb(27, 27, 27);
     border-radius: 10px;
 }
 .achievements .web-dev-certificates .image{
@@ -353,7 +455,8 @@ nav ul li:hover{
 }
 .achievements .poetry{
     width:500px;
-    border:1px solid lightgrey;
+    border:1px solid rgb(20, 20, 20);
+    background-color: rgb(27, 27, 27);
     padding:10px;
     border-radius:10px;
 }
@@ -415,7 +518,8 @@ nav ul li:hover{
 .services .services-wrap .electrical-electronic,.services .services-wrap .automation,.services .services-wrap .web-development{
     min-width:250px;
     height:fit-content;
-    border:1px solid lightgrey;
+    border:1px solid rgb(20, 20, 20);
+    background-color: rgb(27, 27, 27);
     padding:10px;
     border-radius: 10px;
 }

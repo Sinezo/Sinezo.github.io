@@ -27,17 +27,32 @@ function MENU(){
     }
 }
 
-//REGISTER BUTTON
-let register_state=1;
-function REGISTER(){
-    if(register_state==1){
-       document.querySelector('.register').style.top='50px';
-       document.querySelector('.register').style.height='fit-content';
-       register_state=0;
-    }
-    else{
-        document.querySelector('.register').style.top='500px';
-        document.querySelector('.register').style.height='0';
-       register_state=1;
-    }
+//PHOTOS
+function PHOTO1(){
+    document.querySelector('.photo-popup').style.display='block';
+    let image=document.getElementById("popup_images").src="Screenshot_20230708_122240_Gallery.jpg";
+    document.querySelector('.date').innerHTML='03/10/2022';
+    document.querySelector('.place').innerHTML='Kwezi, Mthatha';
+}
+function PHOTO2(){
+    let image=document.getElementById("popup_images").src="Screenshot_20230708_122223_Gallery.jpg";
+    document.querySelector('.photo-popup').style.display='block';
+    document.querySelector('.date').innerHTML='10/10/2022';
+    document.querySelector('.place').innerHTML='lan Woods, Southridge Park, Mthatha';
+}
+function PHOTO3(){
+    let image=document.getElementById("popup_images").src="1674935758660.jpg";
+    document.querySelector('.photo-popup').style.display='block';
+    document.querySelector('.date').innerHTML='03/08/2021';
+    document.querySelector('.place').innerHTML='Beach, East London';
+}
+function PHOTO4(){
+    let image=document.getElementById("popup_images").src="Screenshot_20230708_122240_Gallery.jpg";
+    document.querySelector('.photo-popup').style.display='block';
+    document.querySelector('.date').innerHTML='03/10/2022';
+    document.querySelector('.place').innerHTML='Kwezi, Mthatha';
+}
+//close photos
+function CLOSE_PHOTOS(){
+    document.querySelector('.photo-popup').style.display='none';
 }

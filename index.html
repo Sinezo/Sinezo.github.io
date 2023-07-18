@@ -71,52 +71,77 @@
         <!--text-->
         <div class="text">
             I am one of those creative and innovative electrical enthusiasts who believe in the beauty 
-            of their dreams.&#128150;
-            <br>
-            <div class="buttons">
-                <button class="read-more" onclick="window.location='about.html'">Read More</button> <button class="facebook-profile">Facebook Profile</button>  <button class="more" onclick="MENU()"><i class="fa-solid fa-ellipsis"></i></button>
-            </div>
+            of their dreams.
         </div>
     </div>
 
-    <!--LINE BRAKER-->
-    <div class="hr"></div>
-    <!--DETATILS-->
-    <div class="details">
-        <ul>
-            <li><b>Details</b></li>
-            <li><i class="fa-solid fa-briefcase"></i> Electrician Apprentice at <b>SNR Electrical & Mechanical Contractors</b></li>
-            <li> <i class="fa-solid fa-graduation-cap"></i> Studies at <b>Walter Sisulu University</b></li>
-            <li> <i class="fa-solid fa-graduation-cap"></i> Went to <b>Nosimo Technical High School </b></li>
-            <li><i class="fa-solid fa-house-chimney"></i> Lives in <b>Umtata</b></li>
-            <li> <i class="fa-solid fa-location-dot"></i> From <b>Engcobo</b></li>
-            <li><i class="fa-solid fa-ellipsis"></i>  View Work Experience</li>
-        </ul>
+    <!--HERO NAVIGATION-->
+    <div class="hero-navigation">
+        <!--read more-->
+        <div class="read-more" onclick="window.location='about.html'">
+            <div class="icon"><i class="fa-brands fa-readme"></i></div>
+            <div class="info" >Read More</div>
+        </div>
+        <!--facebook profile-->
+        <div class="facebook-profile">
+            <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="info">Facebook Profile</div>
+        </div>
+        <!--facebook profile-->
+        <div class="more-on-me" onclick="MENU()">
+            <div class="icon"><i class="fa-solid fa-ellipsis"></i></div>
+            <div class="info" >More on Me</div>
+        </div>
     </div>
         <!--LINE BRAKER-->
         <div class="hr"></div>
 
         <!--FEATURED PHOTOS-->
         <div class="featured-photos">
-            <div class="box1">
-                Featured photos
-            </div>
             <!--photot 1-->
-            <div class="photo1">
+            <div class="photo1" onclick="PHOTO1()">
                 <img src="Screenshot_20230708_122240_Gallery.jpg" alt="">
             </div>
             <!--photo 2-->
-            <div class="photo2">
+            <div class="photo2" onclick=" PHOTO2()">
                 <img src="Screenshot_20230708_122223_Gallery.jpg" alt="">
             </div>
             <!--photo 3-->
-            <div class="photo3">
+            <div class="photo3" onclick=" PHOTO3()">
                 <img src="1674935758660.jpg" alt="">
+            </div>
+            <!--photo 4-->
+            <div class="photo4" onclick=" PHOTO4()">
+                <img src="Screenshot_20230708_122240_Gallery.jpg" alt="">
             </div>
         </div>
         <!--MORE PHOTOS-->
         <div class="more-photos">
-            <button>View More</button>
+            <button onclick="window.location='gallery.html'">View More</button>
+        </div>
+
+        <!--PHOTO POPUP-->
+        <div class="photo-popup">
+            <!--close icon-->
+            <div class="close-icon">
+                <div class="icon" onclick="CLOSE_PHOTOS()"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+            <!--popup image-->
+            <div class="popup-image">
+                <img src="undraw_electricity_k2ft.png" id="popup_images" alt="image">
+            </div>
+            <div class="info">
+                <div class="one">Taken</div>
+                <div class="two">
+                    on: <span class="date">12/02/2022</span><br>
+                    at: <span class="place">Mthatha 13 Sisson St</span>
+                </div>
+            </div>
+            <button class="download">Download</button>
+            <div class="buttons">
+                <button class="close" onclick="CLOSE_PHOTOS()">Close</button> <button class="back"><i class="fa-solid fa-chevron-left"></i></button> <button class="next"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+
         </div>
         <!--LINE BRAKER-->
         <div class="hr"></div>
@@ -127,9 +152,8 @@
             <div class="skills-wrap">
             <!--electrical design-->
             <div class="electrical-design">
+                <img src="160.png" alt="">
                 <h4>Electrical Design</h4>
-                <div class="scale"><div class="inner-scale1"></div><div class="inner-scale2">50%</div></div>
-
                 <p>
                     I have the ability to plan and bring an idea into reality. I have built numerous 
                     electrical projects on electrical softwares such as <i>MULTISIM</i> and <i>PROTEUS</i>, simulated them and built real products and systems.
@@ -138,9 +162,8 @@
             </div>
             <!--arduino programming-->
             <div class="arduino-programming">
+                <img src="26.png" alt="">
                 <h4>Arduino Programming</h4>
-                <div class="scale"><div class="inner-scale1"></div><div class="inner-scale2">60%</div></div>
-
                 <p>
                     Automating systems and projects is what I do and love the most. I have been designing and programming educational
                     Arduino Uno based projects since 2019.
@@ -149,9 +172,8 @@
             </div>
             <!--web development-->
             <div class="web-development">
+                <img src="22.png" alt="">
                 <h4>Web Development</h4>
-                <div class="scale"><div class="inner-scale1"></div><div class="inner-scale2">75%</div></div>
-
                 <p>
                     I have taught myself web development with the help of Sololearn, youtube tutorials and w3schools. Sololearn has awarded me with more than 1 certificates in web development courses.
                     <br><button>View Certificates</button>
