@@ -373,6 +373,15 @@ nav ul li:hover{
 }
 .skills h4{
     padding:10px 0;
+    background-image: url('247.png');
+    background-size: cover;
+    height:300px;
+    background-position: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color:chocolate;
 }
 .skills p{
     padding-top: 20px;
@@ -420,12 +429,16 @@ nav ul li:hover{
 .skills  button{
     padding:10px;
     margin:10px 0;
-    background-color:chocolate;
-    color:white;
+    background-color:rgb(23, 23, 24);
+    color:chocolate;
     font-weight:600;
     border-radius: 4px;
     border:0;
     width:100%;
+}
+.skills  button:hover{
+    cursor: pointer;
+    background-color: rgb(20, 20, 20);
 }
 /*achievements*/
 .achievements{
@@ -472,11 +485,15 @@ nav ul li:hover{
     padding:10px;
     width:100%;
     box-sizing:border-box;
-    background-color: chocolate;
+    background-color: rgb(23, 23, 24);
     font-weight:600;
-    color:white;
+    color:chocolate;
     border:0;
     border-radius:4px;
+}
+.achievements button:hover{
+    background-color: rgb(20, 20, 20);
+    cursor: pointer;
 }
 .achievements .web-dev-certificates .skip-boxes div{
     width:60px;
@@ -504,6 +521,9 @@ nav ul li:hover{
 .experience-wrap{
     display:flex;
     justify-content: center;
+    background-color: rgb(27, 27, 27);
+    padding:10px;
+    border-radius: 10px;
 }
 .experience h4{
     background-image: url('49.png');
@@ -532,11 +552,15 @@ nav ul li:hover{
     padding:10px;
     border:0;
     border-radius:4px;
-    background-color: chocolate;
+    background-color: rgb(23, 23, 24);
     font-weight:600;
-    color:white;
+    color:chocolate;
     width:100%;
     margin:5px 0;
+}
+.experience button:hover{
+    background-color: rgb(20, 20, 20);
+    cursor: pointer;
 }
 /*#3578E5;*/
 /*service*/
@@ -553,6 +577,9 @@ nav ul li:hover{
     align-items: center;
     font-size:30px;
     color: chocolate;
+}
+.services h5{
+    padding:10px;
 }
 .services .services-wrap{
     display:flex;
@@ -579,14 +606,18 @@ nav ul li:hover{
     font-size:small;
 }
 .services .services-wrap button{
-    background-color: chocolate;
+    background-color: rgb(23, 23, 24);
     border:0;
     padding:10px;
     border-radius: 4px;
-    color:white;
+    color:chocolate;
     font-weight: 600;
     margin:10px 0;
     width:100%;
+}
+.services .services-wrap button:hover{
+    background-color: rgb(20, 20, 20);
+    cursor: pointer;
 }
 /*footer*/
 footer{
