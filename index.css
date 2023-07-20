@@ -4,6 +4,9 @@
     font-family:arial;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+::-webkit-scrollbar{
+    display:none;
+}
 body{
     background-color:rgb(22, 22, 22);
     color:rgb(211, 206, 206);
@@ -99,6 +102,10 @@ nav ul li:hover{
     width:500px;
     font-size: small;
 }
+.welcome-box .text h1{
+    padding:10px;
+    color:chocolate;
+}
 .welcome-box .text .read-more{
     background-color: unset;
     border:1px solid;
@@ -126,6 +133,10 @@ nav ul li:hover{
     align-items: center;
     border-radius: 4px;
 }
+.hero-navigation .read-more:hover{
+    background-color: rgb(20, 20, 20);
+    cursor: pointer;
+}
 .hero-navigation .read-more i{
     color:rgb(211, 172, 90);
 }
@@ -149,6 +160,10 @@ nav ul li:hover{
     align-items: center;
     border-radius: 4px;
 }
+.hero-navigation .facebook-profile:hover{
+    background-color: rgb(20, 20, 20);
+    cursor: pointer;
+}
 .hero-navigation .facebook-profile i{
     color:rgb(20, 83, 219);
 }
@@ -161,6 +176,10 @@ nav ul li:hover{
     align-items: center;
     border-radius: 4px;
 }
+.hero-navigation .more-on-me:hover{
+    background-color: rgb(20, 20, 20);
+    cursor: pointer;
+}
 /*side-navigation-wrap*/
 .side-navigation-wrap{
     display:flex;
@@ -169,8 +188,8 @@ nav ul li:hover{
 }
 .side-navigation-wrap .left-side-navigation{
     height:0;
-    background-color: #ffffff;;
-    color:black;
+    background-color: rgb(27, 27, 27);
+    color:rgb(202, 196, 196);
     transition: height 300ms ease-in-out;
     position:fixed;
     bottom:0;
@@ -188,9 +207,8 @@ nav ul li:hover{
     color:rgb(194, 188, 188);
 }
 .get-a-tutor{
-    background-color: white;
+    background-color: rgb(27, 27, 27);
     padding:10px;
-    color:black;
     font-size:small;
 }
 .get-a-tutor button{
@@ -216,16 +234,22 @@ nav ul li:hover{
 .featured-photos{
     padding:10px;
     display:flex;
+    overflow-x:scroll;
     gap:10px;
 }
-.featured-photos .photo1,.featured-photos .photo2,.featured-photos .photo3,.featured-photos .photo4{
-    width:100px;
+.featured-photos .photo1,.featured-photos .photo2,.featured-photos .photo3,.featured-photos .photo4,.featured-photos .photo5,.featured-photos .photo6,.featured-photos .photo7,.featured-photos .photo8,.featured-photos .photo9,.featured-photos .photo10{
+    min-width:100px;
     border-radius: 4px;
 }
 .featured-photos img{
     width:100%;
     height: 100%;
     border-radius:4px;
+    transition:all 200ms linear;
+}
+.featured-photos img:hover{
+    cursor: pointer;
+    filter:brightness(30%);
 }
 .more-photos{
     padding:10px;
@@ -324,9 +348,6 @@ nav ul li:hover{
 .skills img{
     width:50%;
 }
-.skills-wrap::-webkit-scrollbar{
-    display:none;
-}
 .skills .electrical-design,.skills .arduino-programming,.skills .web-development{
     min-width:260px;
     border:1px solid rgb(20, 20, 20);
@@ -421,6 +442,15 @@ nav ul li:hover{
 }
 .achievements h4{
     padding:10px 0;
+    background-image: url('322.png');
+    background-size: cover;
+    height:300px;
+    background-position: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color:chocolate;
 }
 .achievements h5{
     padding:0 0 5px 0;
@@ -475,6 +505,17 @@ nav ul li:hover{
     display:flex;
     justify-content: center;
 }
+.experience h4{
+    background-image: url('49.png');
+    height:300px;
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color:chocolate;
+}
 .experience b{
     color:chocolate
 }
@@ -501,6 +542,17 @@ nav ul li:hover{
 /*service*/
 .services{
     padding:20px;
+}
+.services h4{
+    height:300px;
+    background-image: url('3.png');
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:30px;
+    color: chocolate;
 }
 .services .services-wrap{
     display:flex;
