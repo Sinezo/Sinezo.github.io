@@ -1,140 +1,51 @@
 *{
-    margin:0;
-    padding:0;
-    font-family:arial;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+margin:0;
+padding:0;
+font-family: 'Nunito', sans-serif;
 }
-::-webkit-scrollbar{
-    display:none;
-}
-body{
-    background-color:rgb(22, 22, 22);
-    color:rgb(211, 206, 206);
-}
-/*header*/
-header{
-    background-color:black;
-    padding:10px;
-}
-/*nav*/
-nav{
-    display:flex;
-    gap:20px;
-    justify-content: end;
-    padding:0 10px;
-    margin: -50px 0 0 0;
-    color:white;
-    position:absolute;
-    width:95%;
-}
-nav ul{
-    display:flex;
-    list-style: none;
-    gap:20px;
-}
-nav ul li:hover{
-    cursor: pointer;
-    color:rgb(194, 188, 188);
-}
-.menu-icon{
-    display:grid;
-    gap:3px;
-    border:2px solid #c77d0e;
-    padding:10px;
-    border-radius: 50%;
-    background-color: white;
-}
-.menu-icon .bar1,.menu-icon .bar2, .menu-icon .bar3{
-    background: rgb(196, 193, 196);
-    width:20px;
-    height:4px;
-    transition: all 200ms ease-in-out;
-}
-/*website-name*/
-.website-name{
-    padding:10px;
-    font-size: larger;
-    color:chocolate;
-    width:fit-content;
-}
-
-
-
-/*welcome-box*/
-.welcome-box{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+/*font-family: 'Roboto', sans-serif;*/
+/*hero section*/
+.hero-section{
     padding:20px;
-    gap:20px;
-    margin-top:150px;
-}
-.cover-photo{
-    width:100%;
-    height:320px;
-    position:absolute;
-    z-index: -1;
-    margin-top: -240px;
-    background-image: url('Screenshot_20230707_152736_Gallery.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    filter:brightness(30%);
-}
-.welcome-box .image{
-    width:500px;
     display:flex;
-    justify-content: center;
+    justify-content:center;
+    align-items:center;
 }
-.welcome-box .image img{
-    width:100%;
-    height:100%;
-    border-radius:4px;
-}
-.welcome-box .image .one{
-    border:4px solid rgb(20, 20, 20);
-    width:300px;
-    border-radius: 4px;
-}
-
-.welcome-box .text{
+.hero-section .paragraph{
     width:500px;
-    font-size: small;
+    padding:40px;
 }
-.welcome-box .text h1{
-    padding:10px;
-    color:chocolate;
+.hero-section .paragraph .career{
+    padding:10px 0;
+    font-weight: 600;
+    font-size: 30px;
+    color:rgb(108, 223, 114);
 }
-.welcome-box .text .read-more{
-    background-color: unset;
-    border:1px solid;
+.hero-section .image{
+    width:500px;
 }
-.welcome-box .text .facebook-profile{
-    background-color: chocolate;
-    color:white;
-    border:0;
+.hero-section .image img{
+    width:100%
 }
-.welcome-box .text .buttons .more,.welcome-box .text .buttons .read-more{
-    background-color: rgb(201, 201, 196);
-    border:0;}
 /*hero-navigation*/
 .hero-navigation{
-    padding:20px;
-    display:grid;
+    display:flex;
+    padding:20px 0;
     gap:10px;
 }
 .hero-navigation .read-more{
     display:flex;
     gap:10px;
-    border:1px solid rgb(20, 20, 20);
-    background-color: rgb(27, 27, 27);
+    border:1px solid rgb(52, 165, 58);
+    background-color: unset;
     padding:10px;
     align-items: center;
     border-radius: 4px;
+    width:fit-content;
 }
 .hero-navigation .read-more:hover{
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(108, 223, 114);
+    color:white;
     cursor: pointer;
 }
 .hero-navigation .read-more i{
@@ -154,14 +65,16 @@ nav ul li:hover{
 .hero-navigation .facebook-profile{
     display:flex;
     gap:10px;
-    border:1px solid rgb(20, 20, 20);
-    background-color: rgb(27, 27, 27);
+    border:1px solid rgb(52, 165, 58);
+    background-color: unset;
     padding:10px;
     align-items: center;
     border-radius: 4px;
+    width:fit-content;
 }
 .hero-navigation .facebook-profile:hover{
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(108, 223, 114);
+    color:white;
     cursor: pointer;
 }
 .hero-navigation .facebook-profile i{
@@ -170,482 +83,253 @@ nav ul li:hover{
 .hero-navigation .more-on-me{
     display:flex;
     gap:10px;
-    border:1px solid rgb(20, 20, 20);
-    background-color: rgb(27, 27, 27);
+    border:1px solid rgb(52, 165, 58);
+    background-color: unset;
     padding:10px;
     align-items: center;
     border-radius: 4px;
+    width:fit-content;
 }
 .hero-navigation .more-on-me:hover{
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(108, 223, 114);
+    color:white;
     cursor: pointer;
 }
-/*side-navigation-wrap*/
-.side-navigation-wrap{
-    display:flex;
-    gap:10px;
-    overflow: hidden;
-}
-.side-navigation-wrap .left-side-navigation{
-    height:0;
-    background-color: rgb(27, 27, 27);
-    color:rgb(202, 196, 196);
-    transition: height 300ms ease-in-out;
-    position:fixed;
-    bottom:0;
-    overflow:hidden;
-}
-.side-navigation-wrap .left-side-navigation ul{
-    list-style: none;
-    padding:10px;
-    line-height: 30px;
-    min-width: max-content;
-    font-weight:600;
-}
-.side-navigation-wrap .left-side-navigation ul li:hover{
-    cursor: pointer;
-    color:rgb(194, 188, 188);
-}
-.get-a-tutor{
-    background-color: rgb(27, 27, 27);
-    padding:10px;
-    font-size:small;
-}
-.get-a-tutor button{
-    padding:10px;
-    background-color: chocolate;
-    font-weight:600;
-    color:white;
-    border:0;
-    border-radius:4px;
-    width:100%;
-}
-.get-a-tutor p{
-    padding:10px 0;
-}
 
-/*details*/
-.hr{
-    height:10px;
-    background-color: rgb(14, 13, 13);
-}
-
-/*featured-photos*/
-.featured-photos{
-    padding:10px;
-    display:flex;
-    overflow-x:scroll;
-    gap:10px;
-}
-.featured-photos .photo1,.featured-photos .photo2,.featured-photos .photo3,.featured-photos .photo4,.featured-photos .photo5,.featured-photos .photo6,.featured-photos .photo7,.featured-photos .photo8,.featured-photos .photo9,.featured-photos .photo10{
-    min-width:100px;
-    border-radius: 4px;
-}
-.featured-photos img{
-    width:100%;
-    height: 100%;
-    border-radius:4px;
-    transition:all 200ms linear;
-}
-.featured-photos img:hover{
-    cursor: pointer;
-    filter:brightness(30%);
-}
-.more-photos{
-    padding:10px;
-    text-align: end;
-}
-.more-photos button{
-    background-color: unset;
-    border:0;
-    color:chocolate;
-    font-weight: 600;
-}
-
-/*photo-popup*/
-.photo-popup{
-    padding:20px;
-    position:absolute;
-    background-color: rgb(255, 255, 255);
-    margin:10px;
-    transform: translate(-10%,-50%);
-    left:20%;
-    color:rgb(39, 38, 38);
-}
-.photo-popup{
-    display:none;
-}
-.photo-popup .close-icon{
-    display:flex;
-    justify-content: end;
-    padding:20px 0;
-    position:absolute;
-    width:100%;
-    margin:-70px -15px 0 0;
-}
-.photo-popup .close-icon .icon{
-    width:20px;
-    background-color: white;
-    color:rgb(180, 175, 175);
-    height:20px;
-    border-radius: 50%;
-    border:1px solid;
-    display:flex;
-    justify-content: center;
-    align-items:center;
-    padding:8px;
-    font-size:x-large
-}
-.photo-popup .popup-image img{
-    width:100%;
-}
-.photo-popup .info{
-    padding:10px 0;
-    display:flex;
-    gap:10px;
-}
-.photo-popup .info .one{
-    font-size:larger;
-    font-weight:600;
-}
-.photo-popup .info .two{
-    font-size:small;
-}
-.photo-popup .buttons{
-    padding:5px 0;
-}
-.photo-popup .download{
-    padding:15px;
-    width:100%;
-    background-color: chocolate;
-    border:0;
-    color:white;
-    border-radius:4px;
-    font-weight:600;
-}
-.photo-popup .close{
-    width:55%;
-    padding:15px;
-    background-color: rgb(182, 58, 58);
-    border:0;
-    color:white;
-    border-radius:4px;
-    font-weight:600;
-}
-.photo-popup .back,.photo-popup .next{
-    padding:15px;
-}
 /*skills*/
 .skills{
-    padding:10px;
-}
-.skills-wrap{
-    display:flex;
-    overflow-x: scroll;
+    display: flex;
+    justify-content: center;
     gap:20px;
-    text-align:center;
+    text-align: center;
+    padding:20px;
 }
-.skills img{
-    width:50%;
-}
-.skills .electrical-design,.skills .arduino-programming,.skills .web-development{
-    min-width:260px;
-    border:1px solid rgb(20, 20, 20);
-    background-color: rgb(27, 27, 27);
-    padding:10px;
-    border-radius: 5px;
-}
-.skills .skills-wrap .scale{
-    margin:10px 0;
-    height:4px;
-}
-.skills .skills-wrap .scale .inner-scale2{
-    height:30px;
-    width:30px;
-    border-radius:50%;
-    background-color: #9ca1a1;
-    color:white;
-    margin:-13px 0 0 -10px;
+.skills .circular-progress{
+    width:200px;
+    height:200px;
     display:flex;
     justify-content: center;
     align-items: center;
-    font-weight:600;
+    background-color: beige;
 }
-.skills h4{
+.electrical-design .circular-progress .progress{
+    width:100px;
+    height:100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: conic-gradient(rgb(103, 158, 103) 225deg,rgb(218, 218, 214) 0deg);
+    border-radius: 50%;
+    position: relative;
+}
+.skills .hide-circle{
+    width:80px;
+    height:80px;
+    background-color: rgb(242, 242, 247);
+    position:absolute;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size:20px;
+}
+.arduino-programming .circular-progress .progress{
+    width:100px;
+    height:100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: conic-gradient(rgb(103, 158, 103) 225deg,rgb(218, 218, 214) 0deg);
+    border-radius: 50%;
+    position: relative;
+}
+.web-development .circular-progress .progress{
+    width:100px;
+    height:100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: conic-gradient(rgb(103, 158, 103) 225deg,rgb(218, 218, 214) 0deg);
+    border-radius: 50%;
+    position: relative;
+}
+.skills .skill-name{
     padding:10px 0;
-    background-image: url('247.png');
-    background-size: cover;
-    height:300px;
-    background-position: center;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    color:chocolate;
-}
-.skills p{
-    padding-top: 20px;
-    font-size:small;
-}
-.skills .electrical-design .scale{
-    width:100%;
-    border:1px solid lightgrey;
-    display:flex;
-    font-size:xx-small;
-    border-radius: 10px;
-}
-.skills .electrical-design .scale .inner-scale1{
-    height:100%;
-    width:50%;
-    background-color: #9ca1a1;
-}
-.skills .arduino-programming .scale{
-    width:100%;
-    border:1px solid lightgrey;
-    display:flex;
-    font-size:xx-small;
-    border-radius: 10px;
-}
-.skills .arduino-programming .scale .inner-scale1{
-    height:100%;
-    width:60%;
-    background-color: #9ca1a1;
+    text-transform: uppercase;
 }
 
-
-.skills .web-development .scale{
-    width:100%;
-    border:1px solid lightgrey;
-    display:flex;
-    font-size:xx-small;
-    border-radius: 10px;
-}
-.skills .web-development .scale .inner-scale1{
-    height:100%;
-    width:75%;
-    background-color:#9ca1a1;
-}
-
-.skills  button{
-    padding:10px;
-    margin:10px 0;
-    background-color:rgb(23, 23, 24);
-    color:chocolate;
-    font-weight:600;
-    border-radius: 4px;
-    border:0;
-    width:100%;
-}
-.skills  button:hover{
-    cursor: pointer;
-    background-color: rgb(20, 20, 20);
-}
 /*achievements*/
 .achievements{
     padding:20px;
-}
-.achievements-wrap{
     display:flex;
     justify-content: center;
     gap:20px;
-    flex-wrap:wrap;
 }
-.achievements img{
-    width:100%;
+.achievements .icon{
+    text-align: center;
 }
 .achievements h4{
+    text-align: center;
+}
+.achievements p{
     padding:10px 0;
-    background-image: url('322.png');
-    background-size: cover;
-    height:300px;
-    background-position: center;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    color:chocolate;
 }
-.achievements h5{
-    padding:0 0 5px 0;
+.achievements img{
+    width:40%;
 }
-.achievements b{
-    color:chocolate;
-}
-.achievements .web-dev-certificates{
-    padding:10px;
+.achievements .web-dev{
+    border:1px solid lightgrey;
+    padding:30px;
     width:500px;
-    border:1px solid rgb(20, 20, 20);
-    background-color: rgb(27, 27, 27);
-    border-radius: 10px;
+    height: fit-content;
 }
-.achievements .web-dev-certificates .image{
-    padding:10px 0;
+.achievements .web-dev button{
+    background-color: unset;
+    border:1px solid lightgrey;
+    padding:3px;
 }
-.achievements button{
-    padding:10px;
-    width:100%;
-    box-sizing:border-box;
-    background-color: rgb(23, 23, 24);
-    font-weight:600;
-    color:chocolate;
-    border:0;
-    border-radius:4px;
+.achievements .web-dev .download-certificates-btn{
+    padding:15px;
+    background-color: rgb(32, 95, 146);
+    color:white;
 }
-.achievements button:hover{
-    background-color: rgb(20, 20, 20);
-    cursor: pointer;
+.achievements .web-dev .view-certificates-btn{
+    padding:15px;
+    border:1px solid rgb(32, 95, 146);
+    color:rgb(32, 95, 146);
 }
-.achievements .web-dev-certificates .skip-boxes div{
-    width:60px;
-    height:4px;
-    border:1px solid;
-}
+
 .achievements .poetry{
+    border:1px solid lightgrey;
+    padding:30px;
     width:500px;
-    border:1px solid rgb(20, 20, 20);
-    background-color: rgb(27, 27, 27);
-    padding:10px;
-    border-radius:10px;
-}
-.achievements .poetry .video{
-    padding:10px 0;
+    height:fit-content;
 }
 .achievements .poetry video{
     width:100%;
+    border-radius: 10px;
+}
+.achievements .poetry button{
+    padding:15px;
+}
+.achievements .poetry .read-poem{
+    background-color: unset;
+    border:1px solid rgb(32, 95, 146);
+}
+.achievements .poetry .full-video{
+    background-color: rgb(32, 95, 146);
+    color:white;
+    border:0;
 }
 
-/*experience*/
-.experience{
-    padding:20px;
-}
-.experience-wrap{
-    display:flex;
-    justify-content: center;
-    background-color: rgb(27, 27, 27);
-    padding:10px;
-    border-radius: 10px;
-}
-.experience h4{
-    background-image: url('49.png');
-    height:300px;
-    background-size: cover;
-    background-position: center;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    color:chocolate;
-}
-.experience b{
-    color:chocolate
-}
-.experience-wrap div{
-    width:500px;
-}
-.experience ul{
-    list-style-position: inside;
-    font-size: small;
-    padding:10px 0;
-    list-style-type:square;
-}
-.experience button{
-    padding:10px;
-    border:0;
-    border-radius:4px;
-    background-color: rgb(23, 23, 24);
-    font-weight:600;
-    color:chocolate;
-    width:100%;
-    margin:5px 0;
-}
-.experience button:hover{
-    background-color: rgb(20, 20, 20);
-    cursor: pointer;
-}
-/*#3578E5;*/
-/*service*/
+/*services*/
 .services{
     padding:20px;
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    gap:20px;
+    background-color: rgb(51, 56, 50);
 }
-.services h4{
-    height:300px;
-    background-image: url('3.png');
-    background-position: center;
-    background-size: cover;
+.services p{
+    padding:10px 0;
+}
+.services .view-projects-btn{
+    padding:15px;
+    background-color: unset;
+    border:1px solid rgb(108, 223, 114);
+}
+.services h3{
+    font-size:30px;
+}
+.services .request-project-btn{
+    padding:15px;
+    background-color: rgb(108, 223, 114);
+    border:0;
+    color:white;
+}
+.services .electrical-design,.services .automation,.services .web-development,.services .tutoring{
+    padding:40px;
+    background-color: rgb(255, 255, 255);
+    width:500px;
+}
+
+/*featured-projects*/
+.featured-projects{
+    padding:20px;
     display:flex;
     justify-content: center;
     align-items: center;
-    font-size:30px;
-    color: chocolate;
+    height:300px;
 }
-.services h5{
+.featured-projects div{
+    border:1px solid lightgrey;
     padding:10px;
-}
-.services .services-wrap{
-    display:flex;
-    gap:20px;
-    overflow-x: scroll;
-    padding:10px 0;
     text-align: center;
 }
-.services .services-wrap::-webkit-scrollbar{
-    display:none;
-}
-.services .services-wrap img{
-    width:100%;
-}
-.services .services-wrap .electrical-electronic,.services .services-wrap .automation,.services .services-wrap .web-development{
-    min-width:250px;
-    height:fit-content;
-    border:1px solid rgb(20, 20, 20);
-    background-color: rgb(27, 27, 27);
+.featured-projects i{
+    font-size:50px;
     padding:10px;
-    border-radius: 10px;
+    color:rgb(146, 54, 54);
 }
-.services .services-wrap  p{
-    font-size:small;
-}
-.services .services-wrap button{
-    background-color: rgb(23, 23, 24);
-    border:0;
-    padding:10px;
-    border-radius: 4px;
-    color:chocolate;
-    font-weight: 600;
-    margin:10px 0;
-    width:100%;
-}
-.services .services-wrap button:hover{
-    background-color: rgb(20, 20, 20);
-    cursor: pointer;
-}
+
 /*footer*/
 footer{
-    text-align: center;
-    font-weight:600;
-    color:rgb(168, 166, 166);
     padding:20px;
-    background-color: rgb(20, 20, 20);
+    background-color: black;
+    color:rgb(177, 173, 173);
+    display:flex;
+    gap:20px;
+    justify-content: center;
 }
 footer ul{
     list-style: none;
-    padding:20px 0;
 }
-/*AT SMALL SCREENS*/
-@media screen and (max-width:950px){
-    /*nav*/
-    nav ul{
-        display:none;
+footer .contact-me ul{
+    display:flex;
+    gap:20px;
+    padding:10px 0;
+}
+footer .contact-me button{
+    width:100%;
+    padding:15px;
+    background-color: rgb(165, 87, 42);
+    border:0;
+    color:white;
+}
+footer .contact-me ul li{
+    text-align:center;
+    font-size:small;
+    box-shadow:1px 1px 3px rgb(29, 28, 28);
+    padding:10px;
+}
+footer .contact-me ul li i{
+    font-size:x-large;
+}
+
+/*AT SMALL SCREEN*/
+@media screen and (max-width:700px){
+    /*hero section*/
+    .hero-section{
+        flex-wrap:wrap;
     }
-    /*side-navigation-wrap*/
-    .side-navigation-wrap .right-side-navigation button{
+    .hero-navigation{
+        flex-wrap:wrap;
+    }
+    .hero-navigation .facebook-profile,.hero-navigation .read-more,.hero-navigation .more-on-me{
         width:100%;
     }
-    .side-navigation-wrap .right-side-navigation img{
-        width:100%;
+    /*skills*/
+    .skills{
+        flex-wrap:wrap;
     }
-    /*welcome box*/
-    .welcome-box .text{
-        text-align:center;
+    /*achievements*/
+    .achievements{
+        flex-wrap:wrap;
+    }
+    /*footer*/
+    footer{
+        flex-wrap:wrap;
     }
 }

@@ -8,334 +8,184 @@
     <script src="https://kit.fontawesome.com/dd42663f14.js" crossorigin="anonymous"></script> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap" rel="stylesheet">
+  
 
     <title>Sinethemba Lusawana Portfolio</title>
 </head>
 <body>
-    <!--HEADER-->
-    <header>
-        <!--website-name-->
-        <div class="website-name">
-            <span>SNEZO</span><br>
-        </div>
-    </header>
-
-    <!--MENU NAVIGATION-->
-    <nav>
-        <!--menu list items-->
-        <ul>
-           <li onclick="window.location='about.html'">About</li>
-           <li>Experience</li>
-           <li></li>
-        </ul>
-        <!--menu icon-->
-        <div class="menu-icon" onclick="MENU()">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
-    </nav>
-
-    <!--SIDE NAVIGATIONS-->
-    <div class="side-navigation-wrap">
-        <!--left side navigation-->
-        <div class="left-side-navigation">
-            <ul>
-                <li onclick="window.location='about.html'">About</li>
-                <li>Experience</li>
-                <li></li>
-            </ul>
-            <div class="get-a-tutor">
-                <hr>
-                <p>
-                    I offer online and contact tutoring services equiping every learner with 
-                    simplified and less overwhelming lessons specially prepared for them.
-                </p>
-                <button>Apply for Tutoring</button>
+    <!--HERO SECTION-->
+    <div class="hero-section">
+        <!--paragraph-->
+        <div class="paragraph">
+            I am <div class="career">a Web Developer</div>
+            One of those enthusiast who believe in the beauty of their 
+            dreams and bring those wonderful ideas into reality to solve real world problems.
+            <!--hero navigation-->
+            <div class="hero-navigation">
+                <!--read more-->
+                <div class="read-more" onclick="window.location='about.html'">
+                    <div class="icon"><i class="fa-brands fa-readme"></i></div>
+                    <div class="info" >Read More</div>
+                </div>
+                <!--facebook profile-->
+                <div class="facebook-profile" onclick="window.location='https://www.facebook.com/snetembar.luserwerner'">
+                    <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
+                    <div class="info">Facebook Profile</div>
+                </div>
+                <!--facebook profile-->
+                <div class="more-on-me" onclick="MENU()">
+                    <div class="icon"><i class="fa-solid fa-ellipsis"></i></div>
+                    <div class="info" >More on Me</div>
+                </div>
             </div>
         </div>
-    </div>
-
-    <!--WELCOME BOX-->
-    <div class="welcome-box">
         <!--image-->
         <div class="image">
-            <!--cover photo-->
-            <div class="cover-photo">
-            </div>
-            <!--picture-->
-            <div class="one"><img src="Screenshot_20230706_171629_Gallery.jpg" alt="image"></div>
-        </div>
-        <!--text-->
-        <div class="text">
-            <h1>Sinethemba Lusawana</h1><br>
-            I am one of those creative and innovative electrical enthusiasts who believe in the beauty 
-            of their dreams.
+            <img src="profile-pic.png" alt="image">
         </div>
     </div>
 
-    <!--HERO NAVIGATION-->
-    <div class="hero-navigation">
-        <!--read more-->
-        <div class="read-more" onclick="window.location='about.html'">
-            <div class="icon"><i class="fa-brands fa-readme"></i></div>
-            <div class="info" >Read More</div>
+    <!--SKILLS-->
+    <div class="skills">
+        <!--electrical design-->
+        <div class="electrical-design">
+            <div class="circular-progress">
+                <div class="progress">
+                </div>
+                <div class="hide-circle">67%</div>
+            </div>
+            <div class="skill-name">Electrical Design</div>
         </div>
-        <!--facebook profile-->
-        <div class="facebook-profile" onclick="window.location='https://www.facebook.com/snetembar.luserwerner'">
-            <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
-            <div class="info">Facebook Profile</div>
+        <!--arduino programming-->
+        <div class="arduino-programming">
+            <div class="circular-progress">
+                <div class="progress">
+                </div>
+                <div class="hide-circle">70%</div>
+            </div>
+            <div class="skill-name">Arduino Programming</div>
         </div>
-        <!--facebook profile-->
-        <div class="more-on-me" onclick="MENU()">
-            <div class="icon"><i class="fa-solid fa-ellipsis"></i></div>
-            <div class="info" >More on Me</div>
+        <!--web-development-->
+        <div class="web-development">
+            <div class="circular-progress">
+                <div class="progress">
+                </div>
+                <div class="hide-circle">80%</div>
+            </div>
+            <div class="skill-name">Web Development</div>
         </div>
     </div>
-        <!--LINE BRAKER-->
-        <div class="hr"></div>
 
-        <!--FEATURED PHOTOS-->
-        <div class="featured-photos">
-            <!--photot 1-->
-            <div class="photo1" onclick="PHOTO1()">
-                <img src="Screenshot_20230708_122240_Gallery.jpg" alt="">
-            </div>
-            <!--photo 2-->
-            <div class="photo2" onclick=" PHOTO2()">
-                <img src="Screenshot_20230708_122223_Gallery.jpg" alt="">
-            </div>
-            <!--photo 3-->
-            <div class="photo3" onclick=" PHOTO3()">
-                <img src="1674935758660.jpg" alt="">
-            </div>
-            <!--photo 4-->
-            <div class="photo4" onclick=" PHOTO4()">
-                <img src="Screenshot_20230708_122240_Gallery.jpg" alt="">
-            </div>
-            <!--photo 5-->
-            <div class="photo5" onclick=" PHOTO4()">
-                <img src="Screenshot_20230708_122240_Gallery.jpg" alt="">
-            </div>
-            <!--photo 6-->
-            <div class="photo6" onclick=" PHOTO4()">
-                <img src="Screenshot_20230708_122240_Gallery.jpg" alt="">
-            </div>
-            <!--photo 7-->
-            <div class="photo7" onclick=" PHOTO4()">
-                <img src="Screenshot_20230708_122240_Gallery.jpg" alt="">
-            </div>
-            <!--photo 8-->
-            <div class="photo8" onclick=" PHOTO4()">
-                <img src="Screenshot_20230708_122240_Gallery.jpg" alt="">
-            </div>
-            <!--photo 9-->
-            <div class="photo9" onclick=" PHOTO4()">
-                <img src="Screenshot_20230708_122240_Gallery.jpg" alt="">
-            </div>
-            <!--photo 10-->
-            <div class="photo10" onclick=" PHOTO4()">
-                <img src="Screenshot_20230708_122240_Gallery.jpg" alt="">
-            </div>
+    <!--ACHIEVEMENTS-->
+    <div class="achievements">
+        <!--web dev-->
+        <div class="web-dev">
+            <div class="icon"><img src="22.png" alt=""></div>
+            <h4>Web Development</h4>
+            <p>
+                Obtained 5 certificates in Web Development courses from 
+                <b><a href="https://wwww.sololearn.com">Sololearn</a></b> . 
+                <br><button>HTML</button> <button>CSS</button> <button>PHP</button> <button>SQL</button> <button>RESPONSIVE WEB DESIGN</button>
+            </p><br>
+             <button class="view-certificates-btn">View Certificates</button> <button class="download-certificates-btn">Download Certificates</button>
         </div>
-        <!--MORE PHOTOS-->
-        <div class="more-photos">
-            <button onclick="window.location='gallery.html'">View More</button>
+        <!--poetry-->
+        <div class="poetry">
+            <div class="icon"><img src="160.png" alt="image"></div>
+            <h4>Poetry</h4>
+            <p>
+                Placed first in the isiXhosa category in the Fourth<a href="https://www.avbobpoetry.co.za">Avbob Poetry</a> Competition in 2021. 
+            </p>
+            <div class="video">
+                <video src="Facebook_1683788429152_001.mp4" controls></video>
+            </div><br>
+            <button class="read-poem">Read Poem</button> <button class="full-video">Watch Full Poetry Gala</button>
         </div>
+    </div>
 
-        <!--PHOTO POPUP-->
-        <div class="photo-popup">
-            <!--close icon-->
-            <div class="close-icon">
-                <div class="icon" onclick="CLOSE_PHOTOS()"><i class="fa-solid fa-xmark"></i></div>
-            </div>
-            <!--popup image-->
-            <div class="popup-image">
-                <img src="undraw_electricity_k2ft.png" id="popup_images" alt="image">
-            </div>
-            <div class="info">
-                <div class="one">Taken</div>
-                <div class="two">
-                    on: <span class="date">12/02/2022</span><br>
-                    at: <span class="place">Mthatha 13 Sisson St</span>
-                </div>
-            </div>
-            <button class="download">Download</button>
-            <div class="buttons">
-                <button class="close" onclick="CLOSE_PHOTOS()">Close</button> <button class="back"><i class="fa-solid fa-chevron-left"></i></button> <button class="next"><i class="fa-solid fa-chevron-right"></i></button>
-            </div>
-
+    <!--SERVICES-->
+    <div class="services">
+        <!---electrical design-->
+        <div class="electrical-design">
+            <h3>Electrical Design</h3>
+            <p>
+                Have the best of electrical designs specially designed 
+                to meet your specific needs.
+            </p>
+            <button class="view-projects-btn">View Projects</button> <button class="request-project-btn">Request Project</button>
         </div>
-        <!--LINE BRAKER-->
-        <div class="hr"></div>
-
-        <!--SKILLS-->
-        <div class="skills">
-             <h4>Skills</h4>
-            <div class="skills-wrap">
-            <!--electrical design-->
-            <div class="electrical-design">
-                <img src="160.png" alt="">
-                <h5>Electrical Design</h5>
-                <p>
-                    I have the ability to plan and bring an idea into reality. I have built numerous 
-                    electrical projects on electrical softwares such as <i>MULTISIM</i> and <i>PROTEUS</i>, simulated them and built real products and systems.
-                    <br><button>View Designs</button>
-                </p>
-            </div>
-            <!--arduino programming-->
-            <div class="arduino-programming">
-                <img src="26.png" alt="">
-                <h5>Arduino Programming</h5>
-                <p>
-                    Automating systems and projects is what I do and love the most. I have been designing and programming educational
-                    Arduino Uno based projects since 2019.
-                    <br><button>View Projects</button>
-                </p>
-            </div>
-            <!--web development-->
-            <div class="web-development">
-                <img src="22.png" alt="">
-                <h5>Web Development</h5>
-                <p>
-                    I have taught myself web development with the help of Sololearn, youtube tutorials and w3schools. Sololearn has awarded me with more than 1 certificates in web development courses.
-                    <br><button>View Certificates</button>
-                </p>
-            </div>
-            </div>
+         <!---automation-->
+         <div class="automation">
+            <h3>Automation</h3>
+            <p>
+                Let me automate your home appliances and more.
+            </p>
+            <button class="view-projects-btn">View Projects</button> <button class="request-project-btn">Request Project</button>
         </div>
-
-        <!--LINE BRAKER-->
-        <div class="hr"></div>
-
-        <!--ACHIEVEMENTS-->
-        <div class="achievements">
-            <h4>Achievements</h4>
-            <div class="achievements-wrap">
-                <!--in web development-->
-            <div class="web-dev-certificates">
-                <h5>in web development</h5>
-                <p>
-                    Obtained 5 web development certificates from <b><u>Sololearn</u></b> in 2022.
-                </p>
-                <div class="image"><img src="Responsive Web Design_certificate.jpg" alt="image1"></div>
-                <button>View All</button>
-            </div>
-            <!--in poetry-->
-            <div class="poetry">
-                <h5>in poetry</h5>
-                <p>
-                    Placed first in the isiXhosa category in <b><u>Avbob Poetry Competition</u></b> in 2021.
-                </p>
-                <div class="video">
-                    <video src="Facebook_1683788429152_001.mp4" controls></video>
-                </div>
-                <button>Watch  Full Poetry Gala</button>
-            </div>
-            </div>
+         <!---web development-->
+         <div class="web-development">
+            <h3>Web Development</h3>
+            <p>
+               I can design s responsive and interactive website for your business from scratch.
+            </p>
+            <button class="view-projects-btn">View Projects</button> <button class="request-project-btn">Request Design</button>
         </div>
-        <!--LINE BRAKER-->
-        <div class="hr"></div>
-
-        <!--EXPERIENCE-->
-        <div class="experience">
-            <h4>Work Eperience</h4>
-            <div class="experience-wrap">
-            <div>
-                1 year of work ecperience <b><u>@ ELECTRICAL & MECHANICAL CONTRACTORS</u></b> in the following 
-                fields:
-                <ul>
-                    <li>General Electrical Maintenance</li>
-                    <li> Installation & Maintenance of Street Lights</li>
-                    <li>Reparing LV & MV Underground Cables</li>
-                    <li>Fault Location of undergroung cables using a surge generator</li>
-                    <li>Instalation & Maintenance of Overhead Distribution Lines</li>
-                </ul>
-                <button>Download CV</button>
-            <br><button>Hire Me</button>
-            </div>
-            
-            </div>
+         <!---tutoring-->
+         <div class="tutoring">
+            <h3>Online Tutoring</h3>
+            <p>
+                Learn online with me and be equipped with simplified and 
+                less overwhelming lessons specially prepared for you!
+            </p>
+            <button class="view-projects-btn">Visit Site</button> <button class="request-project-btn">Apply Now!</button>
         </div>
-        <!--LINE BRAKER-->
-        <div class="hr"></div>
+    </div>
 
-        <!--SERVICES-->
-        <div class="services">
-            <h4>What I Do</h4>
-            <div class="services-wrap">
-                <!--electrical + electronic-->
-                <div class="electrical-electronic">
-                    <h5>Electrical + Electronic</h5>
-                    <div class="image">
-                        <img src="undraw_electricity_k2ft.png" alt="">
-                    </div>
-                    <p>
-                        Have the best of my electrical + electronic designs to solve 
-                        some of your daily challanges.
-                    </p>
-                    <button>Request Design</button>
-                </div>
-                <!--Automation-->
-                <div class="automation">
-                    <h5>Automation</h5>
-                    <div class="image">
-                        <img src="undraw_Artificial_intelligence_re_enpp.png" alt="">
-                    </div>
-                    <p>
-                        Automation has become a trend nowadays, don' t be left behind. Let me 
-                        automate your home appliances and more.
-                    </p>
-                    <button>Request Automation</button>
-                </div>
-                <!--web development-->
-                <div class="web-development">
-                    <h5>Web Development</h5>
-                    <div class="image">
-                        <img src="undraw_Web_developer_re_h7ie.png" alt="">
-                    </div>
-                    <p>
-                        I can design a responsive and interactive website of your dreams from strach.
-                    </p>
-                    <button>Request a Website</button>
-                </div>
-            </div>
+    <!--FEATURED PROJECTS-->
+    <div class="featured-projects">
+        <div>
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <h4>No featured projects available</h4>
+            <p>
+                Projects will be shown in this section when they are available.
+            </p>
         </div>
+    </div>
 
-        <!--FOOTER-->
-        <footer>
-            <!--about me-->
-            <div class="about-me">
-                <h4>About Me</h4>
-                <ul>
-                    <li>About me</li>
-                    <li>Experience</li>
-                    <li>Hire me</li>
-                </ul>
-            </div>
-            <!--contact me-->
-            <div class="contact-me">
-                <h4>Contact Me</h4>
-                <ul>
-                    <li>Cellphone: +27286052462</li>
-                    <li>Email: lusawanasinethemba@gmail.com</li>
-                    <li>Facebook: Sinethemba Lusawana</li>
-                    <li>WhatsApp: 078 605 2462</li>
-                    <li>YouTube: Sinethemba Lusawana</li>
-                </ul>
-                <address>
-                    <ul>
-                        <li>13 Sisson Street, Forgale, Umtata 5100</li>
-                    </ul>
-                </address>
-            </div>
-            <div>
-                &copy;sinethemba lusawana 2023
-            </div>
-        </footer>
-
+    <!--FOOTER-->
+    <footer>
+        <!--about me-->
+        <div class="about">
+            <ul>
+                <li>About Me</li>
+                <li>Skills</li>
+                <li>Experience</li>
+                <li>Achievements</li>
+                <li>Services</li>
+                <li>Projects</li>
+            </ul>
+        </div>
+        <!--address-->
+        <div class="address">
+            <ul>
+                <li>13 Sissons Street</li>
+                <li>Fortgale</li>
+                <li>Umtata</li>
+                <li>Eastern Cape</li>
+            </ul>
+        </div>
+        <!--contact me-->
+        <div class="contact-me">
+            <ul>
+                <li><i class="fa-solid fa-phone"></i><br>Phone</li>
+                <li><i class="fa-brands fa-whatsapp"></i><br>WhatsApp</li>
+                <li><i class="fa-brands fa-facebook-f"></i><br>Facebook</li>
+                <li><i class="fa-brands fa-youtube"></i><br>YouTube</li>
+            </ul>
+            <button>EMAIL ME</button>
+        </div>
+    </footer>
     <script src="index.js"></script>
 </body>
 </html>
