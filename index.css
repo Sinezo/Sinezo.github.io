@@ -15,11 +15,18 @@ font-family: 'Nunito', sans-serif;
     width:500px;
     padding:40px;
 }
-.hero-section .paragraph .career{
+.hero-section .paragraph .career::before{
+    content:" a Web Developer";
     padding:10px 0;
     font-weight: 600;
     font-size: 30px;
     color:rgb(108, 223, 114);
+    animation:careers 5s infinite;
+}
+@keyframes careers {
+    0% {content:"an Electrician";}
+    50% {content: "an Arduino Programmer"}
+    100% {content: "a Web Developer"}
 }
 .hero-section .image{
     width:500px;
