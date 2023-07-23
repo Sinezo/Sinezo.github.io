@@ -12,6 +12,9 @@
 
 </head>
 <body>
+    <nav>
+        <span onclick="window.location='index.html'">Home <i class="fa-solid fa-chevron-right"></i></span> <span>About</span>
+    </nav>
     <!--ABOUT ME-->
     <div class="about-me-box">
         <!--text-->
@@ -74,12 +77,12 @@
                         <div class="wrap">
                             <div class="info">
                                 <div class="date-location">
-                                   <div class="location"><i class="fa-solid fa-location-dot"></i> 13 Sisson St Forgate Umtata</div>
+                                   <div class="location"><i class="fa-solid fa-location-dot"></i> 13 Sisson St Forgale Umtata</div>
                                    <div class="date"><i class="fa-regular fa-calendar"></i> 12/10/2022</div> 
                                </div>
                            </div>
                            <div class="buttons">
-                               <button class="download"><i class="fa-solid fa-download"></i> Download</button> <button class="back"><i class="fa-solid fa-chevron-left"></i></button> <button class="next"><i class="fa-solid fa-chevron-right"></i></button>
+                               <button class="download"><i class="fa-solid fa-download"></i> Download</button> <button class="back" onclick="BACK_WORK_PHOTOS()"><i class="fa-solid fa-chevron-left"></i></button> <button class="next" onclick="NEXT_WORK_PHOTOS()"><i class="fa-solid fa-chevron-right"></i></button>
                            </div>
                         </div>
                     </div>
@@ -118,5 +121,39 @@
                 <button>EMAIL ME</button>
             </div>
         </footer>
+
+        <script>
+            var position =1;
+            function NEXT_WORK_PHOTOS(){
+                if(position!=4){
+                    const photo = document.querySelector(`div[id="photo${position}"]`);
+                photo.style.marginLeft='-400px';
+                photo.style.filter='brightness(30%)';
+                photo.style.transition='all 300ms ease-in';
+                photo.style.overflow='hidden';
+                position++;
+                }
+                else{
+                    position=1;
+                    for(let i=1;i<=4;i++){
+                        const photo = document.querySelector(`div[id="photo${i}"]`);
+                        photo.style.margin='0';
+                        photo.style.filter='brightness(100%)';
+                    }
+                }
+            }
+
+            function BACK_WORK_PHOTOS(){
+                if(position!=1){
+                const photo = document.querySelector(`div[id="photo${position-1}"]`);
+                photo.style.marginLeft='0';
+                photo.style.transition='all 300ms ease-in';
+                photo.style.filter='brightness(100%)';
+                photo.style.overflow='hidden';
+                position--;
+                }
+            }
+
+        </script>
 </body>
 </html>

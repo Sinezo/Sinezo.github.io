@@ -4,6 +4,12 @@ padding:0;
 font-family: 'Nunito', sans-serif;
 }
 /*font-family: 'Roboto', sans-serif;*/
+/*section heading*/
+.section-heading{
+    text-align: center;
+    padding:20px;
+    font-family: sans-serif;
+}
 /*hero section*/
 .hero-section{
     padding:20px;
@@ -204,13 +210,12 @@ font-family: 'Nunito', sans-serif;
 }
 .achievements .web-dev .download-certificates-btn{
     padding:15px;
-    background-color: rgb(32, 95, 146);
+    background-color: rgb(52, 165, 58);
     color:white;
 }
 .achievements .web-dev .view-certificates-btn{
     padding:15px;
-    border:1px solid rgb(32, 95, 146);
-    color:rgb(32, 95, 146);
+    border:1px solid rgb(52, 165, 58);
 }
 
 .achievements .poetry{
@@ -228,10 +233,10 @@ font-family: 'Nunito', sans-serif;
 }
 .achievements .poetry .read-poem{
     background-color: unset;
-    border:1px solid rgb(32, 95, 146);
+    border:1px solid rgb(52, 165, 58);
 }
 .achievements .poetry .full-video{
-    background-color: rgb(32, 95, 146);
+    background-color: rgb(52, 165, 58);
     color:white;
     border:0;
 }
@@ -245,20 +250,23 @@ font-family: 'Nunito', sans-serif;
     gap:20px;
     background-color: rgb(51, 56, 50);
 }
+.services video{
+    width:100%;
+}
 .services p{
     padding:10px 0;
 }
 .services .view-projects-btn{
     padding:15px;
     background-color: unset;
-    border:1px solid rgb(108, 223, 114);
+    border:1px solid rgb(52, 165, 58);
 }
 .services h3{
     font-size:30px;
 }
 .services .request-project-btn{
     padding:15px;
-    background-color: rgb(108, 223, 114);
+    background-color: rgb(52, 165, 58);
     border:0;
     color:white;
 }
