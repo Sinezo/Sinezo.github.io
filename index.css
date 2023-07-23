@@ -190,6 +190,7 @@ font-family: 'Nunito', sans-serif;
 }
 .achievements h4{
     text-align: center;
+    font-family: sans-serif;
 }
 .achievements p{
     padding:10px 0;
@@ -263,6 +264,8 @@ font-family: 'Nunito', sans-serif;
 }
 .services h3{
     font-size:30px;
+    font-family: sans-serif;
+    padding:10px 0;
 }
 .services .request-project-btn{
     padding:15px;
