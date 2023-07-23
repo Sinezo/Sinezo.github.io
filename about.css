@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Nunito', sans-serif;
+    }
+.about-me-box{
+    padding:20px;
+    display:flex;
+    gap:20px;
+}
+.about-me-box img{
+    width:100%;
+}
+/*work photos*/
+.work-heading-photos{
+    text-align: center;
+    padding:20px;
+}
+.work-photos{
+    display:flex;
+    justify-content: center;
+    padding:40px;
+    gap:20px;
+}
+.work-photos img{
+    width:100%;
+}
+.work-photos .photos{
+    display:flex;
+    overflow-x: hidden;
+    width:400px;
+}
+.work-photos #photo1,.work-photos #photo2,.work-photos #photo3,.work-photos #photo4{
+    min-width:100%;
+}
+/*photo-details*/
+.photo-details{
+    display:flex;
+    justify-content:center;
+}
+.photo-details .buttons{
+    padding:10px 0;
+}
+.photo-details button{
+    padding:15px;
+}
+.photo-details .download{
+    background-color: rgb(74, 170, 74);
+    color:white;
+    border:0;
+}
+/*footer*/
+footer{
+    padding:20px;
+    background-color: black;
+    color:rgb(177, 173, 173);
+    display:flex;
+    gap:20px;
+    justify-content: center;
+}
+footer ul{
+    list-style: none;
+}
+footer .contact-me ul{
+    display:flex;
+    gap:20px;
+    padding:10px 0;
+}
+footer .contact-me button{
+    width:100%;
+    padding:15px;
+    background-color: rgb(165, 87, 42);
+    border:0;
+    color:white;
+}
+footer .contact-me ul li{
+    text-align:center;
+    font-size:small;
+    box-shadow:1px 1px 3px rgb(29, 28, 28);
+    padding:10px;
+}
+footer .contact-me ul li i{
+    font-size:x-large;
+}
+@media screen and (min-width:700px){
+    .about-me-box{
+        justify-content: center;
+    }
+    .about-me-box .text{
+        width:500px;
+    }
+    .about-me-box .photos{
+        width:500px;
+        display:flex;
+        gap:10px;
+    }
+}
+@media screen and (max-width:700px){
+    /*work photos*/
+    .work-photos{
+        flex-wrap:wrap;
+    }
+    /*footer*/
+    footer{
+        flex-wrap:wrap;
+    }
+}

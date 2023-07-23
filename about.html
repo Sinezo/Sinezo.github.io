@@ -3,86 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Document</title>
-    <style>
-        .about-me-box{
-            padding:20px;
-        }
-        .buttons{
-            padding:20px 0;
-            position:fixed;
-            bottom:0px;
-            width:90%;
-            background-color: rgb(22, 22, 22);
+    <link rel="stylesheet" href="about.css">
+    <script src="https://kit.fontawesome.com/dd42663f14.js" crossorigin="anonymous"></script> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap" rel="stylesheet">
+    <title>About Me</title>
 
-        }
-        .buttons button{
-            padding:10px;
-            width:100%;
-            background-color: chocolate;
-            border:0;
-            color:white;
-            font-weight:600;
-            border-radius:4px;
-        }
-    </style>
 </head>
 <body>
-    <!--HEADER-->
-    <header>
-        <!--website-name-->
-        <div class="website-name">
-            <span>SNEZO</span><br>
-        </div>
-    </header>
-
-    <!--MENU NAVIGATION-->
-    <nav>
-        <!--menu list items-->
-        <ul>
-           <li>About</li>
-           <li>Experience</li>
-           <li></li>
-        </ul>
-        <!--menu icon-->
-        <div class="menu-icon" onclick="MENU()">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
-    </nav>
-
-     <!--WELCOME BOX-->
-     <div class="welcome-box">
-        <!--image-->
-        <div class="image">
-            <!--cover photo-->
-            <div class="cover-photo">
-            </div>
-            <!--picture-->
-            <div class="one"><img src="Screenshot_20230706_171629_Gallery.jpg" alt="image"></div>
-        </div>
-    </div> 
-     <!--LINE BRAKER-->
-     <div class="hr"></div>
     <!--ABOUT ME-->
     <div class="about-me-box">
-        <p>
-            I am Sinethemba Lusawana, 24, currently doing Apprenticeship at <b><u>SNR ELECTRICAL & MECHANICAL CONTRACTORS</u></b>
-            in Umtata.
-            <br><br>
-            I did my electrical engineering theorical subjects at <b><u>Walter Sisulu University</u></b>. 
-            <br><br>I am very curious electrical engineering enthusiast who likes learning and developing new 
-            skills. I learned web development through online courses and YouTube video tutorials 
-            from different teachers like <b>Dani Crossing</b> and more.
+        <!--text-->
+        <div class="text">
+            <p>
+                I am Sinethemba Lusawana, 24, currently doing Apprenticeship at <a href="https://www.snrelectrical.co.za">SNR Eletcrical & Mechanical Contractors</a>
+                in Umtata.
+                <br><br>
+                I did my electrical engineering theorical subjects at <a href="https://www.wsu.ac.za">Walter Sisulu Unirvesity</a>. 
+                <br><br>I am a very curious electrical engineering enthusiast who likes learning and developing new 
+                skills. I learned web development through online courses on <a href="https://www.sololearn.com">Sololearn</a> and YouTube video tutorials 
+                from different teachers like <b>Dani Crossing</b> and more.
+    
+                <br><br>I also offer tutoring services to grade 10 -12 learners in Technical Mathematics and 
+                Electrical Technology.
+            </p>
+        </div>
+        <!--photos-->
+        <div class="photos">
+            <div class="photo1">
+                <img src="Screenshot_20230706_171629_Gallery.jpg" alt="photo1">
+            </div>
 
-            <br><br>I also offer tutoring services to grade 10 -12 learners in Technical Mathematics and 
-            Electrical Technology.
-        </p><br><br><br><br><br><br>
-        <div class="buttons">
-            <button>WhatsApp Now</button>
+            <div class="photo2">
+                <img src="Screenshot_20230707_152736_Gallery.jpg" alt="photo2">
+            </div>
+
+            <div class="photo3">
+                <img src="Screenshot_20230708_122223_Gallery.jpg" alt="photo3">
+            </div>
+
+            <div class="photo4">
+                <img src="Screenshot_20230708_122240_Gallery.jpg" alt="photo4">
+            </div>
         </div>
     </div>
+
+    <!--WORK RELATED PHOTOS-->
+    <h2 class="work-heading-photos">Work Related Photos</h2>
+    <div class="work-photos">
+        <div class="photos">
+            <div id="photo1">
+                <img src="Screenshot_20230706_171629_Gallery.jpg" alt="photo1">
+            </div>
+
+            <div id="photo2">
+                <img src="Screenshot_20230707_152736_Gallery.jpg" alt="photo2">
+            </div>
+
+            <div id="photo3">
+                <img src="Screenshot_20230708_122223_Gallery.jpg" alt="photo3">
+            </div>
+
+            <div id="photo4">
+                <img src="Screenshot_20230708_122240_Gallery.jpg" alt="photo4">
+            </div>
+        </div>
+                    <!--photp details-->
+                    <div class="photo-details">
+                        <div class="wrap">
+                            <div class="info">
+                                <div class="date-location">
+                                   <div class="location"><i class="fa-solid fa-location-dot"></i> 13 Sisson St Forgate Umtata</div>
+                                   <div class="date"><i class="fa-regular fa-calendar"></i> 12/10/2022</div> 
+                               </div>
+                           </div>
+                           <div class="buttons">
+                               <button class="download"><i class="fa-solid fa-download"></i> Download</button> <button class="back"><i class="fa-solid fa-chevron-left"></i></button> <button class="next"><i class="fa-solid fa-chevron-right"></i></button>
+                           </div>
+                        </div>
+                    </div>
+    </div>
+
+        <!--FOOTER-->
+        <footer>
+            <!--about me-->
+            <div class="about">
+                <ul>
+                    <li>About Me</li>
+                    <li>Skills</li>
+                    <li>Experience</li>
+                    <li>Achievements</li>
+                    <li>Services</li>
+                    <li>Projects</li>
+                </ul>
+            </div>
+            <!--address-->
+            <div class="address">
+                <ul>
+                    <li>13 Sissons Street</li>
+                    <li>Fortgale</li>
+                    <li>Umtata</li>
+                    <li>Eastern Cape</li>
+                </ul>
+            </div>
+            <!--contact me-->
+            <div class="contact-me">
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i><br>Phone</li>
+                    <li><i class="fa-brands fa-whatsapp"></i><br>WhatsApp</li>
+                    <li><i class="fa-brands fa-facebook-f"></i><br>Facebook</li>
+                    <li><i class="fa-brands fa-youtube"></i><br>YouTube</li>
+                </ul>
+                <button>EMAIL ME</button>
+            </div>
+        </footer>
 </body>
 </html>

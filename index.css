@@ -15,19 +15,25 @@ font-family: 'Nunito', sans-serif;
     width:500px;
     padding:40px;
 }
-.hero-section .paragraph .career::before{
+.hero-section .my-name{
+    display:inline-flex;
+    color:rgb(204, 67, 25);
+    text-decoration: underline;
+}
+.hero-section .paragraph .career::after{
     content:" a Web Developer";
     padding:10px 0;
     font-weight: 600;
     font-size: 30px;
     color:rgb(108, 223, 114);
     animation:careers 5s infinite;
+    display:grid;
 }
-@keyframes careers {
+/*@keyframes careers {
     0% {content:"an Electrician";}
     50% {content: "an Arduino Programmer"}
     100% {content: "a Web Developer"}
-}
+}*/
 .hero-section .image{
     width:500px;
 }
@@ -117,7 +123,7 @@ font-family: 'Nunito', sans-serif;
     display:flex;
     justify-content: center;
     align-items: center;
-    background-color: beige;
+    background-color: rgb(245, 245, 237);
 }
 .electrical-design .circular-progress .progress{
     width:100px;
@@ -321,6 +327,9 @@ footer .contact-me ul li i{
     .hero-section{
         flex-wrap:wrap;
     }
+    .hero-section .paragraph{
+        order:2;
+    }
     .hero-navigation{
         flex-wrap:wrap;
     }
@@ -330,6 +339,9 @@ footer .contact-me ul li i{
     /*skills*/
     .skills{
         flex-wrap:wrap;
+    }
+    .skills .circular-progress{
+        width:300px;
     }
     /*achievements*/
     .achievements{
