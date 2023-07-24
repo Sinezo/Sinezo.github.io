@@ -343,6 +343,12 @@ footer .contact-me ul li i{
         order:2;
         padding:20px;
     }
+    .hero-section .image{
+        text-align: center;
+    }
+    .hero-section .image img{
+        width:70%;
+    }
     .hero-navigation{
         flex-wrap:wrap;
     }
@@ -352,6 +358,7 @@ footer .contact-me ul li i{
     /*skills*/
     .skills{
         flex-wrap:wrap;
+        margin:20px;
     }
     .skills .circular-progress{
         width:300px;
